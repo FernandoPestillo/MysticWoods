@@ -686,14 +686,14 @@ PlayerSettings:
   apiCompatibilityLevelPerPlatform: {}
   m_RenderingPath: 1
   m_MobileRenderingPath: 1
-  metroPackageName: ZeldaClone
+  metroPackageName: MysticWoods
   metroPackageVersion: 
   metroCertificatePath: 
   metroCertificatePassword: 
   metroCertificateSubject: 
   metroCertificateIssuer: 
   metroCertificateNotAfter: 0000000000000000
-  metroApplicationDescription: ZeldaClone
+  metroApplicationDescription: MysticWoods
   wsaImages: {}
   metroTileShortName: 
   metroTileShowName: 0
@@ -764,7 +764,7 @@ PlayerSettings:
   cloudProjectId: b088eeaa-0a45-4b66-9eca-6a06216be9c7
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
-  projectName: ZeldaClone 2024-02-27_18-40-21
+  projectName: MysticWoods
   organizationId: fernandopestillo
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 0
