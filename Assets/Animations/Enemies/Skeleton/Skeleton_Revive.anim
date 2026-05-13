@@ -21,25 +21,25 @@ AnimationClip:
   - serializedVersion: 2
     curve:
     - time: 0
+      value: {fileID: 1962000029, guid: bdc7a07ab4e4584479ec8265ac24e122, type: 3}
+    - time: 0.125
       value: {fileID: 875689727, guid: bdc7a07ab4e4584479ec8265ac24e122, type: 3}
-    - time: 0.14285715
+    - time: 0.25
       value: {fileID: -1536280963, guid: bdc7a07ab4e4584479ec8265ac24e122, type: 3}
-    - time: 0.2857143
+    - time: 0.375
       value: {fileID: 620339053, guid: bdc7a07ab4e4584479ec8265ac24e122, type: 3}
-    - time: 0.42857143
+    - time: 0.5
       value: {fileID: -183961596, guid: bdc7a07ab4e4584479ec8265ac24e122, type: 3}
-    - time: 0.5714286
+    - time: 0.625
       value: {fileID: -1839692968, guid: bdc7a07ab4e4584479ec8265ac24e122, type: 3}
-    - time: 0.71428573
-      value: {fileID: 987009370, guid: bdc7a07ab4e4584479ec8265ac24e122, type: 3}
-    - time: 0.85714287
+    - time: 0.75
       value: {fileID: 1003269923, guid: bdc7a07ab4e4584479ec8265ac24e122, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
     script: {fileID: 0}
     flags: 2
-  m_SampleRate: 7
+  m_SampleRate: 8
   m_WrapMode: 0
   m_Bounds:
     m_Center: {x: 0, y: 0, z: 0}
@@ -56,19 +56,19 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     pptrCurveMapping:
+    - {fileID: 1962000029, guid: bdc7a07ab4e4584479ec8265ac24e122, type: 3}
     - {fileID: 875689727, guid: bdc7a07ab4e4584479ec8265ac24e122, type: 3}
     - {fileID: -1536280963, guid: bdc7a07ab4e4584479ec8265ac24e122, type: 3}
     - {fileID: 620339053, guid: bdc7a07ab4e4584479ec8265ac24e122, type: 3}
     - {fileID: -183961596, guid: bdc7a07ab4e4584479ec8265ac24e122, type: 3}
     - {fileID: -1839692968, guid: bdc7a07ab4e4584479ec8265ac24e122, type: 3}
-    - {fileID: 987009370, guid: bdc7a07ab4e4584479ec8265ac24e122, type: 3}
     - {fileID: 1003269923, guid: bdc7a07ab4e4584479ec8265ac24e122, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 1
+    m_StopTime: 0.875
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
@@ -88,7 +88,7 @@ AnimationClip:
   m_HasGenericRootTransform: 0
   m_HasMotionFloatCurves: 0
   m_Events:
-  - time: 1
+  - time: 0.875
     functionName: Revive
     data: 
     objectReferenceParameter: {fileID: 0}
