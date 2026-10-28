@@ -49,8 +49,8 @@ public class MenuPrincipalManager : MonoBehaviour
     {
         if (startingGame) return;
         startingGame = true;
+        Time.timeScale = 1;
         SceneManager.LoadScene(nomeLevelJogo);
-        Time.timeScale = 0;
     }
     public void AbrirComandos()
     {

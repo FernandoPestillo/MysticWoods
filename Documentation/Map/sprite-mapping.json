@@ -1,0 +1,350 @@
+{
+  "textures": [
+    {
+      "path": "Assets/Art/Environment/HighDetail/Textures/forest-floor.png",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "9ff467071dd6f7903932da18cc7e254a9e06469ccf30476f76b63c989cc271ed",
+      "sprites": []
+    },
+    {
+      "path": "Assets/Art/Environment/HighDetail/Textures/earth-path.png",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "46b9024e53f9a98e66be6ff68639fa0f3b6a6769e4886c8a5a73ce8cb0dff438",
+      "sprites": []
+    },
+    {
+      "path": "Assets/Art/Environment/HighDetail/Textures/woodland-props.png",
+      "width": 1086,
+      "height": 1448,
+      "sha256": "ae7954cfcedbebae6a47da0a64c69e762bf5636c673563185bd967d96405f086",
+      "sprites": [
+        {
+          "name": "OakA",
+          "rect": [
+            5,
+            889,
+            361,
+            456
+          ],
+          "pivot": [
+            0.5,
+            0.010964912280701754
+          ],
+          "guid": "06a7a71411105dc0b568ed041f71af66"
+        },
+        {
+          "name": "OakB",
+          "rect": [
+            366,
+            887,
+            334,
+            538
+          ],
+          "pivot": [
+            0.5,
+            0.00929368029739777
+          ],
+          "guid": "47582964f0a159b887584105301e7fc8"
+        },
+        {
+          "name": "OakC",
+          "rect": [
+            700,
+            887,
+            386,
+            443
+          ],
+          "pivot": [
+            0.5,
+            0.011286681715575621
+          ],
+          "guid": "1be95dac544f5845b575765a953dc060"
+        },
+        {
+          "name": "FernBush",
+          "rect": [
+            14,
+            569,
+            348,
+            277
+          ],
+          "pivot": [
+            0.5,
+            0.018050541516245487
+          ],
+          "guid": "42189de554ee5c548a011ebd1093b598"
+        },
+        {
+          "name": "FlowerBush",
+          "rect": [
+            371,
+            569,
+            346,
+            269
+          ],
+          "pivot": [
+            0.5,
+            0.01858736059479554
+          ],
+          "guid": "efcaa128cd9052e59dda4ec19d20ac58"
+        },
+        {
+          "name": "MushroomBush",
+          "rect": [
+            730,
+            564,
+            344,
+            272
+          ],
+          "pivot": [
+            0.5,
+            0.01838235294117647
+          ],
+          "guid": "2c04ddef7a78513ab1d78a6547571693"
+        },
+        {
+          "name": "MossRockA",
+          "rect": [
+            12,
+            275,
+            349,
+            242
+          ],
+          "pivot": [
+            0.5,
+            0.02066115702479339
+          ],
+          "guid": "ab2684e1f43e5868ab3bd7d3c0f7d983"
+        },
+        {
+          "name": "MossRockB",
+          "rect": [
+            374,
+            272,
+            349,
+            255
+          ],
+          "pivot": [
+            0.5,
+            0.0196078431372549
+          ],
+          "guid": "88f9b4b784075398a26df7bc94397db4"
+        },
+        {
+          "name": "MossRockC",
+          "rect": [
+            744,
+            268,
+            332,
+            189
+          ],
+          "pivot": [
+            0.5,
+            0.026455026455026454
+          ],
+          "guid": "b5a4e7d6a9ab53fda423ebb4f7cf1414"
+        },
+        {
+          "name": "FallenLog",
+          "rect": [
+            16,
+            24,
+            359,
+            183
+          ],
+          "pivot": [
+            0.5,
+            0.0273224043715847
+          ],
+          "guid": "7da6adb4d5fa5984a2e690ffb7cd89bc"
+        },
+        {
+          "name": "FenceA",
+          "rect": [
+            410,
+            25,
+            305,
+            205
+          ],
+          "pivot": [
+            0.5,
+            0.024390243902439025
+          ],
+          "guid": "ec1805fbf145592a9defa14a159bfc89"
+        },
+        {
+          "name": "FenceB",
+          "rect": [
+            764,
+            26,
+            296,
+            193
+          ],
+          "pivot": [
+            0.5,
+            0.025906735751295335
+          ],
+          "guid": "99cc432505ca5ee4ba8fbe24cee980c0"
+        }
+      ]
+    },
+    {
+      "path": "Assets/Art/Environment/HighDetail/Textures/woodland-ruins.png",
+      "width": 1086,
+      "height": 1448,
+      "sha256": "06b6c30cafc17aa76413aa832c2efda7793f460811ac8ea850755350f1094c57",
+      "sprites": [
+        {
+          "name": "OpenArch",
+          "rect": [
+            27,
+            901,
+            516,
+            537
+          ],
+          "pivot": [
+            0.5,
+            0.00931098696461825
+          ],
+          "guid": "cbd07722959957ee965a88e99c7d5cdf"
+        },
+        {
+          "name": "ClosedArch",
+          "rect": [
+            555,
+            900,
+            518,
+            538
+          ],
+          "pivot": [
+            0.5,
+            0.00929368029739777
+          ],
+          "guid": "e657cfbe33915312b01f8368e5689a3b"
+        },
+        {
+          "name": "BrokenPillar",
+          "rect": [
+            76,
+            406,
+            367,
+            484
+          ],
+          "pivot": [
+            0.5,
+            0.010330578512396695
+          ],
+          "guid": "5f3030376fd152d8ba8947b2c9edbb82"
+        },
+        {
+          "name": "RuinWall",
+          "rect": [
+            501,
+            423,
+            567,
+            356
+          ],
+          "pivot": [
+            0.5,
+            0.014044943820224719
+          ],
+          "guid": "4f30a7cff4a8591cab5a88f56932f773"
+        },
+        {
+          "name": "StoneMedallion",
+          "rect": [
+            49,
+            23,
+            624,
+            369
+          ],
+          "pivot": [
+            0.5,
+            0.5
+          ],
+          "guid": "068dc98e0b8d5ce8b2f9740ec81763ad"
+        },
+        {
+          "name": "AmberWaystone",
+          "rect": [
+            710,
+            28,
+            314,
+            372
+          ],
+          "pivot": [
+            0.5,
+            0.013440860215053764
+          ],
+          "guid": "bf9de4bf07185854b10241cd048f9634"
+        }
+      ]
+    },
+    {
+      "path": "Assets/Art/Environment/HighDetail/Textures/gold-key-effects.png",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "76e1de37f8a850a2fe4703e32c1388b3018b42afc4579317d6dcc30e41bf6ccc",
+      "sprites": [
+        {
+          "name": "GoldKey",
+          "rect": [
+            65,
+            742,
+            510,
+            276
+          ],
+          "pivot": [
+            0.5,
+            0.5
+          ],
+          "guid": "8324baf9e84d5759a8b0822b59b372c0"
+        },
+        {
+          "name": "PickupBeam",
+          "rect": [
+            785,
+            603,
+            291,
+            591
+          ],
+          "pivot": [
+            0.5,
+            0.008460236886632826
+          ],
+          "guid": "4f1cc190f1ab5d93a34ae96659835669"
+        },
+        {
+          "name": "Firefly",
+          "rect": [
+            240,
+            182,
+            205,
+            209
+          ],
+          "pivot": [
+            0.5,
+            0.5
+          ],
+          "guid": "5fe0aa40e600550e912294b89858a42a"
+        },
+        {
+          "name": "SunDapple",
+          "rect": [
+            686,
+            124,
+            500,
+            321
+          ],
+          "pivot": [
+            0.5,
+            0.5
+          ],
+          "guid": "cdf5eff0ac4e511496539c9381ed1e9b"
+        }
+      ]
+    }
+  ]
+}

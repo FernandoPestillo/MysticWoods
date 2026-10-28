@@ -1,0 +1,71 @@
+Unity 6000.6.7f1 — graphical Play Mode validation, macOS / Apple M3
+High-detail forest — 2026-10-28
+Native Input System navigation, real Collider2D interactions, onPostRender frame measurements.
+
+PASS: seven slimes
+PASS: five skeletons
+PASS: one boss
+PASS: one mandatory key
+PASS: Solo is an editable populated Tilemap
+PASS: Transicoes is an editable populated Tilemap
+PASS: Detalhes is an editable populated Tilemap
+PASS: Bloqueios is an editable populated Tilemap
+PASS: 96x80 ground bounds
+PASS: logical solid grid uses composite collision
+PASS: terrain shader has no errors
+PASS: SDR output preserved
+PASS: Assets/Art/Environment/HighDetail/Textures/earth-path.png: correct pixel-art import settings
+PASS: Assets/Art/Environment/HighDetail/Textures/forest-floor.png: correct pixel-art import settings
+PASS: Assets/Art/Environment/HighDetail/Textures/gold-key-effects.png: correct pixel-art import settings
+PASS: Assets/Art/Environment/HighDetail/Textures/woodland-props.png: correct pixel-art import settings
+PASS: Assets/Art/Environment/HighDetail/Textures/woodland-ruins.png: correct pixel-art import settings
+PASS: legacy key defaults to Silver
+PASS: old chest prerequisite removed
+PASS: Jogar opens rebuilt level and difficulty
+PASS: Normal starts level
+PASS: player starts in safe southern clearing
+PASS: world depth sorted by Y
+PASS: silver HUD hidden
+PASS: camera stays inside painted map at 21:9 boundary: (7.06, 6.50, 0.00) / (31.94, 20.50, 0.00)
+PASS: camera stays inside painted map at 21:9 boundary: (7.06, 6.50, 0.00) / (31.94, 20.50, 0.00)
+PASS: 21:9 render target
+PASS: camera stays inside painted map at 21:9 boundary: (2.91, 6.50, 0.00) / (36.09, 20.50, 0.00)
+PASS: camera stays inside painted map at 21:9 boundary: (62.81, 66.00, 0.00) / (96.00, 80.00, 0.00)
+PASS: 16:10 render target
+PASS: camera stays inside painted map at 21:9 boundary: (8.30, 6.50, 0.00) / (30.70, 20.50, 0.00)
+PASS: camera stays inside painted map at 21:9 boundary: (18.56, 31.00, 0.00) / (43.44, 45.00, 0.00)
+PASS: camera stays inside painted map at 21:9 boundary: (40.56, 22.00, 0.00) / (65.44, 36.00, 0.00)
+PASS: camera stays inside painted map at 21:9 boundary: (50.56, 43.00, 0.00) / (75.44, 57.00, 0.00)
+PASS: camera stays inside painted map at 21:9 boundary: (63.56, 59.00, 0.00) / (88.44, 73.00, 0.00)
+PASS: gold key reachable without prerequisites
+PASS: closed gate cannot be bypassed
+PASS: arena reachable through unlocked gate
+PASS: duplicate trigger callbacks cannot collect key twice
+PASS: physical route exists to (63.00, 52.00)
+PASS: gate physically stops player without key
+PASS: physical route exists to (57.00, 31.00)
+PASS: physical pickup collects exactly one gold key
+PASS: key stays collected across subsequent frames
+PASS: physical route exists to (63.00, 58.50)
+PASS: gate consumes key and opens
+PASS: entering arena closes both barriers
+PASS: exit blocked while boss alive
+PASS: camera stays inside painted map at 21:9 boundary: (48.47, 49.91, 0.00) / (73.36, 63.91, 0.00)
+PASS: boss combat health unchanged
+PASS: boss defeat releases exit barrier
+PASS: physical route exists to (90.50, 66.00)
+PASS: exit approach remains in level
+PASS: walking through exit completes level
+PASS: reload restores key, gate and counters
+PASS: Restart returns to southern spawn
+PASS: pause works on rebuilt map
+PASS: resume works on rebuilt map
+PASS: tree fades while player overlaps
+PASS: tree opacity restores after overlap
+PASS: native sword collision damages enemy in rebuilt clearing
+PASS: performance sampled real gameplay frames
+PERFORMANCE: 1920x1080 graphical Editor, 2621 rendered camera frames, mean 2.29 ms (436.9 FPS), p95 4.97 ms; warmup 4 seconds, vSync off.
+Unexpected runtime errors: 0
+Visual captures: 1280x720, 1920x1080, 2560x1080, 1920x1200; five areas and overview.
+Performance is measured in graphical Editor with vSync disabled; display refresh and standalone build performance can differ.
+First-play duration of 5–10 minutes is a design target; no human first-play timing was measured.

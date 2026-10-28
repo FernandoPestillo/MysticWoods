@@ -1,18 +1,18 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class KeyController : MonoBehaviour
 {
+    public enum KeyType { Silver, Gold }
     public KeysManager KeysManager;
+    [SerializeField] private KeyType keyType = KeyType.Silver;
+    private bool collected;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("Player"))
-        {
-            Debug.Log("Encontrou Chave!");
-            Destroy(gameObject);
-            KeysManager.EncontrarChavePrata();
-        }
+        if (collected || !collision.gameObject.CompareTag("Player")) return;
+        collected = true;
+        if (keyType == KeyType.Gold) KeysManager.EncontrarChaveOuro();
+        else KeysManager.EncontrarChavePrata();
+        Destroy(gameObject);
     }
 }

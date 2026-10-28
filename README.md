@@ -46,7 +46,7 @@ As cenas configuradas para build ficam em `Assets/Scenes`:
 - Correr: `Left Shift`
 - Atacar: `Space` ou clique esquerdo do mouse
 
-O projeto usa apenas Input System Package (New). Para jogar no editor, abra somente `Assets/Scenes/TelaInicial.unity`, pressione Play, escolha Jogar e depois Normal ou Hard. A selecao de dificuldade mantem o jogo pausado ate que uma opcao seja escolhida.
+O projeto usa apenas Input System Package (New). Para jogar no editor, abra somente `Assets/Scenes/TelaInicial.unity`, pressione Play e escolha Jogar. A partida começa imediatamente com seis corações, usando as configurações do antigo modo normal. Não há seleção de dificuldade.
 
 ## Desenvolvimento
 
@@ -63,3 +63,11 @@ Essa restricao afeta apenas a integracao do editor com a IDE. Os scripts do jogo
 ## Nova tela inicial
 
 A cena `Assets/Scenes/TelaInicial.unity` utiliza o prefab editável `Assets/UI/MainMenu/MainMenu.prefab`, com letreiro exclusivo, floresta em pixel art e os painéis Comandos e Configurações. Consulte [o guia da interface](Documentation/MainMenu/README.md) para edição, comportamento das configurações e capturas de validação.
+
+## Personagem e inimigos
+
+A adaptação para High-Detail Pixel Art, os atlas, a integração e as capturas estão em [Documentation/Characters](Documentation/Characters/README.md).
+
+## Mapa High-Detail Pixel Art
+
+A floresta reconstruída, os assets, os prefabs editáveis, as capturas e os testes estão em [Documentation/Map](Documentation/Map/README.md).

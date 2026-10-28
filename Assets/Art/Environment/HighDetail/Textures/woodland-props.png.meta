@@ -1,0 +1,507 @@
+fileFormatVersion: 2
+guid: 0a6e40cd3d5b346c69e955c7ac0d95aa
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6678711615402770532
+    second: woodland-props_0
+  - first:
+      213: -4460070514858739773
+    second: woodland-props_1
+  - first:
+      213: 4075454912666115449
+    second: woodland-props_2
+  - first:
+      213: 3209676719446339206
+    second: woodland-props_3
+  - first:
+      213: 5354934261070219176
+    second: woodland-props_4
+  - first:
+      213: -252978093847612816
+    second: woodland-props_5
+  - first:
+      213: -2223133893993493288
+    second: woodland-props_6
+  - first:
+      213: -4038168347344752335
+    second: woodland-props_7
+  - first:
+      213: 5973851205761919830
+    second: woodland-props_8
+  - first:
+      213: -7870295858256846520
+    second: woodland-props_9
+  - first:
+      213: 5887387776656928531
+    second: woodland-props_10
+  - first:
+      213: -8524772908365223756
+    second: woodland-props_11
+  - first:
+      213: 4128212998151435421
+    second: woodland-props_12
+  - first:
+      213: 3326436093689988140
+    second: woodland-props_13
+  - first:
+      213: -7333100439613015972
+    second: woodland-props_14
+  - first:
+      213: 5605581195269642387
+    second: woodland-props_15
+  - first:
+      213: 2969143610231715226
+    second: woodland-props_16
+  - first:
+      213: 3387777241808537762
+    second: woodland-props_17
+  - first:
+      213: 5879600624893691468
+    second: woodland-props_18
+  - first:
+      213: 4346867362275587959
+    second: woodland-props_19
+  - first:
+      213: -5495475321079046688
+    second: woodland-props_20
+  - first:
+      213: -772989145657135083
+    second: woodland-props_21
+  - first:
+      213: -8963640519672325335
+    second: woodland-props_22
+  - first:
+      213: -5157574830390455204
+    second: woodland-props_23
+  - first:
+      213: -105480718001413373
+    second: woodland-props_24
+  - first:
+      213: 4108560069125722787
+    second: woodland-props_25
+  - first:
+      213: 926415860736701002
+    second: woodland-props_26
+  - first:
+      213: -5072451566046163683
+    second: woodland-props_27
+  - first:
+      213: 2134846864766372511
+    second: woodland-props_28
+  - first:
+      213: 4240369486003987687
+    second: woodland-props_29
+  - first:
+      213: -967686115731139448
+    second: woodland-props_30
+  - first:
+      213: -5115374377243206198
+    second: woodland-props_31
+  - first:
+      213: 8425816591920214872
+    second: woodland-props_32
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 0
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationMethod: 0
+  spriteTessellationDetail: -1
+  spriteGeometrySubdivision: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: OakA
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 889
+        width: 361
+        height: 456
+      alignment: 9
+      pivot: {x: 0.5, y: 0.010964912}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06a7a71411105dc0b568ed041f71af66
+      internalID: 898766175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OakB
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 887
+        width: 334
+        height: 538
+      alignment: 9
+      pivot: {x: 0.5, y: 0.00929368}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47582964f0a159b887584105301e7fc8
+      internalID: 1050288040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OakC
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 887
+        width: 386
+        height: 443
+      alignment: 9
+      pivot: {x: 0.5, y: 0.0112866815}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1be95dac544f5845b575765a953dc060
+      internalID: 1625775998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FernBush
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 569
+        width: 348
+        height: 277
+      alignment: 9
+      pivot: {x: 0.5, y: 0.018050542}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42189de554ee5c548a011ebd1093b598
+      internalID: -2145704336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlowerBush
+      rect:
+        serializedVersion: 2
+        x: 371
+        y: 569
+        width: 346
+        height: 269
+      alignment: 9
+      pivot: {x: 0.5, y: 0.01858736}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: efcaa128cd9052e59dda4ec19d20ac58
+      internalID: -1664944010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MushroomBush
+      rect:
+        serializedVersion: 2
+        x: 730
+        y: 564
+        width: 344
+        height: 272
+      alignment: 9
+      pivot: {x: 0.5, y: 0.018382354}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c04ddef7a78513ab1d78a6547571693
+      internalID: -97460050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MossRockA
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 275
+        width: 349
+        height: 242
+      alignment: 9
+      pivot: {x: 0.5, y: 0.020661157}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab2684e1f43e5868ab3bd7d3c0f7d983
+      internalID: 96786763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MossRockB
+      rect:
+        serializedVersion: 2
+        x: 374
+        y: 272
+        width: 349
+        height: 255
+      alignment: 9
+      pivot: {x: 0.5, y: 0.019607844}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88f9b4b784075398a26df7bc94397db4
+      internalID: 1085927883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MossRockC
+      rect:
+        serializedVersion: 2
+        x: 744
+        y: 268
+        width: 332
+        height: 189
+      alignment: 9
+      pivot: {x: 0.5, y: 0.026455026}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5a4e7d6a9ab53fda423ebb4f7cf1414
+      internalID: 1034503792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FallenLog
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 24
+        width: 359
+        height: 183
+      alignment: 9
+      pivot: {x: 0.5, y: 0.027322404}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7da6adb4d5fa5984a2e690ffb7cd89bc
+      internalID: -663837953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FenceA
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 25
+        width: 305
+        height: 205
+      alignment: 9
+      pivot: {x: 0.5, y: 0.024390243}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec1805fbf145592a9defa14a159bfc89
+      internalID: 836329421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FenceB
+      rect:
+        serializedVersion: 2
+        x: 764
+        y: 26
+        width: 296
+        height: 193
+      alignment: 9
+      pivot: {x: 0.5, y: 0.025906736}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99cc432505ca5ee4ba8fbe24cee980c0
+      internalID: -10248162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 11fe84991778647119b294d2b82edd68
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      FallenLog: -663837953
+      FenceA: 836329421
+      FenceB: -10248162
+      FernBush: -2145704336
+      FlowerBush: -1664944010
+      MossRockA: 96786763
+      MossRockB: 1085927883
+      MossRockC: 1034503792
+      MushroomBush: -97460050
+      OakA: 898766175
+      OakB: 1050288040
+      OakC: 1625775998
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

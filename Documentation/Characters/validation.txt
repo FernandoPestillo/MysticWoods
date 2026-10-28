@@ -1,0 +1,615 @@
+Unity 6000.6.7f1 — graphical Play Mode validation, macOS
+Character art integration — 2026-10-28
+
+PASS: player: point filtering, sRGB, no mipmaps or compression
+PASS: player: all 51 frames imported
+PASS: player_0 resolves
+PASS: player_0 preserves animation fileID
+PASS: player_0 calibrated world scale
+PASS: player_0 frame crop matches mapping
+PASS: player_1 resolves
+PASS: player_1 preserves animation fileID
+PASS: player_1 calibrated world scale
+PASS: player_1 frame crop matches mapping
+PASS: player_2 resolves
+PASS: player_2 preserves animation fileID
+PASS: player_2 calibrated world scale
+PASS: player_2 frame crop matches mapping
+PASS: player_3 resolves
+PASS: player_3 preserves animation fileID
+PASS: player_3 calibrated world scale
+PASS: player_3 frame crop matches mapping
+PASS: player_4 resolves
+PASS: player_4 preserves animation fileID
+PASS: player_4 calibrated world scale
+PASS: player_4 frame crop matches mapping
+PASS: player_5 resolves
+PASS: player_5 preserves animation fileID
+PASS: player_5 calibrated world scale
+PASS: player_5 frame crop matches mapping
+PASS: player_6 resolves
+PASS: player_6 preserves animation fileID
+PASS: player_6 calibrated world scale
+PASS: player_6 frame crop matches mapping
+PASS: player_7 resolves
+PASS: player_7 preserves animation fileID
+PASS: player_7 calibrated world scale
+PASS: player_7 frame crop matches mapping
+PASS: player_8 resolves
+PASS: player_8 preserves animation fileID
+PASS: player_8 calibrated world scale
+PASS: player_8 frame crop matches mapping
+PASS: player_9 resolves
+PASS: player_9 preserves animation fileID
+PASS: player_9 calibrated world scale
+PASS: player_9 frame crop matches mapping
+PASS: player_10 resolves
+PASS: player_10 preserves animation fileID
+PASS: player_10 calibrated world scale
+PASS: player_10 frame crop matches mapping
+PASS: player_11 resolves
+PASS: player_11 preserves animation fileID
+PASS: player_11 calibrated world scale
+PASS: player_11 frame crop matches mapping
+PASS: player_12 resolves
+PASS: player_12 preserves animation fileID
+PASS: player_12 calibrated world scale
+PASS: player_12 frame crop matches mapping
+PASS: player_13 resolves
+PASS: player_13 preserves animation fileID
+PASS: player_13 calibrated world scale
+PASS: player_13 frame crop matches mapping
+PASS: player_14 resolves
+PASS: player_14 preserves animation fileID
+PASS: player_14 calibrated world scale
+PASS: player_14 frame crop matches mapping
+PASS: player_15 resolves
+PASS: player_15 preserves animation fileID
+PASS: player_15 calibrated world scale
+PASS: player_15 frame crop matches mapping
+PASS: player_16 resolves
+PASS: player_16 preserves animation fileID
+PASS: player_16 calibrated world scale
+PASS: player_16 frame crop matches mapping
+PASS: player_17 resolves
+PASS: player_17 preserves animation fileID
+PASS: player_17 calibrated world scale
+PASS: player_17 frame crop matches mapping
+PASS: player_18 resolves
+PASS: player_18 preserves animation fileID
+PASS: player_18 calibrated world scale
+PASS: player_18 frame crop matches mapping
+PASS: player_19 resolves
+PASS: player_19 preserves animation fileID
+PASS: player_19 calibrated world scale
+PASS: player_19 frame crop matches mapping
+PASS: player_20 resolves
+PASS: player_20 preserves animation fileID
+PASS: player_20 calibrated world scale
+PASS: player_20 frame crop matches mapping
+PASS: player_21 resolves
+PASS: player_21 preserves animation fileID
+PASS: player_21 calibrated world scale
+PASS: player_21 frame crop matches mapping
+PASS: player_22 resolves
+PASS: player_22 preserves animation fileID
+PASS: player_22 calibrated world scale
+PASS: player_22 frame crop matches mapping
+PASS: player_23 resolves
+PASS: player_23 preserves animation fileID
+PASS: player_23 calibrated world scale
+PASS: player_23 frame crop matches mapping
+PASS: player_24 resolves
+PASS: player_24 preserves animation fileID
+PASS: player_24 calibrated world scale
+PASS: player_24 frame crop matches mapping
+PASS: player_25 resolves
+PASS: player_25 preserves animation fileID
+PASS: player_25 calibrated world scale
+PASS: player_25 frame crop matches mapping
+PASS: player_26 resolves
+PASS: player_26 preserves animation fileID
+PASS: player_26 calibrated world scale
+PASS: player_26 frame crop matches mapping
+PASS: player_27 resolves
+PASS: player_27 preserves animation fileID
+PASS: player_27 calibrated world scale
+PASS: player_27 frame crop matches mapping
+PASS: player_28 resolves
+PASS: player_28 preserves animation fileID
+PASS: player_28 calibrated world scale
+PASS: player_28 frame crop matches mapping
+PASS: player_29 resolves
+PASS: player_29 preserves animation fileID
+PASS: player_29 calibrated world scale
+PASS: player_29 frame crop matches mapping
+PASS: player_30 resolves
+PASS: player_30 preserves animation fileID
+PASS: player_30 calibrated world scale
+PASS: player_30 frame crop matches mapping
+PASS: player_31 resolves
+PASS: player_31 preserves animation fileID
+PASS: player_31 calibrated world scale
+PASS: player_31 frame crop matches mapping
+PASS: player_32 resolves
+PASS: player_32 preserves animation fileID
+PASS: player_32 calibrated world scale
+PASS: player_32 frame crop matches mapping
+PASS: player_33 resolves
+PASS: player_33 preserves animation fileID
+PASS: player_33 calibrated world scale
+PASS: player_33 frame crop matches mapping
+PASS: player_34 resolves
+PASS: player_34 preserves animation fileID
+PASS: player_34 calibrated world scale
+PASS: player_34 frame crop matches mapping
+PASS: player_35 resolves
+PASS: player_35 preserves animation fileID
+PASS: player_35 calibrated world scale
+PASS: player_35 frame crop matches mapping
+PASS: player_36 resolves
+PASS: player_36 preserves animation fileID
+PASS: player_36 calibrated world scale
+PASS: player_36 frame crop matches mapping
+PASS: player_37 resolves
+PASS: player_37 preserves animation fileID
+PASS: player_37 calibrated world scale
+PASS: player_37 frame crop matches mapping
+PASS: player_38 resolves
+PASS: player_38 preserves animation fileID
+PASS: player_38 calibrated world scale
+PASS: player_38 frame crop matches mapping
+PASS: player_39 resolves
+PASS: player_39 preserves animation fileID
+PASS: player_39 calibrated world scale
+PASS: player_39 frame crop matches mapping
+PASS: player_40 resolves
+PASS: player_40 preserves animation fileID
+PASS: player_40 calibrated world scale
+PASS: player_40 frame crop matches mapping
+PASS: player_41 resolves
+PASS: player_41 preserves animation fileID
+PASS: player_41 calibrated world scale
+PASS: player_41 frame crop matches mapping
+PASS: player_42 resolves
+PASS: player_42 preserves animation fileID
+PASS: player_42 calibrated world scale
+PASS: player_42 frame crop matches mapping
+PASS: player_43 resolves
+PASS: player_43 preserves animation fileID
+PASS: player_43 calibrated world scale
+PASS: player_43 frame crop matches mapping
+PASS: player_44 resolves
+PASS: player_44 preserves animation fileID
+PASS: player_44 calibrated world scale
+PASS: player_44 frame crop matches mapping
+PASS: player_45 resolves
+PASS: player_45 preserves animation fileID
+PASS: player_45 calibrated world scale
+PASS: player_45 frame crop matches mapping
+PASS: player_46 resolves
+PASS: player_46 preserves animation fileID
+PASS: player_46 calibrated world scale
+PASS: player_46 frame crop matches mapping
+PASS: player_47 resolves
+PASS: player_47 preserves animation fileID
+PASS: player_47 calibrated world scale
+PASS: player_47 frame crop matches mapping
+PASS: player_48 resolves
+PASS: player_48 preserves animation fileID
+PASS: player_48 calibrated world scale
+PASS: player_48 frame crop matches mapping
+PASS: player_49 resolves
+PASS: player_49 preserves animation fileID
+PASS: player_49 calibrated world scale
+PASS: player_49 frame crop matches mapping
+PASS: player_50 resolves
+PASS: player_50 preserves animation fileID
+PASS: player_50 calibrated world scale
+PASS: player_50 frame crop matches mapping
+PASS: slime: point filtering, sRGB, no mipmaps or compression
+PASS: slime: all 25 frames imported
+PASS: slime_0 resolves
+PASS: slime_0 preserves animation fileID
+PASS: slime_0 calibrated world scale
+PASS: slime_0 frame crop matches mapping
+PASS: slime_1 resolves
+PASS: slime_1 preserves animation fileID
+PASS: slime_1 calibrated world scale
+PASS: slime_1 frame crop matches mapping
+PASS: slime_2 resolves
+PASS: slime_2 preserves animation fileID
+PASS: slime_2 calibrated world scale
+PASS: slime_2 frame crop matches mapping
+PASS: slime_3 resolves
+PASS: slime_3 preserves animation fileID
+PASS: slime_3 calibrated world scale
+PASS: slime_3 frame crop matches mapping
+PASS: slime_4 resolves
+PASS: slime_4 preserves animation fileID
+PASS: slime_4 calibrated world scale
+PASS: slime_4 frame crop matches mapping
+PASS: slime_5 resolves
+PASS: slime_5 preserves animation fileID
+PASS: slime_5 calibrated world scale
+PASS: slime_5 frame crop matches mapping
+PASS: slime_6 resolves
+PASS: slime_6 preserves animation fileID
+PASS: slime_6 calibrated world scale
+PASS: slime_6 frame crop matches mapping
+PASS: slime_7 resolves
+PASS: slime_7 preserves animation fileID
+PASS: slime_7 calibrated world scale
+PASS: slime_7 frame crop matches mapping
+PASS: slime_8 resolves
+PASS: slime_8 preserves animation fileID
+PASS: slime_8 calibrated world scale
+PASS: slime_8 frame crop matches mapping
+PASS: slime_9 resolves
+PASS: slime_9 preserves animation fileID
+PASS: slime_9 calibrated world scale
+PASS: slime_9 frame crop matches mapping
+PASS: slime_10 resolves
+PASS: slime_10 preserves animation fileID
+PASS: slime_10 calibrated world scale
+PASS: slime_10 frame crop matches mapping
+PASS: slime_11 resolves
+PASS: slime_11 preserves animation fileID
+PASS: slime_11 calibrated world scale
+PASS: slime_11 frame crop matches mapping
+PASS: slime_12 resolves
+PASS: slime_12 preserves animation fileID
+PASS: slime_12 calibrated world scale
+PASS: slime_12 frame crop matches mapping
+PASS: slime_13 resolves
+PASS: slime_13 preserves animation fileID
+PASS: slime_13 calibrated world scale
+PASS: slime_13 frame crop matches mapping
+PASS: slime_14 resolves
+PASS: slime_14 preserves animation fileID
+PASS: slime_14 calibrated world scale
+PASS: slime_14 frame crop matches mapping
+PASS: slime_15 resolves
+PASS: slime_15 preserves animation fileID
+PASS: slime_15 calibrated world scale
+PASS: slime_15 frame crop matches mapping
+PASS: slime_16 resolves
+PASS: slime_16 preserves animation fileID
+PASS: slime_16 calibrated world scale
+PASS: slime_16 frame crop matches mapping
+PASS: slime_17 resolves
+PASS: slime_17 preserves animation fileID
+PASS: slime_17 calibrated world scale
+PASS: slime_17 frame crop matches mapping
+PASS: slime_18 resolves
+PASS: slime_18 preserves animation fileID
+PASS: slime_18 calibrated world scale
+PASS: slime_18 frame crop matches mapping
+PASS: slime_19 resolves
+PASS: slime_19 preserves animation fileID
+PASS: slime_19 calibrated world scale
+PASS: slime_19 frame crop matches mapping
+PASS: slime_20 resolves
+PASS: slime_20 preserves animation fileID
+PASS: slime_20 calibrated world scale
+PASS: slime_20 frame crop matches mapping
+PASS: slime_21 resolves
+PASS: slime_21 preserves animation fileID
+PASS: slime_21 calibrated world scale
+PASS: slime_21 frame crop matches mapping
+PASS: slime_22 resolves
+PASS: slime_22 preserves animation fileID
+PASS: slime_22 calibrated world scale
+PASS: slime_22 frame crop matches mapping
+PASS: slime_23 resolves
+PASS: slime_23 preserves animation fileID
+PASS: slime_23 calibrated world scale
+PASS: slime_23 frame crop matches mapping
+PASS: slime_24 resolves
+PASS: slime_24 preserves animation fileID
+PASS: slime_24 calibrated world scale
+PASS: slime_24 frame crop matches mapping
+PASS: skeleton: point filtering, sRGB, no mipmaps or compression
+PASS: skeleton: all 25 frames imported
+PASS: skeleton_0 resolves
+PASS: skeleton_0 preserves animation fileID
+PASS: skeleton_0 calibrated world scale
+PASS: skeleton_0 frame crop matches mapping
+PASS: skeleton_1 resolves
+PASS: skeleton_1 preserves animation fileID
+PASS: skeleton_1 calibrated world scale
+PASS: skeleton_1 frame crop matches mapping
+PASS: skeleton_2 resolves
+PASS: skeleton_2 preserves animation fileID
+PASS: skeleton_2 calibrated world scale
+PASS: skeleton_2 frame crop matches mapping
+PASS: skeleton_3 resolves
+PASS: skeleton_3 preserves animation fileID
+PASS: skeleton_3 calibrated world scale
+PASS: skeleton_3 frame crop matches mapping
+PASS: skeleton_4 resolves
+PASS: skeleton_4 preserves animation fileID
+PASS: skeleton_4 calibrated world scale
+PASS: skeleton_4 frame crop matches mapping
+PASS: skeleton_5 resolves
+PASS: skeleton_5 preserves animation fileID
+PASS: skeleton_5 calibrated world scale
+PASS: skeleton_5 frame crop matches mapping
+PASS: skeleton_6 resolves
+PASS: skeleton_6 preserves animation fileID
+PASS: skeleton_6 calibrated world scale
+PASS: skeleton_6 frame crop matches mapping
+PASS: skeleton_7 resolves
+PASS: skeleton_7 preserves animation fileID
+PASS: skeleton_7 calibrated world scale
+PASS: skeleton_7 frame crop matches mapping
+PASS: skeleton_8 resolves
+PASS: skeleton_8 preserves animation fileID
+PASS: skeleton_8 calibrated world scale
+PASS: skeleton_8 frame crop matches mapping
+PASS: skeleton_9 resolves
+PASS: skeleton_9 preserves animation fileID
+PASS: skeleton_9 calibrated world scale
+PASS: skeleton_9 frame crop matches mapping
+PASS: skeleton_10 resolves
+PASS: skeleton_10 preserves animation fileID
+PASS: skeleton_10 calibrated world scale
+PASS: skeleton_10 frame crop matches mapping
+PASS: skeleton_11 resolves
+PASS: skeleton_11 preserves animation fileID
+PASS: skeleton_11 calibrated world scale
+PASS: skeleton_11 frame crop matches mapping
+PASS: skeleton_12 resolves
+PASS: skeleton_12 preserves animation fileID
+PASS: skeleton_12 calibrated world scale
+PASS: skeleton_12 frame crop matches mapping
+PASS: skeleton_13 resolves
+PASS: skeleton_13 preserves animation fileID
+PASS: skeleton_13 calibrated world scale
+PASS: skeleton_13 frame crop matches mapping
+PASS: skeleton_14 resolves
+PASS: skeleton_14 preserves animation fileID
+PASS: skeleton_14 calibrated world scale
+PASS: skeleton_14 frame crop matches mapping
+PASS: skeleton_15 resolves
+PASS: skeleton_15 preserves animation fileID
+PASS: skeleton_15 calibrated world scale
+PASS: skeleton_15 frame crop matches mapping
+PASS: skeleton_16 resolves
+PASS: skeleton_16 preserves animation fileID
+PASS: skeleton_16 calibrated world scale
+PASS: skeleton_16 frame crop matches mapping
+PASS: skeleton_17 resolves
+PASS: skeleton_17 preserves animation fileID
+PASS: skeleton_17 calibrated world scale
+PASS: skeleton_17 frame crop matches mapping
+PASS: skeleton_18 resolves
+PASS: skeleton_18 preserves animation fileID
+PASS: skeleton_18 calibrated world scale
+PASS: skeleton_18 frame crop matches mapping
+PASS: skeleton_19 resolves
+PASS: skeleton_19 preserves animation fileID
+PASS: skeleton_19 calibrated world scale
+PASS: skeleton_19 frame crop matches mapping
+PASS: skeleton_20 resolves
+PASS: skeleton_20 preserves animation fileID
+PASS: skeleton_20 calibrated world scale
+PASS: skeleton_20 frame crop matches mapping
+PASS: skeleton_21 resolves
+PASS: skeleton_21 preserves animation fileID
+PASS: skeleton_21 calibrated world scale
+PASS: skeleton_21 frame crop matches mapping
+PASS: skeleton_22 resolves
+PASS: skeleton_22 preserves animation fileID
+PASS: skeleton_22 calibrated world scale
+PASS: skeleton_22 frame crop matches mapping
+PASS: skeleton_23 resolves
+PASS: skeleton_23 preserves animation fileID
+PASS: skeleton_23 calibrated world scale
+PASS: skeleton_23 frame crop matches mapping
+PASS: skeleton_24 resolves
+PASS: skeleton_24 preserves animation fileID
+PASS: skeleton_24 calibrated world scale
+PASS: skeleton_24 frame crop matches mapping
+PASS: Player_Attack_Down sprite key at 0.00
+PASS: Player_Attack_Down sprite key at 0.10
+PASS: Player_Attack_Down sprite key at 0.20
+PASS: Player_Attack_Down sprite key at 0.30
+PASS: Player_Attack_Down: animation has visible frames
+PASS: Player_Attack_Left sprite key at 0.00
+PASS: Player_Attack_Left sprite key at 0.10
+PASS: Player_Attack_Left sprite key at 0.20
+PASS: Player_Attack_Left sprite key at 0.30
+PASS: Player_Attack_Left: animation has visible frames
+PASS: Player_Attack_Right sprite key at 0.00
+PASS: Player_Attack_Right sprite key at 0.10
+PASS: Player_Attack_Right sprite key at 0.20
+PASS: Player_Attack_Right sprite key at 0.30
+PASS: Player_Attack_Right: animation has visible frames
+PASS: Player_Attack_Up sprite key at 0.00
+PASS: Player_Attack_Up sprite key at 0.10
+PASS: Player_Attack_Up sprite key at 0.20
+PASS: Player_Attack_Up sprite key at 0.30
+PASS: Player_Attack_Up: animation has visible frames
+PASS: Player_Die sprite key at 0.00
+PASS: Player_Die sprite key at 0.13
+PASS: Player_Die sprite key at 0.25
+PASS: Player_Die: animation has visible frames
+PASS: Player_Idle_Down sprite key at 0.00
+PASS: Player_Idle_Down sprite key at 0.10
+PASS: Player_Idle_Down sprite key at 0.20
+PASS: Player_Idle_Down sprite key at 0.30
+PASS: Player_Idle_Down sprite key at 0.40
+PASS: Player_Idle_Down sprite key at 0.50
+PASS: Player_Idle_Down: animation has visible frames
+PASS: Player_Idle_Left sprite key at 0.00
+PASS: Player_Idle_Left sprite key at 0.10
+PASS: Player_Idle_Left sprite key at 0.20
+PASS: Player_Idle_Left sprite key at 0.30
+PASS: Player_Idle_Left sprite key at 0.40
+PASS: Player_Idle_Left sprite key at 0.50
+PASS: Player_Idle_Left: animation has visible frames
+PASS: Player_Idle_Right sprite key at 0.00
+PASS: Player_Idle_Right sprite key at 0.10
+PASS: Player_Idle_Right sprite key at 0.20
+PASS: Player_Idle_Right sprite key at 0.30
+PASS: Player_Idle_Right sprite key at 0.40
+PASS: Player_Idle_Right sprite key at 0.50
+PASS: Player_Idle_Right: animation has visible frames
+PASS: Player_Idle_Up sprite key at 0.00
+PASS: Player_Idle_Up sprite key at 0.10
+PASS: Player_Idle_Up sprite key at 0.20
+PASS: Player_Idle_Up sprite key at 0.30
+PASS: Player_Idle_Up sprite key at 0.40
+PASS: Player_Idle_Up sprite key at 0.50
+PASS: Player_Idle_Up: animation has visible frames
+PASS: Player_Down sprite key at 0.00
+PASS: Player_Down sprite key at 0.10
+PASS: Player_Down sprite key at 0.20
+PASS: Player_Down sprite key at 0.30
+PASS: Player_Down sprite key at 0.40
+PASS: Player_Down sprite key at 0.50
+PASS: Player_Down: animation has visible frames
+PASS: Player_Left sprite key at 0.00
+PASS: Player_Left sprite key at 0.10
+PASS: Player_Left sprite key at 0.20
+PASS: Player_Left sprite key at 0.30
+PASS: Player_Left sprite key at 0.40
+PASS: Player_Left sprite key at 0.50
+PASS: Player_Left: animation has visible frames
+PASS: Player_Right sprite key at 0.00
+PASS: Player_Right sprite key at 0.10
+PASS: Player_Right sprite key at 0.20
+PASS: Player_Right sprite key at 0.30
+PASS: Player_Right sprite key at 0.40
+PASS: Player_Right sprite key at 0.50
+PASS: Player_Right: animation has visible frames
+PASS: Player_Up sprite key at 0.00
+PASS: Player_Up sprite key at 0.10
+PASS: Player_Up sprite key at 0.20
+PASS: Player_Up sprite key at 0.30
+PASS: Player_Up sprite key at 0.40
+PASS: Player_Up sprite key at 0.50
+PASS: Player_Up: animation has visible frames
+PASS: Skeleton_Attack sprite key at 0.00
+PASS: Skeleton_Attack sprite key at 0.10
+PASS: Skeleton_Attack sprite key at 0.20
+PASS: Skeleton_Attack sprite key at 0.30
+PASS: Skeleton_Attack sprite key at 0.40
+PASS: Skeleton_Attack sprite key at 0.50
+PASS: Skeleton_Attack: animation has visible frames
+PASS: Skeleton_Death sprite key at 0.00
+PASS: Skeleton_Death sprite key at 0.13
+PASS: Skeleton_Death sprite key at 0.25
+PASS: Skeleton_Death sprite key at 0.38
+PASS: Skeleton_Death sprite key at 0.50
+PASS: Skeleton_Death: animation has visible frames
+PASS: Skeleton_Hit sprite key at 0.00
+PASS: Skeleton_Hit sprite key at 0.17
+PASS: Skeleton_Hit sprite key at 0.33
+PASS: Skeleton_Hit: animation has visible frames
+PASS: Skeleton_Idle sprite key at 0.00
+PASS: Skeleton_Idle sprite key at 0.10
+PASS: Skeleton_Idle sprite key at 0.20
+PASS: Skeleton_Idle sprite key at 0.30
+PASS: Skeleton_Idle sprite key at 0.40
+PASS: Skeleton_Idle: animation has visible frames
+PASS: Skeleton_Revive sprite key at 0.00
+PASS: Skeleton_Revive sprite key at 0.14
+PASS: Skeleton_Revive sprite key at 0.29
+PASS: Skeleton_Revive sprite key at 0.43
+PASS: Skeleton_Revive sprite key at 0.57
+PASS: Skeleton_Revive sprite key at 0.71
+PASS: Skeleton_Revive sprite key at 0.86
+PASS: Skeleton_Revive: animation has visible frames
+PASS: Skeleton_Run sprite key at 0.00
+PASS: Skeleton_Run sprite key at 0.13
+PASS: Skeleton_Run sprite key at 0.25
+PASS: Skeleton_Run sprite key at 0.38
+PASS: Skeleton_Run sprite key at 0.50
+PASS: Skeleton_Run: animation has visible frames
+PASS: Slime_Death sprite key at 0.00
+PASS: Slime_Death sprite key at 0.10
+PASS: Slime_Death sprite key at 0.20
+PASS: Slime_Death sprite key at 0.30
+PASS: Slime_Death sprite key at 0.40
+PASS: Slime_Death: animation has visible frames
+PASS: Slime_Hit sprite key at 0.00
+PASS: Slime_Hit sprite key at 0.11
+PASS: Slime_Hit sprite key at 0.22
+PASS: Slime_Hit: animation has visible frames
+PASS: Slime_Idle sprite key at 0.00
+PASS: Slime_Idle sprite key at 0.13
+PASS: Slime_Idle sprite key at 0.25
+PASS: Slime_Idle sprite key at 0.38
+PASS: Slime_Idle: animation has visible frames
+PASS: Slime_Run sprite key at 0.00
+PASS: Slime_Run sprite key at 0.10
+PASS: Slime_Run sprite key at 0.20
+PASS: Slime_Run sprite key at 0.30
+PASS: Slime_Run sprite key at 0.40
+PASS: Slime_Run sprite key at 0.50
+PASS: Slime_Run sprite key at 0.60
+PASS: Slime_Run sprite key at 0.70
+PASS: Slime_Run sprite key at 0.80
+PASS: Slime_Run sprite key at 0.90
+PASS: Slime_Run sprite key at 1.00
+PASS: Slime_Run sprite key at 1.10
+PASS: Slime_Run sprite key at 1.20
+PASS: Slime_Run: animation has visible frames
+PASS: game map unchanged
+PASS: SDR output preserved
+PASS: Jogar keeps difficulty selection
+PASS: Normal starts gameplay
+PASS: Slime (1) uses high-detail art in scene
+PASS: Esqueleto (1) uses high-detail art in scene
+PASS: SlimeBoss uses high-detail art in scene
+PASS: Slime (6) uses high-detail art in scene
+PASS: Slime (3) uses high-detail art in scene
+PASS: Esqueleto (3) uses high-detail art in scene
+PASS: Esqueleto (2) uses high-detail art in scene
+PASS: Player uses high-detail art in scene
+PASS: Slime (5) uses high-detail art in scene
+PASS: Slime (4) uses high-detail art in scene
+PASS: Slime (2) uses high-detail art in scene
+PASS: Esqueleto (4) uses high-detail art in scene
+PASS: Slime uses high-detail art in scene
+PASS: Esqueleto uses high-detail art in scene
+PASS: movement responds to D
+PASS: movement animation responds to D
+PASS: new movement frame for D
+PASS: attack animation facing D
+PASS: sword hitbox active facing D
+PASS: movement responds to A
+PASS: movement animation responds to A
+PASS: new movement frame for A
+PASS: attack animation facing A
+PASS: sword hitbox active facing A
+PASS: movement responds to W
+PASS: movement animation responds to W
+PASS: new movement frame for W
+PASS: attack animation facing W
+PASS: sword hitbox active facing W
+PASS: movement responds to S
+PASS: movement animation responds to S
+PASS: new movement frame for S
+PASS: attack animation facing S
+PASS: sword hitbox active facing S
+PASS: slime, skeleton and boss available
+PASS: slime receives damage
+PASS: skeleton receives damage
+PASS: dead enemies stop targeting and collisions
+PASS: death animations triggered
+PASS: slime death animation retains destroy event
+PASS: skeleton revive animation retains Revive event
+PASS: boss defeat still opens final barrier
+PASS: boss death animation retains destroy event
+PASS: return to main menu works
+PASS: Game View remains SDR
+Unexpected runtime errors: 0
+
+Post-import scale and data-preservation checks
+PASS: player maximum idle height difference from original: 4.9%; PNG unchanged from imagegen output
+PASS: slime maximum idle height difference from original: 7.4%; PNG unchanged from imagegen output
+PASS: skeleton maximum idle height difference from original: 5.2%; PNG unchanged from imagegen output
+PASS: all 27 integration files preserve original data except sprite references

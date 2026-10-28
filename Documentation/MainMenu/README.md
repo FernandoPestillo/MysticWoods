@@ -13,7 +13,7 @@ Os scripts ficam em `Assets/UI/MainMenu/Scripts/`. `MenuPrincipalManager`, em `A
 ## Navegação
 
 - Mouse ou setas para navegar; Enter para selecionar.
-- Jogar abre a fase existente e preserva a escolha de dificuldade.
+- Jogar abre a fase e inicia a partida imediatamente, com seis corações.
 - Comandos mostra os controles atuais. Voltar e Esc retornam ao menu e restauram a seleção.
 - Configurações oferece volume geral, resoluções disponíveis e Janela/Tela cheia sem bordas. Esc fecha a lista de opções antes de fechar o painel.
 - Sair encerra a aplicação no build e interrompe Play Mode no Editor.
@@ -41,7 +41,7 @@ A validação usa a Unity gráfica e dispositivos virtuais de entrada em uma có
 - Volume em pré-visualização, cancelamento, aplicação e recarga das preferências.
 - Listas de resolução sem duplicações e fechamento de dropdown por Esc.
 - Confirmação, reversão explícita e timeout real de 15 segundos com o jogo pausado.
-- Início da partida, escolha de dificuldade, retorno ao menu e Sair no Editor.
+- Início direto da partida, retorno ao menu e Sair no Editor.
 
 As capturas finais ficam em `Captures/`. Os prompts e o método de geração da arte estão em [Artwork.md](Artwork.md).
 

@@ -1,0 +1,447 @@
+fileFormatVersion: 2
+guid: 039b8aeed003e405fb9621ea1f873d99
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1215575351579297270
+    second: woodland-ruins_0
+  - first:
+      213: -5688385778390641190
+    second: woodland-ruins_1
+  - first:
+      213: 5391821860638646190
+    second: woodland-ruins_2
+  - first:
+      213: 787359572845002774
+    second: woodland-ruins_3
+  - first:
+      213: -2331204942730260164
+    second: woodland-ruins_4
+  - first:
+      213: -2763035254025482349
+    second: woodland-ruins_5
+  - first:
+      213: -1918796916288538322
+    second: woodland-ruins_6
+  - first:
+      213: -966983636905337909
+    second: woodland-ruins_7
+  - first:
+      213: -8084087578054850967
+    second: woodland-ruins_8
+  - first:
+      213: -5697418277768923345
+    second: woodland-ruins_9
+  - first:
+      213: -6650342232813154883
+    second: woodland-ruins_10
+  - first:
+      213: -6290106423791143492
+    second: woodland-ruins_11
+  - first:
+      213: -1958986648971874200
+    second: woodland-ruins_12
+  - first:
+      213: 3780456536862910706
+    second: woodland-ruins_13
+  - first:
+      213: -3243603196640695029
+    second: woodland-ruins_14
+  - first:
+      213: -6499877857589368251
+    second: woodland-ruins_15
+  - first:
+      213: 6136806146127671120
+    second: woodland-ruins_16
+  - first:
+      213: -362614734836315928
+    second: woodland-ruins_17
+  - first:
+      213: -1574807349987659751
+    second: woodland-ruins_18
+  - first:
+      213: -3954346485583905853
+    second: woodland-ruins_19
+  - first:
+      213: 1746760199311322826
+    second: woodland-ruins_20
+  - first:
+      213: -6576589238110233185
+    second: woodland-ruins_21
+  - first:
+      213: -3342321142080639683
+    second: woodland-ruins_22
+  - first:
+      213: -8226754437980268144
+    second: woodland-ruins_23
+  - first:
+      213: -624459424932471736
+    second: woodland-ruins_24
+  - first:
+      213: -4196413678043625931
+    second: woodland-ruins_25
+  - first:
+      213: -5390899390333635202
+    second: woodland-ruins_26
+  - first:
+      213: -9002151381771050340
+    second: woodland-ruins_27
+  - first:
+      213: -5151109954172072740
+    second: woodland-ruins_28
+  - first:
+      213: 9029509448976241540
+    second: woodland-ruins_29
+  - first:
+      213: -1289845735112178172
+    second: woodland-ruins_30
+  - first:
+      213: -3608271249417385602
+    second: woodland-ruins_31
+  - first:
+      213: -2973749483295746471
+    second: woodland-ruins_32
+  - first:
+      213: -5531004542289121027
+    second: woodland-ruins_33
+  - first:
+      213: 5912600135215383760
+    second: woodland-ruins_34
+  - first:
+      213: 4725377528366301234
+    second: woodland-ruins_35
+  - first:
+      213: 5936319420225566216
+    second: woodland-ruins_36
+  - first:
+      213: 7946680879337441133
+    second: woodland-ruins_37
+  - first:
+      213: 8196693714106309902
+    second: woodland-ruins_38
+  - first:
+      213: -5090687797912440788
+    second: woodland-ruins_39
+  - first:
+      213: -8301560803373622429
+    second: woodland-ruins_40
+  - first:
+      213: -837697553993652416
+    second: woodland-ruins_41
+  - first:
+      213: -5759309473876648708
+    second: woodland-ruins_42
+  - first:
+      213: 2596953811621316527
+    second: woodland-ruins_43
+  - first:
+      213: -7212083599717127241
+    second: woodland-ruins_44
+  - first:
+      213: 6327361366388522614
+    second: woodland-ruins_45
+  - first:
+      213: -1782746610982166821
+    second: woodland-ruins_46
+  - first:
+      213: 4464603963874201008
+    second: woodland-ruins_47
+  - first:
+      213: 3097214457253313715
+    second: woodland-ruins_48
+  - first:
+      213: -1222378805619480991
+    second: woodland-ruins_49
+  - first:
+      213: 4696878944692555729
+    second: woodland-ruins_50
+  - first:
+      213: -6818740703119785976
+    second: woodland-ruins_51
+  - first:
+      213: -532114603278620640
+    second: woodland-ruins_52
+  - first:
+      213: -753219538293192110
+    second: woodland-ruins_53
+  - first:
+      213: 1210185847050818277
+    second: woodland-ruins_54
+  - first:
+      213: 4318555417942960335
+    second: woodland-ruins_55
+  - first:
+      213: 5888669354372097795
+    second: woodland-ruins_56
+  - first:
+      213: 7980382212208404440
+    second: woodland-ruins_57
+  - first:
+      213: -3555293139679672856
+    second: woodland-ruins_58
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 0
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationMethod: 0
+  spriteTessellationDetail: -1
+  spriteGeometrySubdivision: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: OpenArch
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 901
+        width: 516
+        height: 537
+      alignment: 9
+      pivot: {x: 0.5, y: 0.009310987}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbd07722959957ee965a88e99c7d5cdf
+      internalID: -912151791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ClosedArch
+      rect:
+        serializedVersion: 2
+        x: 555
+        y: 900
+        width: 518
+        height: 538
+      alignment: 9
+      pivot: {x: 0.5, y: 0.00929368}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e657cfbe33915312b01f8368e5689a3b
+      internalID: 870167740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrokenPillar
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 406
+        width: 367
+        height: 484
+      alignment: 9
+      pivot: {x: 0.5, y: 0.010330578}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f3030376fd152d8ba8947b2c9edbb82
+      internalID: 409522220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RuinWall
+      rect:
+        serializedVersion: 2
+        x: 501
+        y: 423
+        width: 567
+        height: 356
+      alignment: 9
+      pivot: {x: 0.5, y: 0.014044944}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f30a7cff4a8591cab5a88f56932f773
+      internalID: 36030215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StoneMedallion
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 23
+        width: 624
+        height: 369
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 068dc98e0b8d5ce8b2f9740ec81763ad
+      internalID: -1304371213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AmberWaystone
+      rect:
+        serializedVersion: 2
+        x: 710
+        y: 28
+        width: 314
+        height: 372
+      alignment: 9
+      pivot: {x: 0.5, y: 0.01344086}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf9de4bf07185854b10241cd048f9634
+      internalID: 1811446008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: fc4f4721a15a641109c1becab67c9015
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      AmberWaystone: 1811446008
+      BrokenPillar: 409522220
+      ClosedArch: 870167740
+      OpenArch: -912151791
+      RuinWall: 36030215
+      StoneMedallion: -1304371213
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

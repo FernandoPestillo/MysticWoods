@@ -8,6 +8,7 @@ public class RestartMenu : MonoBehaviour
 
     public void Restart()
     {
+        Time.timeScale = 1;
         SceneManager.LoadScene("FaseMysticWoods");
     }
 

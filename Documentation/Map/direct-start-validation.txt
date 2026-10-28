@@ -1,0 +1,27 @@
+Unity 6000.6.7f1 — graphical Play Mode validation
+Direct start with normal settings — 2026-10-28
+
+PASS: direct scene Play: unpaused
+PASS: direct scene Play: six full normal hearts
+PASS: direct scene Play: no difficulty screen or buttons
+PASS: direct scene Play: movement settings preserved
+PASS: difficulty API removed
+PASS: movement immediately available
+PASS: pause still works
+PASS: restart from pause: unpaused
+PASS: restart from pause: six full normal hearts
+PASS: restart from pause: no difficulty screen or buttons
+PASS: restart from pause: movement settings preserved
+PASS: restart screen starts hidden
+PASS: normal health takes one damage from six
+PASS: HUD keeps six heart slots
+PASS: death opens restart screen
+PASS: restart after death: unpaused
+PASS: restart after death: six full normal hearts
+PASS: restart after death: no difficulty screen or buttons
+PASS: restart after death: movement settings preserved
+PASS: Jogar from main menu: unpaused
+PASS: Jogar from main menu: six full normal hearts
+PASS: Jogar from main menu: no difficulty screen or buttons
+PASS: Jogar from main menu: movement settings preserved
+Unexpected runtime errors: 0

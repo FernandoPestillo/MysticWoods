@@ -6,7 +6,6 @@ using UnityEngine.UI;
 public class HeartSystem : MonoBehaviour, IDamageable
 {
     public GameObject MenuRestart;
-    public GameObject MenuDificuldade;
     public float Health
     {
         set
@@ -26,8 +25,9 @@ public class HeartSystem : MonoBehaviour, IDamageable
         }
     }
 
-    public float vida = 6f;
-    public float vidaMaxima = 6f;
+    private const float NormalHealth = 6f;
+    public float vida = NormalHealth;
+    public float vidaMaxima = NormalHealth;
     bool isAlive = true;
     public Animator animator;
     private Rigidbody2D _playerRB2D;
@@ -54,6 +54,9 @@ public class HeartSystem : MonoBehaviour, IDamageable
     // Start is called before the first frame update
     void Start()
     {
+        Time.timeScale = 1;
+        vidaMaxima = NormalHealth;
+        vida = NormalHealth;
         animator = GetComponent<Animator>();
         animator.SetBool("isAlive", isAlive);
         _playerRB2D = GetComponent<Rigidbody2D>();
@@ -116,20 +119,4 @@ public class HeartSystem : MonoBehaviour, IDamageable
         throw new System.NotImplementedException();
     }
 
-    public void Normal()
-    {
-        Debug.Log("Normal");
-        vidaMaxima = 6f;
-        Time.timeScale = 1;
-        MenuDificuldade.SetActive(false);
-    }
-
-    public void Hard()
-    {
-        Debug.Log("Hard");
-        vidaMaxima = 2f;
-        Time.timeScale = 1;
-        MenuDificuldade.SetActive(false);
-    }
 }
-
