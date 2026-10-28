@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class PlayerController : MonoBehaviour
 {
@@ -39,7 +40,16 @@ public class PlayerController : MonoBehaviour
 
      void FixedUpdate()
     {
-        _playerDirection = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
+        var keyboard = Keyboard.current;
+        _playerDirection = Vector2.zero;
+        if (keyboard != null)
+        {
+            int horizontal = (keyboard.dKey.isPressed || keyboard.rightArrowKey.isPressed ? 1 : 0)
+                - (keyboard.aKey.isPressed || keyboard.leftArrowKey.isPressed ? 1 : 0);
+            int vertical = (keyboard.wKey.isPressed || keyboard.upArrowKey.isPressed ? 1 : 0)
+                - (keyboard.sKey.isPressed || keyboard.downArrowKey.isPressed ? 1 : 0);
+            _playerDirection = new Vector2(horizontal, vertical);
+        }
 
         if (_playerDirection.sqrMagnitude > 0.1 && _playerAnimator.GetInteger("Movimento") != 2)
         {
@@ -82,12 +92,12 @@ public class PlayerController : MonoBehaviour
 
     void PlayerRun()
     {
-        if (Input.GetKeyDown(KeyCode.LeftShift))
+        if (Keyboard.current?.leftShiftKey.wasPressedThisFrame == true)
         {
             _playerSpeed = _playerRunSpeed;
         }
 
-        if (Input.GetKeyUp(KeyCode.LeftShift))
+        if (Keyboard.current?.leftShiftKey.wasReleasedThisFrame == true)
         {
             _playerSpeed = _playerInitialSpeed;
         }
@@ -95,13 +105,13 @@ public class PlayerController : MonoBehaviour
 
     void OnAttack()
     {
-        if (Input.GetKeyDown(KeyCode.Space) || Input.GetMouseButtonDown(0))
+        if (Keyboard.current?.spaceKey.wasPressedThisFrame == true || Mouse.current?.leftButton.wasPressedThisFrame == true)
         {
             _isAttack = true;
             _playerSpeed = 0;
         }
 
-        if (Input.GetKeyUp(KeyCode.Space) || Input.GetMouseButtonUp(0))
+        if (Keyboard.current?.spaceKey.wasReleasedThisFrame == true || Mouse.current?.leftButton.wasReleasedThisFrame == true)
         {
             _isAttack = false;
             _playerSpeed = _playerInitialSpeed;

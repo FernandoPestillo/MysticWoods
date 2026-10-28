@@ -17,11 +17,11 @@ MysticWoods/
 
 ## Requisitos
 
-- Unity 2022.3.20f1
-- Universal Render Pipeline 14.0.10
-- Input System 1.7.0
-- Cinemachine 2.9.7
-- TextMesh Pro 3.0.6
+- Unity 6000.6.7f1
+- Universal Render Pipeline 17.6.0
+- Input System 1.20.1
+- Cinemachine 6.6.0
+- TextMesh Pro incluido no Unity UI (UGUI) 2.6.0
 
 As dependencias do projeto ficam em `Packages/manifest.json` e serao restauradas automaticamente pela Unity ao abrir o projeto.
 
@@ -30,7 +30,7 @@ As dependencias do projeto ficam em `Packages/manifest.json` e serao restauradas
 1. Abra o Unity Hub.
 2. Selecione `Add project from disk`.
 3. Escolha a pasta raiz deste repositorio: `MysticWoods`.
-4. Abra com a Unity `2022.3.20f1`.
+4. Abra com a Unity `6000.6.7f1`.
 
 ## Cenas
 
@@ -46,8 +46,16 @@ As cenas configuradas para build ficam em `Assets/Scenes`:
 - Correr: `Left Shift`
 - Atacar: `Space` ou clique esquerdo do mouse
 
+O projeto usa apenas Input System Package (New). Para jogar no editor, abra somente `Assets/Scenes/TelaInicial.unity`, pressione Play, escolha Jogar e depois Normal ou Hard. A selecao de dificuldade mantem o jogo pausado ate que uma opcao seja escolhida.
+
 ## Desenvolvimento
 
 Scripts principais ficam em `Assets/Scripts`. O projeto inclui controles de player, combate, inimigos, chefe, menus, sistema de vida, chaves e portas.
 
 Antes de commitar alteracoes, confirme que a Unity gerou/atualizou os arquivos `.meta` correspondentes aos assets modificados.
+
+## Code Assist no macOS
+
+A integracao opcional Code Assist fica desativada no Editor do macOS pela restricao `!UNITY_EDITOR_OSX` em `Assets/Plugins/CodeAssist/Editor/CodeAssistAssembly.asmdef`. A versao incluida do plugin depende de Visual Studio 2022 e seu encerramento do NetMQ pode bloquear o recarregamento de assemblies ao entrar em Play Mode no macOS.
+
+Essa restricao afeta apenas a integracao do editor com a IDE. Os scripts do jogo continuam habilitados, e o plugin permanece disponivel nos outros sistemas. Depois de aplicar a alteracao, reabra a Unity para descarregar a versao do plugin que ja estava carregada.

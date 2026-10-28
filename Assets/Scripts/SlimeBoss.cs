@@ -70,7 +70,7 @@ public class SlimeBoss : MonoBehaviour, IDamageable
     // Update is called once per frame
     void Update()
     {
-        _slimeDirection = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
+
         _spriteRenderer = GetComponent<SpriteRenderer>();
 
     }

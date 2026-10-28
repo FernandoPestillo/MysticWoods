@@ -67,7 +67,7 @@ public class SkeletonController : MonoBehaviour, IDamageable
     // Update is called once per frame
     void Update()
     {
-        _skeletonDirection = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
+
         _spriteRenderer = GetComponent<SpriteRenderer>();
 
     }
