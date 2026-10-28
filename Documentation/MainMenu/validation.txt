@@ -1,0 +1,110 @@
+Unity 6000.6.7f1 — graphical Play Mode validation
+
+PASS: initial focus on Jogar
+PASS: render target 1280x720; actual=1280x720
+PASS: JogarButton fits 1280x720
+PASS: menu buttons do not overlap
+PASS: ComandosButton fits 1280x720
+PASS: menu buttons do not overlap
+PASS: ConfiguracoesButton fits 1280x720
+PASS: menu buttons do not overlap
+PASS: SairButton fits 1280x720
+PASS: menu buttons do not overlap
+PASS: Mystic Woods Title fits 1280x720
+PASS: Keyboard Hint fits 1280x720
+PASS: visible text fits: Label
+PASS: visible text fits: Label
+PASS: visible text fits: Label
+PASS: visible text fits: Label
+PASS: visible text fits: Keyboard Hint
+PASS: render target 1920x1080; actual=1920x1080
+PASS: JogarButton fits 1920x1080
+PASS: menu buttons do not overlap
+PASS: ComandosButton fits 1920x1080
+PASS: menu buttons do not overlap
+PASS: ConfiguracoesButton fits 1920x1080
+PASS: menu buttons do not overlap
+PASS: SairButton fits 1920x1080
+PASS: menu buttons do not overlap
+PASS: Mystic Woods Title fits 1920x1080
+PASS: Keyboard Hint fits 1920x1080
+PASS: visible text fits: Label
+PASS: visible text fits: Label
+PASS: visible text fits: Label
+PASS: visible text fits: Label
+PASS: visible text fits: Keyboard Hint
+PASS: render target 2560x1080; actual=2560x1080
+PASS: JogarButton fits 2560x1080
+PASS: menu buttons do not overlap
+PASS: ComandosButton fits 2560x1080
+PASS: menu buttons do not overlap
+PASS: ConfiguracoesButton fits 2560x1080
+PASS: menu buttons do not overlap
+PASS: SairButton fits 2560x1080
+PASS: menu buttons do not overlap
+PASS: Mystic Woods Title fits 2560x1080
+PASS: Keyboard Hint fits 2560x1080
+PASS: visible text fits: Label
+PASS: visible text fits: Label
+PASS: visible text fits: Label
+PASS: visible text fits: Label
+PASS: visible text fits: Keyboard Hint
+PASS: render target 1920x1200; actual=1920x1200
+PASS: JogarButton fits 1920x1200
+PASS: menu buttons do not overlap
+PASS: ComandosButton fits 1920x1200
+PASS: menu buttons do not overlap
+PASS: ConfiguracoesButton fits 1920x1200
+PASS: menu buttons do not overlap
+PASS: SairButton fits 1920x1200
+PASS: menu buttons do not overlap
+PASS: Mystic Woods Title fits 1920x1200
+PASS: Keyboard Hint fits 1920x1200
+PASS: visible text fits: Label
+PASS: visible text fits: Label
+PASS: visible text fits: Label
+PASS: visible text fits: Label
+PASS: visible text fits: Keyboard Hint
+PASS: mouse opens Comandos
+PASS: Escape closes Comandos
+PASS: focus returns to Comandos
+PASS: Voltar closes Comandos and restores focus
+PASS: keyboard navigation reaches Configurações
+PASS: Enter opens Configurações
+PASS: initial settings focus on volume
+PASS: volume previews immediately
+PASS: preview is not persisted
+PASS: Escape cancels and restores volume
+PASS: audio-only Apply closes settings
+PASS: confirmed audio saved
+PASS: audio survives reloading preferences
+PASS: resolution dropdown expands
+PASS: resolution options have no duplicates
+PASS: Escape closes dropdown without closing settings
+PASS: video requires confirmation
+PASS: unconfirmed video is not persisted
+PASS: Reverter returns to settings
+PASS: Reverter restores audio baseline
+PASS: 15-second timeout reverts video while paused
+PASS: timeout leaves saved video unchanged
+PASS: second video preview starts
+PASS: Manter closes settings
+PASS: confirmed video saved
+PASS: settings reopen with confirmed mode
+PASS: Cancelar returns to menu
+PASS: Jogar loads existing game scene
+PASS: existing difficulty selection preserved
+PASS: Normal starts gameplay
+PASS: return to menu restores unpaused interface
+PASS: return to menu restores initial focus
+
+Quit button: True
+Unexpected runtime errors: 0
+Existing PlayerPrefs restored after validation.
+
+HDR output regression check — Unity 6000.6.7f1, graphical Play Mode, macOS
+Before: HDROutputSettings.main.active=True; available=True; gamut=HDR10; GameView.hdrActive=True.
+After: HDROutputSettings.main.active=False; available=False; GameView.hdrActive=False.
+Active pipeline: Built-in (GraphicsSettings.currentRenderPipeline=null). Color space: Linear, unchanged.
+Disabled allowHDRDisplaySupport and useHDRDisplay; no source artwork recoloring.
+No C# compilation errors or runtime exceptions in the post-change probe log.

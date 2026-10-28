@@ -59,3 +59,7 @@ Antes de commitar alteracoes, confirme que a Unity gerou/atualizou os arquivos `
 A integracao opcional Code Assist fica desativada no Editor do macOS pela restricao `!UNITY_EDITOR_OSX` em `Assets/Plugins/CodeAssist/Editor/CodeAssistAssembly.asmdef`. A versao incluida do plugin depende de Visual Studio 2022 e seu encerramento do NetMQ pode bloquear o recarregamento de assemblies ao entrar em Play Mode no macOS.
 
 Essa restricao afeta apenas a integracao do editor com a IDE. Os scripts do jogo continuam habilitados, e o plugin permanece disponivel nos outros sistemas. Depois de aplicar a alteracao, reabra a Unity para descarregar a versao do plugin que ja estava carregada.
+
+## Nova tela inicial
+
+A cena `Assets/Scenes/TelaInicial.unity` utiliza o prefab editável `Assets/UI/MainMenu/MainMenu.prefab`, com letreiro exclusivo, floresta em pixel art e os painéis Comandos e Configurações. Consulte [o guia da interface](Documentation/MainMenu/README.md) para edição, comportamento das configurações e capturas de validação.
