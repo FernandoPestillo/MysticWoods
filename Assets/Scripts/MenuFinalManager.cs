@@ -1,20 +1,43 @@
 using System.Collections;
-using System.Collections.Generic;
+using MysticWoods.UI;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class MenuFinalManager : MonoBehaviour
 {
-    [SerializeField] private string voltarMenuPrincipal;
-
-    public void VoltarMenu()
+    [SerializeField] private string voltarMenuPrincipal = "TelaInicial";
+    [SerializeField] private string nomeLevelJogo = "FaseMysticWoods";
+    [SerializeField] private Button jogarNovamenteButton;
+    private bool transitioning;
+    private void Awake()
     {
-        SceneManager.LoadScene(voltarMenuPrincipal);
+        Time.timeScale = 1;
+        MainMenuPreferences.LoadAndApply();
     }
-
+    private IEnumerator Start()
+    {
+        yield return null;
+        if (jogarNovamenteButton != null && EventSystem.current != null)
+            EventSystem.current.SetSelectedGameObject(jogarNovamenteButton.gameObject);
+    }
+    public void JogarNovamente() => Load(nomeLevelJogo);
+    public void VoltarMenu() => Load(voltarMenuPrincipal);
+    private void Load(string scene)
+    {
+        if (transitioning) return;
+        transitioning = true;
+        Time.timeScale = 1;
+        SceneManager.LoadScene(scene);
+    }
     public void SairJogo()
     {
-        Debug.Log("Sair do Jogo");
+        Time.timeScale = 1;
+#if UNITY_EDITOR
+        UnityEditor.EditorApplication.isPlaying = false;
+#else
         Application.Quit();
+#endif
     }
 }

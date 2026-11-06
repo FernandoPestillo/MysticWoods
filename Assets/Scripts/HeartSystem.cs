@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class HeartSystem : MonoBehaviour, IDamageable
 {
     public GameObject MenuRestart;
+    public event System.Action Died;
     [Header("Damage response")]
     [SerializeField, Min(0f)] private float hurtInvulnerability = .35f;
     [SerializeField, Min(.02f)] private float knockbackDuration = .18f;
@@ -17,14 +18,16 @@ public class HeartSystem : MonoBehaviour, IDamageable
     {
         set
         {
+            bool wasAlive = vida > 0f;
             vida = value;
 
-            if (vida <= 0)
+            if (vida <= 0 && wasAlive)
             {
                 GetComponent<PlayerController>()?.CancelCombat();
                 animator.SetBool("isAlive", false);
                 Targetable = false;
-                MenuRestart.SetActive(true);
+                if (Died != null) Died.Invoke();
+                else if (MenuRestart != null) MenuRestart.SetActive(true);
             }
         }
         get

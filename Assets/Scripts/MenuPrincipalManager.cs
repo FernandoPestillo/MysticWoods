@@ -14,6 +14,7 @@ public class MenuPrincipalManager : MonoBehaviour
     [SerializeField] private GameObject painelConfiguracoes;
     [SerializeField] private GameObject modalOverlay;
     [SerializeField] private MenuSettingsController settingsController;
+    [SerializeField] private MenuCommandsController commandsController;
     [SerializeField] private Button jogarButton;
     [SerializeField] private Button comandosButton;
     [SerializeField] private Button configuracoesButton;
@@ -31,6 +32,7 @@ public class MenuPrincipalManager : MonoBehaviour
     private void Start()
     {
         settingsController.Closed += OnSettingsClosed;
+        commandsController.Closed += FecharComandos;
         painelComandos.SetActive(false);
         painelConfiguracoes.SetActive(false);
         modalOverlay.SetActive(false);
@@ -114,5 +116,6 @@ public class MenuPrincipalManager : MonoBehaviour
     private void OnDestroy()
     {
         if (settingsController != null) settingsController.Closed -= OnSettingsClosed;
+        if (commandsController != null) commandsController.Closed -= FecharComandos;
     }
 }

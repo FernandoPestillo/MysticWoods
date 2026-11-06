@@ -46,3 +46,7 @@ A validação usa a Unity gráfica e dispositivos virtuais de entrada em uma có
 As capturas finais ficam em `Captures/`. Os prompts e o método de geração da arte estão em [Artwork.md](Artwork.md).
 
 Personagem, inimigos e mapa permanecem para as próximas etapas.
+
+## Painéis compartilhados
+
+Configurações e Comandos agora usam os prefabs em `Assets/UI/Shared/`, compartilhados com o Pause. O visual e as ações da tela inicial foram preservados; Comandos esclarece que cada toque executa um golpe. Os fluxos de Pause, Game Over e Final estão em [GameMenus](../GameMenus/README.md).

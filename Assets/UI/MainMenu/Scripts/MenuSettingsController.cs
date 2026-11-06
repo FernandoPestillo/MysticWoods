@@ -26,6 +26,7 @@ namespace MysticWoods.UI
         private bool dropdownWasExpanded;
         private double confirmationDeadline;
         public event Action Closed;
+        public Slider InitialSelection => volumeSlider;
         public bool IsConfirmingVideo { get; private set; }
         public int SecondsRemaining => Mathf.Max(0, Mathf.CeilToInt((float)(confirmationDeadline - Time.realtimeSinceStartupAsDouble)));
 

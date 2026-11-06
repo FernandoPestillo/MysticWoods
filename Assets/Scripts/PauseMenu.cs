@@ -1,49 +1,34 @@
-using System.Collections;
-using System.Collections.Generic;
+using MysticWoods.UI;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 
+// Compatibility adapter for existing scenes and UnityEvent bindings.
 public class PauseMenu : MonoBehaviour
 {
     public GameObject pauseMenu;
     public GameObject restartMenu;
-
-
-    // Start is called before the first frame update
-    void Start()
+    private GameMenuController controller;
+    private void Awake() => controller = FindAnyObjectByType<GameMenuController>();
+    private void Update()
     {
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        if (Keyboard.current?.escapeKey.wasPressedThisFrame == true && !restartMenu.activeSelf)
-        {
-            Debug.Log("apertou ESC" + pauseMenu.activeSelf);
-            if (pauseMenu.activeSelf) 
-            { 
-                pauseMenu.SetActive(false);
-                Time.timeScale = 1;
-            }
-            else 
-            {
-                pauseMenu.SetActive(true);
-                Time.timeScale = 0;
-            }
-        }        
+        if (controller != null || Keyboard.current?.escapeKey.wasPressedThisFrame != true) return;
+        if (restartMenu != null && restartMenu.activeSelf) return;
+        if (pauseMenu == null) return;
+        pauseMenu.SetActive(!pauseMenu.activeSelf);
+        Time.timeScale = pauseMenu.activeSelf ? 0 : 1;
     }
     public void ResumeGame()
     {
-        pauseMenu.gameObject.SetActive(false);
+        if (controller != null) { controller.Resume(); return; }
+        if (pauseMenu != null) pauseMenu.SetActive(false);
+        FindAnyObjectByType<PlayerController>()?.SuppressAttackUntilRelease();
         Time.timeScale = 1;
     }
     public void VoltarMenu()
     {
+        if (controller != null) { controller.ReturnToMainMenu(); return; }
+        Time.timeScale = 1;
         SceneManager.LoadScene("TelaInicial");
     }
-
 }
-
-

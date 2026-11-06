@@ -29,6 +29,7 @@ public class PlayerController : MonoBehaviour
     private Vector2 inputDirection;
     private Vector2 facing = Vector2.down;
     private bool running;
+    private bool suppressAttackUntilRelease = true;
     private bool attackRequested;
     private bool queuedAttack;
     private float attackElapsed;
@@ -75,6 +76,13 @@ public class PlayerController : MonoBehaviour
             running = keyboard.leftShiftKey.isPressed;
         }
         inputDirection = inputDirection.normalized;
+        if (suppressAttackUntilRelease)
+        {
+            attackRequested = queuedAttack = false;
+            if (keyboard?.spaceKey.isPressed != true && Mouse.current?.leftButton.isPressed != true)
+                suppressAttackUntilRelease = false;
+            return;
+        }
         bool pressed = keyboard?.spaceKey.wasPressedThisFrame == true ||
             Mouse.current?.leftButton.wasPressedThisFrame == true;
         if (!pressed) return;
@@ -151,6 +159,15 @@ public class PlayerController : MonoBehaviour
         if (swordLeft != null) swordLeft.EndSwing();
         if (swordUp != null) swordUp.EndSwing();
         if (swordDown != null) swordDown.EndSwing();
+    }
+
+    public void SuppressAttackUntilRelease()
+    {
+        suppressAttackUntilRelease = Keyboard.current?.spaceKey.isPressed == true ||
+            Keyboard.current?.spaceKey.wasPressedThisFrame == true ||
+            Mouse.current?.leftButton.isPressed == true ||
+            Mouse.current?.leftButton.wasPressedThisFrame == true;
+        attackRequested = queuedAttack = false;
     }
 
     public void CancelCombat()
