@@ -1,45 +1,82 @@
-using System;
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(BoxCollider2D))]
 public class SwordHitbox : MonoBehaviour
 {
     public float _swordDamage = 1f;
-    public float knockbackForce = 4000f;
+    public float knockbackForce = 600f;
     public Collider2D swordCollider;
+    private BoxCollider2D box;
+    private Transform owner;
+    private readonly HashSet<IDamageable> struck = new HashSet<IDamageable>();
+    private readonly List<Collider2D> overlaps = new List<Collider2D>();
+    private ContactFilter2D filter;
+    public bool IsOpen { get; private set; }
 
-    void Start()
+    private void Awake()
     {
-        if(swordCollider == null)
+        box = GetComponent<BoxCollider2D>();
+        swordCollider = box;
+        box.isTrigger = true;
+        box.enabled = false;
+        filter = new ContactFilter2D { useTriggers = false };
+        filter.SetLayerMask(Physics2D.AllLayers);
+    }
+
+    public void Configure(Vector2 direction, float reach, float width, Vector2 center)
+    {
+        if (box == null) box = GetComponent<BoxCollider2D>();
+        transform.localPosition = Vector3.zero;
+        transform.localRotation = Quaternion.identity;
+        box.offset = center + direction * (reach * .5f);
+        box.size = Mathf.Abs(direction.x) > 0 ? new Vector2(reach, width) : new Vector2(width, reach);
+        box.isTrigger = true;
+        box.enabled = false;
+    }
+
+    public void BeginSwing(Transform attacker)
+    {
+        owner = attacker;
+        struck.Clear();
+        IsOpen = true;
+        box.enabled = true;
+    }
+
+    public void Sample()
+    {
+        if (!IsOpen || owner == null) return;
+        Vector3 scale = transform.lossyScale;
+        Vector2 size = Vector2.Scale(box.size, new Vector2(Mathf.Abs(scale.x), Mathf.Abs(scale.y)));
+        // Explicit queries also hit enemies already overlapping when the window opens.
+        Physics2D.OverlapBox(transform.TransformPoint(box.offset), size, transform.eulerAngles.z, filter, overlaps);
+        foreach (var other in overlaps)
         {
-            Debug.LogWarning("swordCollider nao encontrado");
+            if (other == null || other.isTrigger || other.transform.IsChildOf(owner)) continue;
+            var target = other.GetComponentInParent<IDamageable>();
+            if (target == null || !target.Targetable || target.Health <= 0 || !struck.Add(target)) continue;
+            Vector2 direction = ((Vector2)other.bounds.center - (Vector2)owner.position).normalized;
+            if (direction == Vector2.zero) direction = ((Vector2)box.bounds.center - (Vector2)owner.position).normalized;
+            target.OnHit(_swordDamage, direction * knockbackForce);
         }
     }
 
-    void OnCollisionEnter2D(Collision2D col)
+    public void EndSwing()
     {
-
-
-        IDamageable damageableObject = col.collider.GetComponent<IDamageable>();
-        if(damageableObject != null)
-        {
-            Vector3 parentPosition = gameObject.GetComponentInParent<Transform>().position;
-            Vector2 direction  = (Vector2) (col.collider.gameObject.transform.position - parentPosition).normalized;
-            Vector2 knockback = direction * knockbackForce;
-
-            // col.collider.SendMessage("OnHit", _swordDamage, knockback);
-            damageableObject.OnHit(_swordDamage, knockback);
-        } else {
-            Debug.LogWarning("Objeto não implementou inferface IDamageable");
-        }
-
+        IsOpen = false;
+        if (box == null) box = GetComponent<BoxCollider2D>();
+        box.enabled = false;
+        struck.Clear();
+        owner = null;
     }
 
+    private void OnDisable() => EndSwing();
 
-    // Update is called once per frame
-    void Update()
+    private void OnDrawGizmosSelected()
     {
-        
+        var collider = GetComponent<BoxCollider2D>();
+        Gizmos.color = IsOpen ? Color.red : Color.yellow;
+        Gizmos.matrix = transform.localToWorldMatrix;
+        Gizmos.DrawWireCube(collider.offset, collider.size);
     }
 }

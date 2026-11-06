@@ -26,9 +26,9 @@ Em `High Detail Forest/Grid`, os Tilemaps são:
 - **Solo:** chão contínuo de floresta, sem colisão.
 - **Transicoes:** caminhos de terra; o asset `Forest Path` calcula os vizinhos e mantém as bordas conectadas.
 - **Detalhes:** pequenos agrupamentos de flores, sem colisão.
-- **Bloqueios:** máscara física independente da aparência, com TilemapCollider2D e CompositeCollider2D. O renderer fica desativado; ative-o temporariamente para visualizar a máscara.
+- **Bloqueios:** limite externo do mapa, com TilemapCollider2D e CompositeCollider2D. Restam apenas as 348 células da borda de 96×80. O interior da grama é transitável. O renderer fica desativado; ative-o temporariamente para visualizar o limite.
 
-Ao mudar uma rota, edite também os bloqueios correspondentes. Copas e luzes não bloqueiam a passagem. Os prefabs de árvores, rochas, troncos e cercas possuem colisões simples nos pontos de apoio. A copa e os arcos ficam transparentes quando encobrem o jogador.
+A grama não restringe o jogador às trilhas. O tile legado `grass` também usa Collider Type None. Copas e luzes não bloqueiam a passagem. Os prefabs de árvores, rochas, troncos e cercas possuem colisões simples nos pontos de apoio. A copa e os arcos ficam transparentes quando encobrem o jogador.
 
 Os prefabs de portão, entrada, barreiras e saída também estão conectados às instâncias da cena. Os prefabs ficam em `Assets/Art/Environment/HighDetail/Prefabs/`. `GoldKey` contém o coletor, o sprite animado e a luz de destaque; sua instância na cena referencia o KeysManager do HUD. Ao inserir outra chave em outra cena, configure essa referência.
 
@@ -67,3 +67,11 @@ Também foram capturadas a entrada em 1280×720, 2560×1080 e 1920×1200, e a ar
 ## Início direto da partida
 
 A tela de dificuldade e o modo difícil foram removidos. O jogador começa com seis corações, inclusive ao abrir a fase diretamente no Editor ou reiniciar após pausa ou morte. O relatório [direct-start-validation.txt](direct-start-validation.txt) registra a validação desse fluxo; [direct-start.png](Captures/direct-start.png) mostra a partida iniciada sem seleção.
+
+## Correção da colisão da grama
+
+A máscara anterior ocupava 5.942 células e bloqueava áreas visualmente cobertas por grama. Foram removidos os 5.594 bloqueios internos, mantendo somente a borda externa. `Solo`, `Transicoes` e `Detalhes` continuam sem colliders. As colisões próprias de árvores, rochas, troncos, cercas, portões e barreiras foram preservadas. A geometria do CompositeCollider2D é reconstruída a partir do Tilemap da borda.
+
+Os testes físicos e de recarregamento estão em [idle-grass-validation.txt](../Characters/idle-grass-validation.txt).
+
+As velocidades atuais e a validação da chave, portão e barreira após o retrabalho de combate estão em [Combat](../Combat/README.md).

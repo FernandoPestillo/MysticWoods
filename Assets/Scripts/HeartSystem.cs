@@ -6,6 +6,13 @@ using UnityEngine.UI;
 public class HeartSystem : MonoBehaviour, IDamageable
 {
     public GameObject MenuRestart;
+    [Header("Damage response")]
+    [SerializeField, Min(0f)] private float hurtInvulnerability = .35f;
+    [SerializeField, Min(.02f)] private float knockbackDuration = .18f;
+    [SerializeField, Min(0f)] private float maxKnockbackImpulse = 12f;
+    private float nextDamageAt;
+    private Coroutine knockRoutine;
+    public bool IsInvulnerable => Time.time < nextDamageAt;
     public float Health
     {
         set
@@ -14,6 +21,7 @@ public class HeartSystem : MonoBehaviour, IDamageable
 
             if (vida <= 0)
             {
+                GetComponent<PlayerController>()?.CancelCombat();
                 animator.SetBool("isAlive", false);
                 Targetable = false;
                 MenuRestart.SetActive(true);
@@ -51,15 +59,19 @@ public class HeartSystem : MonoBehaviour, IDamageable
             _playerRB2D.simulated = value;
         }
     }
+    private void Awake()
+    {
+        animator = GetComponent<Animator>();
+        _playerRB2D = GetComponent<Rigidbody2D>();
+    }
+
     // Start is called before the first frame update
     void Start()
     {
         Time.timeScale = 1;
         vidaMaxima = NormalHealth;
         vida = NormalHealth;
-        animator = GetComponent<Animator>();
         animator.SetBool("isAlive", isAlive);
-        _playerRB2D = GetComponent<Rigidbody2D>();
     }
 
     // Update is called once per frame
@@ -98,20 +110,33 @@ public class HeartSystem : MonoBehaviour, IDamageable
 
     public void OnHit(float damage, Vector2 knockback)
     {
+        if (!Targetable || IsInvulnerable || damage <= 0f) return;
+        nextDamageAt = Time.time + hurtInvulnerability;
+        Health -= damage;
+        if (!Targetable) { gettingKnockBack = false; return; }
+        if (knockRoutine != null) StopCoroutine(knockRoutine);
         gettingKnockBack = true;
-        Health = Health - damage;
-        _playerRB2D.AddForce(knockback, ForceMode2D.Impulse);
-        StartCoroutine(KnockRoutine());
-    }
-    private IEnumerator KnockRoutine()
-    {
-        yield return new WaitForSeconds(0.2f);
-        gettingKnockBack = false;
+        GetComponent<CadencedMovement2D>()?.Suspend(knockbackDuration);
+        _playerRB2D.linearVelocity = Vector2.zero;
+        _playerRB2D.AddForce(Vector2.ClampMagnitude(knockback, maxKnockbackImpulse), ForceMode2D.Impulse);
+        knockRoutine = StartCoroutine(KnockRoutine());
     }
 
-    public void OnHit(float damage)
+    private IEnumerator KnockRoutine()
     {
-        Health = Health - damage;
+        yield return new WaitForSeconds(knockbackDuration);
+        gettingKnockBack = false;
+        knockRoutine = null;
+    }
+
+    public void OnHit(float damage) => OnHit(damage, Vector2.zero);
+
+    private void OnDisable()
+    {
+        StopAllCoroutines();
+        gettingKnockBack = false;
+        knockRoutine = null;
+        nextDamageAt = 0f;
     }
 
     public void OnObjectDestroyed()

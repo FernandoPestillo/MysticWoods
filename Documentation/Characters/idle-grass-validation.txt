@@ -1,0 +1,82 @@
+Unity 6000.6.7f1, Metal, batchmode com Play Mode, em cópia isolada do projeto.
+As verificações de colisão foram repetidas após salvar e recarregar a cena.
+Os testes usam o prefab real do jogador e um PhysicsScene2D isolado.
+A arte PNG existente foi preservada; a respiração é uma deformação de vértices na renderização.
+Observação do ambiente: o Editor em batchmode registrou uma exceção interna de indexação
+em UnityEditor.Search.SearchDatabase.GetDefaultSearchDatabase. As verificações de gameplay
+e renderização concluíram com sucesso; não houve erros de compilação de scripts ou shader.
+
+PASS existing transforms, colliders, rigidbodies, animator settings, controller scripts and hitboxes unchanged: Assets/Animations/Player/Player.prefab
+PASS existing transforms, colliders, rigidbodies, animator settings, controller scripts and hitboxes unchanged: Assets/Animations/Enemies/Slime/Slime.prefab
+PASS existing transforms, colliders, rigidbodies, animator settings, controller scripts and hitboxes unchanged: Assets/Animations/Enemies/Skeleton/Esqueleto.prefab
+PASS existing transforms, colliders, rigidbodies, animator settings, controller scripts and hitboxes unchanged: Assets/Animations/Enemies/Boss/SlimeBoss.prefab
+PASS every scene object and obstacle outside the grass collision mask unchanged
+PASS tested runtime implementation and idle clips match the project
+PASS 348 boundary tiles remain
+PASS all 7332 interior cell centers free of grass collision
+PASS outer map boundary still collides
+PASS boundary collider regenerated as a ring
+PASS ground tilemap has no collider
+PASS flowers tilemap has no collider
+PASS grass remains clear after scene reload
+PASS boundary remains solid after scene reload
+PASS Assets/Animations/Player/Player.prefab idle component resolves
+PASS Assets/Animations/Player/Player.prefab breathing material resolves
+PASS Assets/Animations/Player/Player.prefab physics preserved
+PASS Assets/Animations/Enemies/Skeleton/Esqueleto.prefab idle component resolves
+PASS Assets/Animations/Enemies/Skeleton/Esqueleto.prefab breathing material resolves
+PASS Assets/Animations/Enemies/Skeleton/Esqueleto.prefab physics preserved
+PASS Assets/Animations/Enemies/Slime/Slime.prefab idle component resolves
+PASS Assets/Animations/Enemies/Slime/Slime.prefab breathing material resolves
+PASS Assets/Animations/Enemies/Slime/Slime.prefab physics preserved
+PASS Assets/Animations/Enemies/Boss/SlimeBoss.prefab idle component resolves
+PASS Assets/Animations/Enemies/Boss/SlimeBoss.prefab breathing material resolves
+PASS Assets/Animations/Enemies/Boss/SlimeBoss.prefab physics preserved
+PASS Skeleton_Idle has stable valid pose
+PASS Skeleton_Idle loops cleanly, length=1.8
+PASS Slime_Idle has stable valid pose
+PASS Slime_Idle loops cleanly, length=1.8
+PASS Player_Idle_Down has stable valid pose
+PASS Player_Idle_Down loops cleanly, length=1.8
+PASS Player_Idle_Left has stable valid pose
+PASS Player_Idle_Left loops cleanly, length=1.8
+PASS Player_Idle_Right has stable valid pose
+PASS Player_Idle_Right loops cleanly, length=1.8
+PASS Player_Idle_Up has stable valid pose
+PASS Player_Idle_Up loops cleanly, length=1.8
+UNITY ERROR ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index
+PASS actual player walks two units across formerly solid grass, final=(27.50, 13.50)
+PASS Player has continuous breathing min=0 max=0.025 state=-1299810767
+PASS Player uses Idle state tag
+PASS Player scale/hitbox unchanged
+PASS Esqueleto has continuous breathing min=0 max=0.018 state=-1638686923
+PASS Esqueleto uses Idle state tag
+PASS Esqueleto scale/hitbox unchanged
+PASS Slime has continuous breathing min=2.682209E-09 max=0.09 state=-1860979972
+PASS Slime uses Idle state tag
+PASS Slime scale/hitbox unchanged
+PASS SlimeBoss has continuous breathing min=0 max=0.075 state=-1860979972
+PASS SlimeBoss uses Idle state tag
+PASS SlimeBoss scale/hitbox unchanged
+PASS Player exits Idle while moving
+PASS Player breathing fades away in movement
+PASS Esqueleto exits Idle while moving
+PASS Esqueleto breathing fades away in movement
+PASS Slime exits Idle while moving
+PASS Slime breathing fades away in movement
+PASS SlimeBoss exits Idle while moving
+PASS SlimeBoss breathing fades away in movement
+PASS Player returns to Idle
+PASS Esqueleto returns to Idle
+PASS Slime returns to Idle
+PASS SlimeBoss returns to Idle
+PASS player idle direction (0.00, -1.00) sprite=player_0
+PASS player idle direction (0.00, -1.00) flip correct
+PASS player idle direction (0.00, 1.00) sprite=player_12
+PASS player idle direction (0.00, 1.00) flip correct
+PASS player idle direction (1.00, 0.00) sprite=player_6
+PASS player idle direction (1.00, 0.00) flip correct
+PASS player idle direction (-1.00, 0.00) sprite=player_6
+PASS player idle direction (-1.00, 0.00) flip correct
+PASS shader compiles without errors on Metal

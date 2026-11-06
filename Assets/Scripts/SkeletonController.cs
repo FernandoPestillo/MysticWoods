@@ -1,145 +1,107 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(CadencedMovement2D), typeof(EnemyMeleeAttack))]
 public class SkeletonController : MonoBehaviour, IDamageable
 {
     public float damage = 1f;
-    public float knockbackForce = 100f;
-    bool isAlive = true;
+    public float knockbackForce = 8f;
     public Animator animator;
+    public float _health = 4f;
+    public bool _targetable = true;
+    public bool causandoDano;
+    public float _moveSpeedSkeleton = 2.4f;
+    public DetectionController _detectionArea;
+
+    private Rigidbody2D _skeletonRB2D;
+    private SpriteRenderer spriteRenderer;
+    private CadencedMovement2D movement;
+    private EnemyMeleeAttack melee;
+
+    private void Awake()
+    {
+        animator = GetComponent<Animator>();
+        _skeletonRB2D = GetComponent<Rigidbody2D>();
+        spriteRenderer = GetComponent<SpriteRenderer>();
+        movement = GetComponent<CadencedMovement2D>();
+        melee = GetComponent<EnemyMeleeAttack>();
+    }
+
+    private void Start() => animator.SetBool("isAlive", _health > 0f);
+
     public float Health
     {
+        get => _health;
         set
         {
-            if (value < _health)
-            {
-                animator.SetTrigger("hit");
-            }
-
+            if (value < _health && _health > 0f) animator.SetTrigger("hit");
             _health = value;
-
-            if (_health <= 0)
-            {
-                animator.SetBool("isAlive", false);
-                Targetable = false;
-                // Destroy(gameObject);
-            }
-        }
-        get
-        {
-            return _health;
+            if (_health > 0f) return;
+            animator.SetBool("isAlive", false);
+            Targetable = false;
         }
     }
 
     public bool Targetable
     {
-        get { return _targetable; }
+        get => _targetable;
         set
         {
             _targetable = value;
-
             _skeletonRB2D.simulated = value;
+            if (!value)
+            {
+                movement.Stop();
+                melee.Cancel();
+                causandoDano = false;
+                animator.SetBool("isMoving", false);
+            }
         }
-    }
-
-    public float _health = 4;
-    public bool _targetable = true;
-    public bool causandoDano = false;
-
-
-    public float _moveSpeedSkeleton = 3.5f;
-    private Vector2 _skeletonDirection;
-    private Rigidbody2D _skeletonRB2D;
-
-    public DetectionController _detectionArea;
-
-    private SpriteRenderer _spriteRenderer;
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        animator = GetComponent<Animator>();
-        animator.SetBool("isAlive", isAlive);
-        _skeletonRB2D = GetComponent<Rigidbody2D>();
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
-        _spriteRenderer = GetComponent<SpriteRenderer>();
-
     }
 
     private void FixedUpdate()
     {
-        if (_detectionArea.detectedObjs.Count > 0)
-        {
-            _skeletonDirection = (_detectionArea.detectedObjs[0].transform.position - transform.position).normalized;
-
-            if (!causandoDano)
-            {
-                _skeletonRB2D.MovePosition(_skeletonRB2D.position + _skeletonDirection * _moveSpeedSkeleton * Time.fixedDeltaTime);
-            }
-
-            if (_skeletonDirection.x > 0)
-            {
-                _spriteRenderer.flipX = false;
-            }
-            else if (_skeletonDirection.x < 0)
-            {
-                _spriteRenderer.flipX = true;
-            }
-        }
+        if (!Targetable || _health <= 0f) return;
+        Collider2D target = _detectionArea != null ? _detectionArea.Target : null;
+        Vector2 direction = target != null ? ((Vector2)target.bounds.center - _skeletonRB2D.position).normalized : Vector2.zero;
+        bool holdPosition = melee.Step(target, damage, knockbackForce);
+        causandoDano = melee.IsBusy;
+        movement.Step(holdPosition ? Vector2.zero : direction * _moveSpeedSkeleton, _moveSpeedSkeleton);
+        animator.SetBool("isMoving", movement.IsMoving);
+        if (!melee.IsBusy && Mathf.Abs(direction.x) > .01f) spriteRenderer.flipX = direction.x < 0f;
     }
 
-
-    public void OnHit(float damage, Vector2 knockback)
+    public void OnHit(float amount, Vector2 knockback)
     {
-        Health = Health - damage;
-
-        // Aplicando física ao receber ataque
-        _skeletonRB2D.AddForce(knockback);
+        if (!Targetable) return;
+        OnHit(amount);
+        if (Targetable) _skeletonRB2D.AddForce(knockback);
     }
 
-    public void OnHit(float damage)
+    public void OnHit(float amount)
     {
-        Health = Health - damage;
+        if (!Targetable) return;
+        melee.Interrupt();
+        causandoDano = false;
+        Health -= amount;
+        // Let the existing physics impulse act before locomotion takes over again.
+        movement.Suspend(.12f);
     }
 
-    public void OnObjectDestroyed()
-    {
-        Destroy(gameObject);
-    }
+    public void OnObjectDestroyed() => Destroy(gameObject);
+
     public void Revive()
     {
-        Debug.Log("Reviver ESqueleto");
         _health = 4f;
+        causandoDano = false;
+        movement.Stop();
         animator.SetBool("isAlive", true);
         Targetable = true;
     }
 
-    // Quando Esqueleto colidir com o Player, aplicar dano e knockback
-    void OnCollisionEnter2D(Collision2D collision)
+    private void OnDisable()
     {
-        IDamageable damageable = collision.collider.GetComponent<IDamageable>();
-
-        if (damageable != null && collision.gameObject.CompareTag("Player"))
-        {
-            causandoDano = true;
-            Vector3 parentPosition = gameObject.GetComponentInParent<Transform>().position;
-            Vector2 direction = (Vector2)(collision.collider.gameObject.transform.position - transform.position).normalized;
-            Vector2 knockback = direction * knockbackForce;
-
-            damageable.OnHit(damage, knockback);
-            _skeletonRB2D.AddForce((direction * -1) * knockbackForce, ForceMode2D.Impulse);
-            StartCoroutine(DamageRoutine());
-        }
-    }
-    private IEnumerator DamageRoutine()
-    {
-        yield return new WaitForSeconds(0.2f);
+        if (melee != null) melee.Cancel();
         causandoDano = false;
+        if (movement != null) movement.Stop();
     }
 }

@@ -1,0 +1,195 @@
+Validação: Unity 6000.6.7f1 / Metal / Play Mode / Input System real com dispositivos sintéticos.
+Executada em cópia isolada, sem alterar a cena aberta no Editor do usuário.
+A cena, os prefabs e os clips finais foram importados pela Unity; scripts e assets testados coincidem com o projeto.
+Preservação adicional: Tilemap de bloqueios da grama idêntico ao início desta implementação.
+A exceção interna QuickSearch, quando registrada como EDITOR NOTE, vem do índice de busca do Editor em batchmode.
+Nenhum erro de compilação de scripts, shader ou execução do código de gameplay foi registrado.
+
+PASS scene boss uses dedicated controller at 1.7 u/s
+PASS scene boss has no duplicate slime controller
+PASS boss final barrier reference preserved
+PASS all scene slimes configured at 2 u/s
+PASS all scene skeletons configured at 2.4 u/s
+PASS 7332 grass cells clear; map boundary remains solid
+PASS grass ground remains non-solid
+PASS Assets/Animations/Enemies/Slime/Slime.prefab smoothing component resolves
+PASS Assets/Animations/Enemies/Slime/Slime.prefab interpolates physics
+PASS Assets/Animations/Enemies/Slime/Slime.prefab idle breathing preserved
+PASS Assets/Animations/Enemies/Skeleton/Esqueleto.prefab smoothing component resolves
+PASS Assets/Animations/Enemies/Skeleton/Esqueleto.prefab interpolates physics
+PASS Assets/Animations/Enemies/Skeleton/Esqueleto.prefab idle breathing preserved
+PASS Assets/Animations/Enemies/Boss/SlimeBoss.prefab smoothing component resolves
+PASS Assets/Animations/Enemies/Boss/SlimeBoss.prefab interpolates physics
+PASS Assets/Animations/Enemies/Boss/SlimeBoss.prefab idle breathing preserved
+PASS Assets/Animations/Player/Player.prefab smoothing component resolves
+PASS Assets/Animations/Player/Player.prefab interpolates physics
+PASS Assets/Animations/Player/Player.prefab idle breathing preserved
+PASS Player_Attack_Down is a complete .50s nonlooping swing (0.5)
+PASS Player_Attack_Down no longer controls sword colliders
+PASS Player_Attack_Left is a complete .50s nonlooping swing (0.5)
+PASS Player_Attack_Left no longer controls sword colliders
+PASS Player_Attack_Right is a complete .50s nonlooping swing (0.5)
+PASS Player_Attack_Right no longer controls sword colliders
+PASS Player_Attack_Up is a complete .50s nonlooping swing (0.5)
+PASS Player_Attack_Up no longer controls sword colliders
+EDITOR NOTE: internal QuickSearch indexing exception
+PASS player accelerates instead of starting at full speed, velocity=(2.33, 0.00) key=True active=True
+PASS walking reaches 3.5 u/s
+PASS measured walking speed=3.500
+PASS diagonal walking is normalized
+PASS running reaches 5.25 u/s
+PASS measured running speed=5.250
+PASS player brakes gradually
+PASS running player comes to rest within approximately .08s braking
+PASS Slime(Clone) accelerates smoothly
+PASS Slime(Clone) cruising speed=2
+PASS Slime(Clone) measured physical speed=2.000
+PASS Slime(Clone) physics knockback displaces away from attack
+PASS Slime(Clone) damage preserves knockback control
+PASS Slime(Clone) stops when target leaves
+PASS Slime(Clone) does not pursue after death
+PASS Esqueleto(Clone) accelerates smoothly
+PASS Esqueleto(Clone) cruising speed=2.4
+PASS Esqueleto(Clone) measured physical speed=2.400
+PASS Esqueleto(Clone) physics knockback displaces away from attack
+PASS Esqueleto(Clone) damage preserves knockback control
+PASS Esqueleto(Clone) stops when target leaves
+PASS Esqueleto(Clone) does not pursue after death
+PASS skeleton revival preserved
+PASS SlimeBoss(Clone) accelerates smoothly
+PASS SlimeBoss(Clone) cruising speed=1.7
+PASS SlimeBoss(Clone) measured physical speed=1.700
+PASS SlimeBoss(Clone) physics knockback displaces away from attack
+PASS SlimeBoss(Clone) damage preserves knockback control
+PASS SlimeBoss(Clone) stops when target leaves
+PASS SlimeBoss(Clone) does not pursue after death
+PASS no damage during preparation (1.00, 0.00)
+PASS close and edge hits with already-overlapping targets (1.00, 0.00)
+PASS range, back, triggers and Targetable filters (1.00, 0.00)
+PASS no self damage (1.00, 0.00)
+PASS 600 force from player origin (1.00, 0.00)
+PASS one hit per target across multiple colliders (1.00, 0.00)
+PASS no damage after recovery (1.00, 0.00)
+PASS no damage during preparation (-1.00, 0.00)
+PASS close and edge hits with already-overlapping targets (-1.00, 0.00)
+PASS range, back, triggers and Targetable filters (-1.00, 0.00)
+PASS no self damage (-1.00, 0.00)
+PASS 600 force from player origin (-1.00, 0.00)
+PASS one hit per target across multiple colliders (-1.00, 0.00)
+PASS no damage after recovery (-1.00, 0.00)
+PASS no damage during preparation (0.00, 1.00)
+PASS close and edge hits with already-overlapping targets (0.00, 1.00)
+PASS range, back, triggers and Targetable filters (0.00, 1.00)
+PASS no self damage (0.00, 1.00)
+PASS 600 force from player origin (0.00, 1.00)
+PASS one hit per target across multiple colliders (0.00, 1.00)
+PASS no damage after recovery (0.00, 1.00)
+PASS no damage during preparation (0.00, -1.00)
+PASS close and edge hits with already-overlapping targets (0.00, -1.00)
+PASS range, back, triggers and Targetable filters (0.00, -1.00)
+PASS no self damage (0.00, -1.00)
+PASS 600 force from player origin (0.00, -1.00)
+PASS one hit per target across multiple colliders (0.00, -1.00)
+PASS no damage after recovery (0.00, -1.00)
+PASS enemy entering during active window is detected
+PASS sword has no solid physics and closes after attack
+PASS sword has no solid physics and closes after attack
+PASS sword has no solid physics and closes after attack
+PASS sword has no solid physics and closes after attack
+PASS late mouse press queues exactly one complete next swing
+PASS holding Space produces one swing
+PASS simultaneous keyboard and mouse produce one swing, delta=1
+PASS early repeated clicks do not build an unlimited queue
+PASS hitboxes close after repeated keyboard swing 1
+PASS hitboxes close after repeated keyboard swing 2
+PASS hitboxes close after repeated keyboard swing 3
+PASS hitboxes close after repeated keyboard swing 4
+PASS hitboxes close after repeated keyboard swing 5
+PASS hitboxes close after repeated keyboard swing 6
+PASS hitboxes close after repeated keyboard swing 7
+PASS hitboxes close after repeated keyboard swing 8
+PASS hitboxes close after repeated keyboard swing 9
+PASS hitboxes close after repeated keyboard swing 10
+PASS hitboxes close after repeated keyboard swing 11
+PASS hitboxes close after repeated keyboard swing 12
+PASS hitboxes close after repeated keyboard swing 13
+PASS hitboxes close after repeated keyboard swing 14
+PASS hitboxes close after repeated keyboard swing 15
+PASS hitboxes close after repeated keyboard swing 16
+PASS hitboxes close after repeated keyboard swing 17
+PASS hitboxes close after repeated keyboard swing 18
+PASS hitboxes close after repeated keyboard swing 19
+PASS hitboxes close after repeated keyboard swing 20
+PASS hitboxes close after repeated keyboard swing 21
+PASS hitboxes close after repeated keyboard swing 22
+PASS hitboxes close after repeated keyboard swing 23
+PASS hitboxes close after repeated keyboard swing 24
+PASS hitboxes close after repeated keyboard swing 25
+PASS hitboxes close after repeated keyboard swing 26
+PASS hitboxes close after repeated keyboard swing 27
+PASS hitboxes close after repeated keyboard swing 28
+PASS hitboxes close after repeated keyboard swing 29
+PASS hitboxes close after repeated keyboard swing 30
+PASS 30 complete keyboard attacks without lockups or duplicate hits
+PASS hitboxes close after repeated mouse swing 1
+PASS hitboxes close after repeated mouse swing 2
+PASS hitboxes close after repeated mouse swing 3
+PASS hitboxes close after repeated mouse swing 4
+PASS hitboxes close after repeated mouse swing 5
+PASS hitboxes close after repeated mouse swing 6
+PASS hitboxes close after repeated mouse swing 7
+PASS hitboxes close after repeated mouse swing 8
+PASS hitboxes close after repeated mouse swing 9
+PASS hitboxes close after repeated mouse swing 10
+PASS hitboxes close after repeated mouse swing 11
+PASS hitboxes close after repeated mouse swing 12
+PASS hitboxes close after repeated mouse swing 13
+PASS hitboxes close after repeated mouse swing 14
+PASS hitboxes close after repeated mouse swing 15
+PASS hitboxes close after repeated mouse swing 16
+PASS hitboxes close after repeated mouse swing 17
+PASS hitboxes close after repeated mouse swing 18
+PASS hitboxes close after repeated mouse swing 19
+PASS hitboxes close after repeated mouse swing 20
+PASS hitboxes close after repeated mouse swing 21
+PASS hitboxes close after repeated mouse swing 22
+PASS hitboxes close after repeated mouse swing 23
+PASS hitboxes close after repeated mouse swing 24
+PASS hitboxes close after repeated mouse swing 25
+PASS hitboxes close after repeated mouse swing 26
+PASS hitboxes close after repeated mouse swing 27
+PASS hitboxes close after repeated mouse swing 28
+PASS hitboxes close after repeated mouse swing 29
+PASS hitboxes close after repeated mouse swing 30
+PASS 30 complete mouse attacks without lockups or duplicate hits
+PASS attack caps running movement at 35 percent walking speed
+PASS attack facing remains fixed while moving in another direction
+PASS facing and running recover automatically after attack
+PASS diagonal tie retains previous cardinal facing
+PASS pause freezes current attack
+PASS pause discards buffered and paused commands
+PASS knockback completes without locking attack or movement
+PASS movement recovers after knockback
+PASS death immediately closes sword and clears cycle
+PASS death state has priority
+PASS disabling player closes hitboxes
+PASS player can attack again after re-enable
+PASS directional attack state down
+PASS directional attack flip down
+PASS directional attack state up
+PASS directional attack flip up
+PASS directional attack state right
+PASS directional attack flip right
+PASS directional attack state left
+PASS directional attack flip left
+PASS returns to previous Idle tag
+PASS idle breathing still renders
+PASS level restart starts player with six hearts
+PASS boss final barrier reference resolves in Play Mode
+PASS boss gate physical obstacle preserved
+PASS gold key exists
+PASS actual gold-key trigger still collects key
+PASS physical contact opens boss gate and consumes key
+PASS arena entry activates final barrier
+PASS defeating scene boss still releases final barrier
+RESULT PASS

@@ -27,7 +27,7 @@ Transform:
   m_GameObject: {fileID: 500064032502970821}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -62,10 +62,10 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.15, y: 0}
+  m_Offset: {x: 0.65, y: 0.1}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -76,7 +76,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.7, y: 1.2}
+  m_Size: {x: 1.3, y: 1.35}
   m_EdgeRadius: 0
 --- !u!114 &6298619347962054214
 MonoBehaviour:
@@ -91,7 +91,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _swordDamage: 1
-  knockbackForce: 4000
+  knockbackForce: 600
   swordCollider: {fileID: 6868671969119973693}
 --- !u!1 &2762425813062409098
 GameObject:
@@ -120,7 +120,7 @@ Transform:
   m_GameObject: {fileID: 2762425813062409098}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1, y: 1, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -155,10 +155,10 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.946628, y: 0}
+  m_Offset: {x: 0, y: 0.75}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -169,7 +169,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.4738677, y: 0.69926274}
+  m_Size: {x: 1.35, y: 1.3}
   m_EdgeRadius: 0
 --- !u!114 &1304506751284125997
 MonoBehaviour:
@@ -184,7 +184,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _swordDamage: 1
-  knockbackForce: 4000
+  knockbackForce: 600
   swordCollider: {fileID: 692903050319142165}
 --- !u!1 &5459671755627316376
 GameObject:
@@ -213,7 +213,7 @@ Transform:
   m_GameObject: {fileID: 5459671755627316376}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.8, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -248,10 +248,10 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.15, y: 0}
+  m_Offset: {x: -0.65, y: 0.1}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -262,7 +262,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.7, y: 1.2}
+  m_Size: {x: 1.3, y: 1.35}
   m_EdgeRadius: 0
 --- !u!114 &2832463265652650525
 MonoBehaviour:
@@ -277,7 +277,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _swordDamage: 1
-  knockbackForce: 4000
+  knockbackForce: 600
   swordCollider: {fileID: 8917339026792385021}
 --- !u!1 &7080989771032980918
 GameObject:
@@ -294,6 +294,8 @@ GameObject:
   - component: {fileID: 2583255201138498375}
   - component: {fileID: 7315972537410374976}
   - component: {fileID: 4173220266989381025}
+  - component: {fileID: 8900000000000000001}
+  - component: {fileID: 8900000000000000002}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -340,7 +342,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 2d0e1dbb9c164c09a240b92744daf739, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -384,8 +386,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d853b5e04527a6a44a45cf0b009b62eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _playerSpeed: 6
-  _playerRunSpeed: 10
+  _playerSpeed: 3.5
+  _playerRunSpeed: 5.25
+  attackDuration: 0.5
+  hitWindowStart: 0.1
+  hitWindowEnd: 0.3
+  inputBuffer: 0.15
+  attackMovement: 0.35
+  attackReach: 1.3
+  attackWidth: 1.35
+  attackCenter: {x: 0, y: 0.1}
+  swordRight: {fileID: 6298619347962054214}
+  swordUp: {fileID: 1304506751284125997}
+  swordLeft: {fileID: 2832463265652650525}
+  swordDown: {fileID: 8116821449395110344}
 --- !u!50 &6007898160820596754
 Rigidbody2D:
   serializedVersion: 4
@@ -409,7 +423,7 @@ Rigidbody2D:
   m_ExcludeLayers:
     serializedVersion: 2
     m_Bits: 0
-  m_Interpolate: 0
+  m_Interpolate: 1
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 4
@@ -482,6 +496,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MenuRestart: {fileID: 0}
+  hurtInvulnerability: 0.35
+  knockbackDuration: 0.18
+  maxKnockbackImpulse: 12
   vida: 6
   vidaMaxima: 6
   animator: {fileID: 0}
@@ -521,7 +538,7 @@ Transform:
   m_GameObject: {fileID: 7631287659566401965}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1, y: -1, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -556,10 +573,10 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.946628, y: 0.25036865}
+  m_Offset: {x: 0, y: -0.55}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -570,7 +587,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.4738677, y: 0.69926274}
+  m_Size: {x: 1.35, y: 1.3}
   m_EdgeRadius: 0
 --- !u!114 &8116821449395110344
 MonoBehaviour:
@@ -585,5 +602,34 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _swordDamage: 1
-  knockbackForce: 4000
+  knockbackForce: 600
   swordCollider: {fileID: 3360587897471126267}
+--- !u!114 &8900000000000000001
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7080989771032980918}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6526e4d97b34bffbc0e94cdf356efee, type: 3}
+  m_Name:
+  m_EditorClassIdentifier: Assembly-CSharp::IdleSpriteMotion
+  period: 1.8
+  verticalStretch: 0.025
+  horizontalSquash: 0
+--- !u!114 &8900000000000000002
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7080989771032980918}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e155d566a08414e82740e791567b7b5, type: 3}
+  m_Name:
+  m_EditorClassIdentifier: Assembly-CSharp::CadencedMovement2D
+  accelerationTime: .12
+  brakingTime: .08

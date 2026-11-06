@@ -14,6 +14,9 @@ GameObject:
   - component: {fileID: 4325117555073019182}
   - component: {fileID: 576124613679706211}
   - component: {fileID: 3717222399970588370}
+  - component: {fileID: 8900000000000000001}
+  - component: {fileID: 8900000000000000002}
+  - component: {fileID: 8900000000000000003}
   m_Layer: 0
   m_Name: Esqueleto
   m_TagString: Enemy
@@ -57,7 +60,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 2d0e1dbb9c164c09a240b92744daf739, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -133,7 +136,7 @@ Rigidbody2D:
   m_ExcludeLayers:
     serializedVersion: 2
     m_Bits: 0
-  m_Interpolate: 0
+  m_Interpolate: 1
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 4
@@ -185,11 +188,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 1
-  knockbackForce: 150
+  knockbackForce: 8
   animator: {fileID: 0}
   _health: 4
   _targetable: 1
-  _moveSpeedSkeleton: 4.5
+  _moveSpeedSkeleton: 2.4
   _detectionArea: {fileID: 8475483736438932925}
 --- !u!1 &874309378266299824
 GameObject:
@@ -274,3 +277,52 @@ MonoBehaviour:
   _tagTargetDetection: Player
   parentGameObject: {fileID: 369541423830831935}
   detectedObjs: []
+--- !u!114 &8900000000000000001
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 369541423830831935}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6526e4d97b34bffbc0e94cdf356efee, type: 3}
+  m_Name:
+  m_EditorClassIdentifier: Assembly-CSharp::IdleSpriteMotion
+  period: 2.2
+  verticalStretch: 0.018
+  horizontalSquash: 0
+--- !u!114 &8900000000000000002
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 369541423830831935}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e155d566a08414e82740e791567b7b5, type: 3}
+  m_Name:
+  m_EditorClassIdentifier: Assembly-CSharp::CadencedMovement2D
+  accelerationTime: .18
+  brakingTime: .10
+--- !u!114 &8900000000000000003
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 369541423830831935}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33bfec2a85eb4d3699f4ac3c2576bf5d, type: 3}
+  m_Name:
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyMeleeAttack
+  windup: 0.6
+  activeWindow: 0.18
+  recovery: 0.5
+  cooldown: 0.75
+  reach: 0.6
+  arcAngle: 110
+  telegraphMaterial: {fileID: 2100000, guid: f6b1d0c22d964369be14f6687660f673, type: 2}
+  squash: 0
