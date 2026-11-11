@@ -1,39 +1,32 @@
-using System.Collections;
-using System.Collections.Generic;
-using TMPro;
+using MysticWoods.UI;
 using UnityEngine;
 
 public class KeysManager : MonoBehaviour
 {
-    private TMP_Text numeroChavesPrata;
     public int chavesPrata = 0;
-    private TMP_Text numeroChavesOuro;
     public int chavesOuro = 0;
+    [SerializeField] private GameplayNotice notices;
 
     public void EncontrarChavePrata()
     {
         chavesPrata++;
-        numeroChavesPrata = GameObject.Find("chavesPrata").GetComponent<TMP_Text>();
-        numeroChavesPrata.text = chavesPrata.ToString();
+        Notify("Chave de prata coletada!");
     }
-    public void UsarChavePrata()
-    {
-        chavesPrata--;
-        numeroChavesPrata = GameObject.Find("chavesPrata").GetComponent<TMP_Text>();
-        numeroChavesPrata.text = chavesPrata.ToString();
-    }
+
+    public void UsarChavePrata() => chavesPrata = Mathf.Max(0, chavesPrata - 1);
 
     public void EncontrarChaveOuro()
     {
         chavesOuro++;
-        numeroChavesOuro = GameObject.Find("chavesOuro").GetComponent<TMP_Text>();
-        numeroChavesOuro.text = chavesOuro.ToString();
-    }
-    public void UsarChaveOuro()
-    {
-        chavesOuro--;
-        numeroChavesOuro = GameObject.Find("chavesOuro").GetComponent<TMP_Text>();
-        numeroChavesOuro.text = chavesOuro.ToString();
+        Notify("Chave dourada coletada! O portão pode ser aberto.");
     }
 
+    public void UsarChaveOuro() => chavesOuro = Mathf.Max(0, chavesOuro - 1);
+    public void AvisarPortaoTrancado() => Notify("Portão trancado. Encontre a chave dourada para entrar.");
+
+    private void Notify(string message)
+    {
+        if (notices == null) notices = FindAnyObjectByType<GameplayNotice>();
+        if (notices != null) notices.Show(message);
+    }
 }
