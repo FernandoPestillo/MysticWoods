@@ -18,7 +18,7 @@ MysticWoods/
 ## Requisitos
 
 - Unity 6000.6.7f1
-- Universal Render Pipeline 17.6.0
+- Universal Render Pipeline 17.6.0 (Renderer 2D, ativo desde a reestruturação)
 - Input System 1.20.1
 - Cinemachine 6.6.0
 - TextMesh Pro incluido no Unity UI (UGUI) 2.6.0
@@ -43,14 +43,16 @@ As cenas configuradas para build ficam em `Assets/Scenes`:
 ## Controles
 
 - Movimento: `WASD` ou setas
-- Correr: `Left Shift`
-- Atacar: `Space` ou clique esquerdo do mouse
+- Correr: `Shift`
+- Atacar (combo de três golpes): `Space`, `J` ou clique esquerdo do mouse
+- Esquivar (invulnerável durante o rolamento): `K`, `Ctrl` esquerdo ou clique direito do mouse
+- Controle (gamepad): analógico esquerdo, gatilho esquerdo para correr, botão oeste ataca, botão leste esquiva
 
 O projeto usa apenas Input System Package (New). Para jogar no editor, abra somente `Assets/Scenes/TelaInicial.unity`, pressione Play e escolha Jogar. A partida começa imediatamente com seis corações, usando as configurações do antigo modo normal. Não há seleção de dificuldade.
 
 ## Desenvolvimento
 
-Scripts principais ficam em `Assets/Scripts`. O projeto inclui controles de player, combate, inimigos, chefe, menus, sistema de vida, chaves e portas.
+O jogo usa três montagens próprias em `Assets/Gameplay`: `MysticWoods.Player` (personagem), `MysticWoods.Combat` (vida, dano e feedback) e `MysticWoods.Enemies` (IA). `Assets/Scripts` mantém menus, chaves, portões e ambiente.
 
 Antes de commitar alteracoes, confirme que a Unity gerou/atualizou os arquivos `.meta` correspondentes aos assets modificados.
 
@@ -71,3 +73,7 @@ A adaptação para High-Detail Pixel Art, os atlas, a integração e as capturas
 ## Mapa High-Detail Pixel Art
 
 A floresta reconstruída, os assets, os prefabs editáveis, as capturas e os testes estão em [Documentation/Map](Documentation/Map/README.md).
+
+## Reestruturação gráfica, de combate e da IA
+
+Pipeline URP 2D com iluminação e pós-processamento, combate com combo, esquiva e feedback de impacto, e IA com percepção, coordenação de ataques e chefe em fases. Consulte [Documentation/Restructure](Documentation/Restructure/README.md).

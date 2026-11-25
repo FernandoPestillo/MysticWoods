@@ -25,22 +25,27 @@ namespace MysticWoods.Tests.Player
         {
             var prefab=AssetDatabase.LoadAssetAtPath<GameObject>(PlayerFoundationBuilder.PrefabPath);
             Assert.That(prefab, Is.Not.Null);
+            var allowed=new[]{typeof(PlayerMovement).Assembly.GetName().Name,"MysticWoods.Combat","Unity.RenderPipelines.Universal.2D.Runtime"};
             foreach(var behaviour in prefab.GetComponentsInChildren<MonoBehaviour>(true))
-                Assert.That(behaviour.GetType().Assembly, Is.EqualTo(typeof(PlayerMovement).Assembly));
+                Assert.That(allowed, Does.Contain(behaviour.GetType().Assembly.GetName().Name), behaviour.GetType().FullName);
+            Assert.That(prefab.CompareTag("Player"), Is.True);
             Assert.That(prefab.GetComponentsInChildren<Collider2D>(true).Length, Is.EqualTo(1));
             Assert.That(prefab.GetComponent<CapsuleCollider2D>().size, Is.EqualTo(new Vector2(.55f,.30f)));
             Assert.That(prefab.GetComponent<Rigidbody2D>().gravityScale, Is.Zero);
             Assert.That(prefab.GetComponent<Rigidbody2D>().interpolation, Is.EqualTo(RigidbodyInterpolation2D.Interpolate));
             Assert.That(prefab.GetComponent<Rigidbody2D>().collisionDetectionMode, Is.EqualTo(CollisionDetectionMode2D.Continuous));
+            Assert.That(prefab.GetComponent<PlayerCombat>(), Is.Not.Null);
+            Assert.That(prefab.GetComponent<MysticWoods.Gameplay.Combat.Health>(), Is.Not.Null);
         }
         [Test]
-        public void InputContainsOnlyMovementAndRunWithBothKeyboardLayouts()
+        public void InputContainsMovementRunAttackAndDodge()
         {
             var input=AssetDatabase.LoadAssetAtPath<InputActionAsset>(PlayerFoundationBuilder.InputPath);
-            Assert.That(input.actionMaps.Single().actions.Select(x=>x.name), Is.EquivalentTo(new[]{"Move","Run"}));
+            Assert.That(input.actionMaps.Single().actions.Select(x=>x.name), Is.EquivalentTo(new[]{"Move","Run","Attack","Dodge"}));
             var paths=input.FindAction("Player/Move").bindings.Select(x=>x.path).ToArray();
             Assert.That(paths, Does.Contain("<Keyboard>/w"));Assert.That(paths,Does.Contain("<Keyboard>/upArrow"));
-            Assert.That(input.FindAction("Player/Run").bindings.Count, Is.EqualTo(2));
+            Assert.That(input.FindAction("Player/Attack").bindings.Select(x=>x.path), Does.Contain("<Keyboard>/space").And.Contain("<Mouse>/leftButton"));
+            Assert.That(input.FindAction("Player/Dodge").bindings.Select(x=>x.path), Does.Contain("<Keyboard>/k").And.Contain("<Mouse>/rightButton"));
         }
         [Test]
         public void ConfigGuardsInvalidValuesWithoutChangingAsset()
@@ -69,24 +74,28 @@ namespace MysticWoods.Tests.Player
             => Assert.That(PlayerDirection.Resolve(new Vector2(x,y),previous,.03f),Is.EqualTo(expected));
 
         [Test]
-        public void AnimatorContainsEightRealStatesAndOnlyPresentationParameter()
+        public void AnimatorContainsDirectionalStatesAndOnlyPresentationParameter()
         {
             var controller=AssetDatabase.LoadAssetAtPath<AnimatorController>(PlayerFoundationBuilder.ControllerPath);
             Assert.That(controller.parameters.Select(x=>x.name),Is.EqualTo(new[]{PlayerAnimationController.PlaybackRateParameter}));
             var states=controller.layers[0].stateMachine.states.Select(x=>x.state).ToArray();
-            Assert.That(states.Length,Is.EqualTo(8));Assert.That(states.All(x=>x.motion!=null && !x.writeDefaultValues && x.transitions.Length==0),Is.True);
+            Assert.That(states.Select(x=>x.name),Is.EquivalentTo(new[]{"Idle_Down","Idle_Right","Idle_Up","Idle_Left","Walk_Down","Walk_Right","Walk_Up","Walk_Left",
+                "Attack_Down","Attack_Right","Attack_Up","Attack_Left","Death"}));
+            Assert.That(states.All(x=>x.motion!=null && !x.writeDefaultValues && x.transitions.Length==0),Is.True);
             Assert.That(controller.layers[0].stateMachine.defaultState.name,Is.EqualTo("Idle_Down"));
             foreach(var state in states)
             {
                 var clip=(AnimationClip)state.motion;
-                Assert.That(AnimationUtility.GetAnimationClipSettings(clip).loopTime,Is.True);
+                bool locomotion=state.name.StartsWith("Idle")||state.name.StartsWith("Walk");
+                Assert.That(AnimationUtility.GetAnimationClipSettings(clip).loopTime,Is.EqualTo(locomotion),state.name);
                 foreach(var b in AnimationUtility.GetCurveBindings(clip))
                 {
                     Assert.That(b.path,Is.EqualTo("Sprite"));Assert.That(b.propertyName,Does.StartWith("m_LocalPosition."));
                 }
                 Assert.That(AnimationUtility.GetObjectReferenceCurveBindings(clip).Single().path,Is.EqualTo("Sprite"));
                 Assert.That(clip.events,Is.Empty);
-                Assert.That(clip.length,Is.EqualTo(state.name.StartsWith("Walk")?.75f:1.8f).Within(.001f));
+                float expected=state.name.StartsWith("Walk")?.75f:state.name.StartsWith("Idle")?1.8f:state.name=="Death"?.375f:PlayerAnimationController.AttackClipLength;
+                Assert.That(clip.length,Is.EqualTo(expected).Within(.002f),state.name);
             }
         }
         [Test]
@@ -99,7 +108,7 @@ namespace MysticWoods.Tests.Player
             {
                 var controller=AssetDatabase.LoadAssetAtPath<AnimatorController>(PlayerFoundationBuilder.ControllerPath);
                 var visual=player.transform.Find("Visual").gameObject;var originalPosition=player.transform.position;
-                foreach(var clip in controller.animationClips)
+                foreach(var clip in controller.animationClips.Where(c=>c.name.StartsWith("Idle")||c.name.StartsWith("Walk")))
                 {
                     renderer.flipX=clip.name.EndsWith("Left");
                     var keys=AnimationUtility.GetObjectReferenceCurve(clip,AnimationUtility.GetObjectReferenceCurveBindings(clip).Single());

@@ -22,7 +22,7 @@ public class PauseMenu : MonoBehaviour
     {
         if (controller != null) { controller.Resume(); return; }
         if (pauseMenu != null) pauseMenu.SetActive(false);
-        FindAnyObjectByType<PlayerController>()?.SuppressAttackUntilRelease();
+        FindAnyObjectByType<MysticWoods.Gameplay.Player.PlayerController>()?.SuppressActionsUntilRelease();
         Time.timeScale = 1;
     }
     public void VoltarMenu()

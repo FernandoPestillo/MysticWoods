@@ -1,0 +1,5 @@
+{
+  "name": "MysticWoods.Combat.PlayModeTests",
+  "references": ["MysticWoods.Player", "MysticWoods.Combat", "MysticWoods.Enemies", "Unity.InputSystem"],
+  "optionalUnityReferences": ["TestAssemblies"]
+}

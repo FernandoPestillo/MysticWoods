@@ -15,7 +15,7 @@ public class TransparetObject : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (!collision.GetComponent<PlayerController>() || !occupants.Add(collision)) return;
+        if (!collision.GetComponentInParent<MysticWoods.Gameplay.Player.PlayerController>() || !occupants.Add(collision)) return;
         FadeTo(_transparencyValue);
     }
 

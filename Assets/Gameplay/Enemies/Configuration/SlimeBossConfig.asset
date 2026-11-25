@@ -1,0 +1,129 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b0ac4b12f06e46c0b85fde38c671f9e, type: 3}
+  m_Name: SlimeBossConfig
+  m_EditorClassIdentifier: MysticWoods.Enemies::MysticWoods.Gameplay.Enemies.EnemyConfig
+  maxHealth: 24
+  poise: 8
+  staggerDuration: 0.6
+  knockbackResistance: 0.85
+  invulnerabilityAfterHit: 0.05
+  wanderSpeed: 0.6
+  chaseSpeed: 1.7
+  acceleration: 10
+  hopPeriod: 0.9
+  wanderRadius: 0
+  wanderPause: 2
+  sightRadius: 9
+  pursuitRadius: 22
+  hearingMultiplier: 1
+  reactionTime: 0.8
+  memory: 6
+  alertAllies: 0
+  leashRadius: 30
+  engageDistance: 2
+  strafeAmount: 0
+  retreatOnHit: 0
+  retreatTime: 0.45
+  ignoresAttackSlots: 1
+  separation: 1.4
+  revives: 0
+  reviveDelay: 2.5
+  reviveHealth: 0.5
+  hitFlash: {r: 1, g: 1, b: 1, a: 0.8}
+  deathTint: {r: 0.55, g: 1, b: 0.45, a: 1}
+  attacks:
+  - name: Esmagar
+    kind: 0
+    minPhase: 0
+    weight: 1
+    minRange: 0
+    maxRange: 0.9
+    windup: 0.8
+    active: 0.22
+    recovery: 0.65
+    cooldown: 1
+    reach: 0.8
+    arc: 120
+    speed: 7
+    count: 3
+    spread: 40
+    damage: 1
+    knockback: 10
+    heavy: 1
+    superArmor: 1
+  - name: Salto Esmagador
+    kind: 2
+    minPhase: 0
+    weight: 1.3
+    minRange: 1.5
+    maxRange: 7
+    windup: 0.75
+    active: 0.55
+    recovery: 0.9
+    cooldown: 4.5
+    reach: 1.9
+    arc: 100
+    speed: 7
+    count: 3
+    spread: 40
+    damage: 1
+    knockback: 11
+    heavy: 1
+    superArmor: 1
+  - name: Cuspe Acido
+    kind: 3
+    minPhase: 2
+    weight: 1
+    minRange: 2
+    maxRange: 8
+    windup: 0.55
+    active: 0.1
+    recovery: 0.5
+    cooldown: 3.2
+    reach: 0.22
+    arc: 100
+    speed: 5.5
+    count: 5
+    spread: 60
+    damage: 1
+    knockback: 5
+    heavy: 0
+    superArmor: 1
+  - name: Chamado
+    kind: 4
+    minPhase: 2
+    weight: 0.8
+    minRange: 0
+    maxRange: 20
+    windup: 0.9
+    active: 0.2
+    recovery: 0.6
+    cooldown: 11
+    reach: 0.45
+    arc: 100
+    speed: 7
+    count: 2
+    spread: 40
+    damage: 1
+    knockback: 6
+    heavy: 0
+    superArmor: 1
+  phaseThresholds:
+  - 0.66
+  - 0.33
+  phaseTransitionTime: 1.4
+  phaseSpeedUp: 1.18
+  summonPrefab: {fileID: 2578159539417438268, guid: d39ec628052dcc6408d764d2c57484d0, type: 3}
+  maxSummons: 3
+  projectilePrefab: {fileID: 8571485890992182827, guid: 614cdb3eb052b42fb990e39b72aac995, type: 3}
+  phaseShockwave: 3.4

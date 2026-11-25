@@ -1,8 +1,11 @@
+using MysticWoods.Gameplay.Combat;
 using TMPro;
 using UnityEngine;
 
 namespace MysticWoods.UI
 {
+    using PlayerController = MysticWoods.Gameplay.Player.PlayerController;
+
     public sealed class GameplayNotice : MonoBehaviour
     {
         [SerializeField] private CanvasGroup panel;
@@ -10,7 +13,7 @@ namespace MysticWoods.UI
         [SerializeField, Min(.1f)] private float displayDuration = 3.5f;
         [SerializeField, Min(.01f)] private float fadeDuration = .2f;
         private GameMenuController menus;
-        private HeartSystem heart;
+        private Health heart;
         private float remaining;
         private float opacity;
 
@@ -18,14 +21,14 @@ namespace MysticWoods.UI
         {
             menus = FindAnyObjectByType<GameMenuController>();
             var player = FindAnyObjectByType<PlayerController>();
-            if (player != null) heart = player.GetComponent<HeartSystem>();
+            if (player != null) heart = player.GetComponent<Health>();
             panel.blocksRaycasts = panel.interactable = false;
             Clear();
         }
 
         public void Show(string message)
         {
-            if (Time.timeScale <= 0f || (heart != null && heart.Health <= 0)) return;
+            if (Time.timeScale <= 0f || (heart != null && heart.IsDead)) return;
             // Repeated contact must not keep restarting the same notice.
             if (remaining > 0f && messageLabel.text == message) return;
             messageLabel.text = message;
@@ -34,7 +37,7 @@ namespace MysticWoods.UI
 
         private void Update()
         {
-            if (heart != null && heart.Health <= 0) { Clear(); return; }
+            if (heart != null && heart.IsDead) { Clear(); return; }
             if (Time.timeScale <= 0f || (menus != null && menus.State != GameMenuController.MenuState.Playing))
             {
                 panel.alpha = 0f;

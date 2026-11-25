@@ -1,4 +1,5 @@
 using System.Collections;
+using MysticWoods.Gameplay.Combat;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.InputSystem;
@@ -7,6 +8,8 @@ using UnityEngine.UI;
 
 namespace MysticWoods.UI
 {
+    using PlayerController = MysticWoods.Gameplay.Player.PlayerController;
+
     public sealed class GameMenuController : MonoBehaviour
     {
         public enum MenuState { Playing, Paused, Settings, Commands, Dying, GameOver, Transitioning }
@@ -24,7 +27,7 @@ namespace MysticWoods.UI
         [SerializeField] private string levelScene = "FaseMysticWoods";
         [SerializeField] private string mainMenuScene = "TelaInicial";
         private PlayerController player;
-        private HeartSystem heart;
+        private Health heart;
         private Coroutine selection;
         private Coroutine deathRoutine;
         public MenuState State { get; private set; }
@@ -38,8 +41,8 @@ namespace MysticWoods.UI
             Time.timeScale = 1;
             MainMenuPreferences.LoadAndApply();
             player = FindAnyObjectByType<PlayerController>();
-            heart = player != null ? player.GetComponent<HeartSystem>() : null;
-            if (heart != null) heart.Died += BeginDying;
+            heart = player != null ? player.GetComponent<Health>() : null;
+            if (player != null) player.Died += BeginDying;
             settings.Closed += SettingsClosed;
             commands.Closed += CommandsClosed;
             HidePanels();
@@ -60,7 +63,8 @@ namespace MysticWoods.UI
 
         public void Pause()
         {
-            if (State != MenuState.Playing || (heart != null && heart.Health <= 0)) return;
+            HitStop.Cancel();
+            if (State != MenuState.Playing || (heart != null && heart.IsDead)) return;
             State = MenuState.Paused;
             Time.timeScale = 0;
             overlay.SetActive(true);
@@ -75,7 +79,7 @@ namespace MysticWoods.UI
             HidePanels();
             overlay.SetActive(false);
             ClearSelection();
-            if (player != null) player.SuppressAttackUntilRelease();
+            if (player != null) player.SuppressActionsUntilRelease();
             Time.timeScale = 1;
         }
 
@@ -153,7 +157,7 @@ namespace MysticWoods.UI
             deathRoutine = null;
             ClearSelection();
             settings.Cancel();
-            if (player != null) player.SuppressAttackUntilRelease();
+            if (player != null) player.SuppressActionsUntilRelease();
             Time.timeScale = 1;
             SceneManager.LoadScene(scene);
         }
@@ -189,7 +193,7 @@ namespace MysticWoods.UI
 
         private void OnDestroy()
         {
-            if (heart != null) heart.Died -= BeginDying;
+            if (player != null) player.Died -= BeginDying;
             if (settings != null) settings.Closed -= SettingsClosed;
             if (commands != null) commands.Closed -= CommandsClosed;
             if (State != MenuState.Playing) Time.timeScale = 1;

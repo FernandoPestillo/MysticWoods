@@ -1,0 +1,89 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b0ac4b12f06e46c0b85fde38c671f9e, type: 3}
+  m_Name: SlimeConfig
+  m_EditorClassIdentifier: MysticWoods.Enemies::MysticWoods.Gameplay.Enemies.EnemyConfig
+  maxHealth: 3
+  poise: 0
+  staggerDuration: 0.4
+  knockbackResistance: 0
+  invulnerabilityAfterHit: 0.08
+  wanderSpeed: 0.8
+  chaseSpeed: 2.1
+  acceleration: 16
+  hopPeriod: 0.55
+  wanderRadius: 2.2
+  wanderPause: 1.6
+  sightRadius: 4.5
+  pursuitRadius: 7.5
+  hearingMultiplier: 1
+  reactionTime: 0.5
+  memory: 2.5
+  alertAllies: 4
+  leashRadius: 10
+  engageDistance: 1.1
+  strafeAmount: 0.5
+  retreatOnHit: 0
+  retreatTime: 0.45
+  ignoresAttackSlots: 0
+  separation: 0.6
+  revives: 0
+  reviveDelay: 2.5
+  reviveHealth: 0.5
+  hitFlash: {r: 1, g: 1, b: 1, a: 0.95}
+  deathTint: {r: 0.55, g: 1, b: 0.5, a: 1}
+  attacks:
+  - name: Bote
+    kind: 0
+    minPhase: 0
+    weight: 1
+    minRange: 0
+    maxRange: 0.45
+    windup: 0.5
+    active: 0.16
+    recovery: 0.4
+    cooldown: 0.65
+    reach: 0.45
+    arc: 100
+    speed: 7
+    count: 3
+    spread: 40
+    damage: 1
+    knockback: 6
+    heavy: 0
+    superArmor: 0
+  - name: Salto
+    kind: 1
+    minPhase: 0
+    weight: 1.2
+    minRange: 0.8
+    maxRange: 2.4
+    windup: 0.65
+    active: 0.3
+    recovery: 0.6
+    cooldown: 2.6
+    reach: 0.2
+    arc: 100
+    speed: 6.5
+    count: 3
+    spread: 40
+    damage: 1
+    knockback: 7
+    heavy: 0
+    superArmor: 0
+  phaseThresholds: []
+  phaseTransitionTime: 1.4
+  phaseSpeedUp: 1.18
+  summonPrefab: {fileID: 0}
+  maxSummons: 3
+  projectilePrefab: {fileID: 0}
+  phaseShockwave: 3.2

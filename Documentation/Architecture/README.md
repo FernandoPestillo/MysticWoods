@@ -111,7 +111,7 @@ Veja [o diagnóstico](Diagnostico.md), [os resultados e limites](Validation.md) 
 
 1. A qualidade anatômica e as pequenas diferenças de desenho internas dos quadros continuam sendo características da arte atual. O alinhamento da base foi corrigido; o atlas não foi redesenhado. Não há promessa de um novo ciclo artístico.
 2. Validação realizada no Editor macOS com Unity 6000.6.7f1. Não foi produzido um build Web/desktop nesta etapa, nem feito teste manual prolongado em navegadores, controles ou dispositivos móveis. As ações implementadas são de teclado.
-3. A integração com a fase, o HeartSystem, os menus de morte/pausa e os inimigos ainda não foi migrada. Permanecem funcionais com o personagem anterior e não são dependências do sandbox.
+3. ~~A integração com a fase, o HeartSystem, os menus de morte/pausa e os inimigos ainda não foi migrada.~~ Concluída na [reestruturação de 25/11/2026](../Restructure/README.md): a fase usa esta base, com combate, vida e HUD próprios.
 4. A lista de build possui um caminho desabilitado antigo para Telarestart.unity. A configuração gráfica global aponta um GUID de pipeline que não foi localizado nos recursos; a execução de teste confirmou o pipeline Built-in. Nenhuma dessas configurações foi alterada nesta entrega. O material do sandbox foi ajustado ao ambiente efetivo, com um teste visual para erro de shader.
 5. Os testes automatizados e as capturas verificam estados, física, referências, continuidade e alinhamento. A aprovação final do estilo e da sensação dos passos continua sendo uma avaliação humana.
 

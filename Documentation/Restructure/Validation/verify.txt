@@ -1,0 +1,11 @@
+RESULT PASS
+ok   Assets/Gameplay/Player/Sandbox/PlayerSandbox.unity: objects=50 missingScripts=0 errorShaders=0 builtinSprite=0
+ok   Assets/Scenes/FaseMysticWoods.unity: objects=757 missingScripts=0 errorShaders=0 builtinSprite=0
+ok   Assets/Scenes/TelaFinal.unity: objects=33 missingScripts=0 errorShaders=0 builtinSprite=0
+ok   Assets/Scenes/TelaInicial.unity: objects=174 missingScripts=0 errorShaders=0 builtinSprite=0
+ok   shader Mystic Woods/Attack Telegraph
+ok   shader Mystic Woods/Effect Sprite
+ok   shader Mystic Woods/Forest Ground
+ok   shader Mystic Woods/Idle Sprite
+ok   shader Mystic Woods/Player Sandbox Solid
+pipeline=MysticWoods-URP

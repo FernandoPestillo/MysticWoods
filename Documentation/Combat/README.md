@@ -1,3 +1,5 @@
+> **Histórico.** Este documento descreve o combate anterior à [reestruturação de 25/11/2026](../Restructure/README.md). Os scripts citados aqui (`PlayerController` legado, `SwordHitbox`, `EnemyMeleeAttack`, `CadencedMovement2D`…) foram substituídos e os harnesses desta pasta não compilam mais no projeto atual.
+
 # Cadência de movimento e combate
 
 O jogador anda a 3,5 u/s e corre a 5,25 u/s. Slime, esqueleto e chefe se movem a 2,0, 2,4 e 1,7 u/s. `CadencedMovement2D` suaviza o movimento em FixedUpdate, preserva impulsos de knockback e controla somente o multiplicador `LocomotionRate` do estado de caminhada. A aceleração/frenagem usa 0,12/0,08 s no jogador e 0,18/0,10 s nos inimigos; os Rigidbody2D usam interpolação.

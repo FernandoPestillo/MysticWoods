@@ -1,0 +1,6 @@
+{
+  "name": "MysticWoods.Enemies",
+  "rootNamespace": "MysticWoods.Gameplay.Enemies",
+  "references": ["MysticWoods.Combat"],
+  "autoReferenced": true
+}

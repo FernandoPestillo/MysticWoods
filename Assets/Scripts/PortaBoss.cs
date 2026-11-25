@@ -40,14 +40,14 @@ public class PortaBoss : MonoBehaviour
             if (arenaSealVisuals[i] != null) sealWasEnabled[i] = arenaSealVisuals[i].enabled;
         if (leftDoor != null) leftScale = leftDoor.localScale;
         if (rightDoor != null) rightScale = rightDoor.localScale;
-        var controller = FindAnyObjectByType<PlayerController>();
+        var controller = FindAnyObjectByType<MysticWoods.Gameplay.Player.PlayerController>();
         if (controller != null) player = controller.transform;
         if (KeysManager == null) KeysManager = FindAnyObjectByType<KeysManager>();
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        var controller = collision.collider.GetComponentInParent<PlayerController>();
+        var controller = collision.collider.GetComponentInParent<MysticWoods.Gameplay.Player.PlayerController>();
         if (controller == null || unlocked || Time.timeScale <= 0f) return;
         player = controller.transform;
         if (KeysManager == null) return;

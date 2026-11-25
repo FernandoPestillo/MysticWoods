@@ -3,7 +3,7 @@ using UnityEngine;
 namespace MysticWoods.Gameplay.Player
 {
     public enum PlayerFacing { Down, Right, Up, Left }
-    public enum PlayerMotionState { Idle, Walk }
+    public enum PlayerMotionState { Idle, Walk, Attack, Dodge, Hurt, Dead }
 
     public static class PlayerDirection
     {
@@ -20,5 +20,13 @@ namespace MysticWoods.Gameplay.Player
                 return motion.x > 0 ? PlayerFacing.Right : PlayerFacing.Left;
             return motion.y > 0 ? PlayerFacing.Up : PlayerFacing.Down;
         }
+
+        public static Vector2 ToVector(PlayerFacing facing) => facing switch
+        {
+            PlayerFacing.Right => Vector2.right,
+            PlayerFacing.Up => Vector2.up,
+            PlayerFacing.Left => Vector2.left,
+            _ => Vector2.down
+        };
     }
 }

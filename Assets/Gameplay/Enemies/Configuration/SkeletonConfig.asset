@@ -1,0 +1,89 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b0ac4b12f06e46c0b85fde38c671f9e, type: 3}
+  m_Name: SkeletonConfig
+  m_EditorClassIdentifier: MysticWoods.Enemies::MysticWoods.Gameplay.Enemies.EnemyConfig
+  maxHealth: 4
+  poise: 1.5
+  staggerDuration: 0.5
+  knockbackResistance: 0
+  invulnerabilityAfterHit: 0.08
+  wanderSpeed: 0.9
+  chaseSpeed: 2.4
+  acceleration: 14
+  hopPeriod: 0
+  wanderRadius: 2.5
+  wanderPause: 2
+  sightRadius: 5.5
+  pursuitRadius: 9
+  hearingMultiplier: 1
+  reactionTime: 0.4
+  memory: 3.5
+  alertAllies: 5
+  leashRadius: 13
+  engageDistance: 1.9
+  strafeAmount: 0.8
+  retreatOnHit: 0.35
+  retreatTime: 0.45
+  ignoresAttackSlots: 0
+  separation: 0.8
+  revives: 1
+  reviveDelay: 2.5
+  reviveHealth: 0.5
+  hitFlash: {r: 1, g: 1, b: 1, a: 0.95}
+  deathTint: {r: 0.92, g: 0.88, b: 0.75, a: 1}
+  attacks:
+  - name: Corte
+    kind: 0
+    minPhase: 0
+    weight: 1
+    minRange: 0
+    maxRange: 0.6
+    windup: 0.6
+    active: 0.18
+    recovery: 0.5
+    cooldown: 0.75
+    reach: 0.6
+    arc: 110
+    speed: 7
+    count: 3
+    spread: 40
+    damage: 1
+    knockback: 7
+    heavy: 0
+    superArmor: 0
+  - name: Estocada
+    kind: 1
+    minPhase: 0
+    weight: 0.8
+    minRange: 1
+    maxRange: 2.6
+    windup: 0.7
+    active: 0.22
+    recovery: 0.55
+    cooldown: 3
+    reach: 0.25
+    arc: 100
+    speed: 9
+    count: 3
+    spread: 40
+    damage: 1
+    knockback: 8
+    heavy: 0
+    superArmor: 0
+  phaseThresholds: []
+  phaseTransitionTime: 1.4
+  phaseSpeedUp: 1.18
+  summonPrefab: {fileID: 0}
+  maxSummons: 3
+  projectilePrefab: {fileID: 0}
+  phaseShockwave: 3.2

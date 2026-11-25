@@ -1,0 +1,7 @@
+{
+  "name": "MysticWoods.Combat.EditModeTests",
+  "references": ["MysticWoods.Player", "MysticWoods.Combat", "MysticWoods.Enemies", "Unity.RenderPipelines.Universal.Runtime", "Unity.RenderPipelines.Universal.2D.Runtime",
+    "Unity.RenderPipelines.Core.Runtime", "Unity.Cinemachine"],
+  "includePlatforms": ["Editor"],
+  "optionalUnityReferences": ["TestAssemblies"]
+}

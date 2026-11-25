@@ -55,7 +55,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name:
+  m_Name: 
   m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -192,7 +192,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name:
+  m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 0.84705883, b: 0.41568628, a: 1}
@@ -267,7 +267,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name:
+  m_Name: 
   m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -404,7 +404,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name:
+  m_Name: 
   m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -541,7 +541,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name:
+  m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 0.84705883, b: 0.41568628, a: 1}
@@ -620,7 +620,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name:
+  m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
   m_Color: {r: 0.005, g: 0.025, b: 0.018, a: 0.78}
@@ -695,7 +695,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name:
+  m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
   m_Color: {r: 0.3, g: 0.36, b: 0.2, a: 0.65}
@@ -770,7 +770,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name:
+  m_Name: 
   m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -907,7 +907,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name:
+  m_Name: 
   m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1065,7 +1065,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
-  m_Name:
+  m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.CanvasScaler
   m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
@@ -1088,7 +1088,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
-  m_Name:
+  m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.GraphicRaycaster
   m_IgnoreReversedGraphics: 1
   m_BlockingObjects: 0
@@ -1105,7 +1105,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1c9c6907809e429785a5f6ce3febed35, type: 3}
-  m_Name:
+  m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MysticWoods.UI.GameMenuController
   overlay: {fileID: 5455769048054663384}
   pausePanel: {fileID: 5533634618837685470}
@@ -1117,7 +1117,7 @@ MonoBehaviour:
   settingsButton: {fileID: 4017645117296051002}
   commandsButton: {fileID: 5094995416289269168}
   retryButton: {fileID: 1412486845469371483}
-  deathClip: {fileID: 7400000, guid: 6db7a803c50758948b6ce5dc54adf15a, type: 2}
+  deathClip: {fileID: 7400000, guid: 9be1c57495958413dbdacf2d0bdfba29, type: 2}
   levelScene: FaseMysticWoods
   mainMenuScene: TelaInicial
 --- !u!114 &1647125494145267275
@@ -1130,7 +1130,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2a83e6df8bc9f1d4582b931828c2d672, type: 3}
-  m_Name:
+  m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PauseMenu
   pauseMenu: {fileID: 5533634618837685470}
   restartMenu: {fileID: 1361253847216668866}
@@ -1144,7 +1144,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 91b6ee718626758469185f5749d81be6, type: 3}
-  m_Name:
+  m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RestartMenu
 --- !u!1 &6867157418230993588
 GameObject:
@@ -1201,7 +1201,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name:
+  m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
   m_Color: {r: 0.3, g: 0.36, b: 0.2, a: 0.65}
@@ -1276,7 +1276,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name:
+  m_Name: 
   m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1514,11 +1514,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6727593798493375882, guid: 424deccfa80894397be86deb0cb59e81, type: 3}
       propertyPath: m_Navigation.m_SelectOnUp
-      value:
+      value: 
       objectReference: {fileID: 4017645117296051002}
     - target: {fileID: 6727593798493375882, guid: 424deccfa80894397be86deb0cb59e81, type: 3}
       propertyPath: m_Navigation.m_SelectOnDown
-      value:
+      value: 
       objectReference: {fileID: 4203516220946054404}
     - target: {fileID: 6727593798493375882, guid: 424deccfa80894397be86deb0cb59e81, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
@@ -1526,7 +1526,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6727593798493375882, guid: 424deccfa80894397be86deb0cb59e81, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value:
+      value: 
       objectReference: {fileID: 7954097475741984973}
     - target: {fileID: 6727593798493375882, guid: 424deccfa80894397be86deb0cb59e81, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
@@ -1638,7 +1638,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
-  m_Name:
+  m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Button
 --- !u!224 &8669513292372868118 stripped
 RectTransform:
@@ -1747,11 +1747,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5994291041825399679, guid: 6c8fb1586c19c46f5902885d2bc9bc68, type: 3}
       propertyPath: m_Navigation.m_SelectOnUp
-      value:
+      value: 
       objectReference: {fileID: 4097396955378501649}
     - target: {fileID: 5994291041825399679, guid: 6c8fb1586c19c46f5902885d2bc9bc68, type: 3}
       propertyPath: m_Navigation.m_SelectOnDown
-      value:
+      value: 
       objectReference: {fileID: 4097396955378501649}
     - target: {fileID: 5994291041825399679, guid: 6c8fb1586c19c46f5902885d2bc9bc68, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
@@ -1759,7 +1759,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5994291041825399679, guid: 6c8fb1586c19c46f5902885d2bc9bc68, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value:
+      value: 
       objectReference: {fileID: 7954097475741984973}
     - target: {fileID: 5994291041825399679, guid: 6c8fb1586c19c46f5902885d2bc9bc68, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
@@ -1792,7 +1792,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
-  m_Name:
+  m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Button
 --- !u!1001 &5054122170988342036
 PrefabInstance:
@@ -1905,7 +1905,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1f3753c050ac4adea77e4a4f9cb07628, type: 3}
-  m_Name:
+  m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MysticWoods.UI.MenuCommandsController
 --- !u!1001 &6285491552629699990
 PrefabInstance:
@@ -2155,7 +2155,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3cf2487dd573f4aeb9c6f9d6b8a8448c, type: 3}
-  m_Name:
+  m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MysticWoods.UI.MenuSettingsController
 --- !u!1001 &7314362806727067035
 PrefabInstance:
@@ -2175,11 +2175,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6727593798493375882, guid: 424deccfa80894397be86deb0cb59e81, type: 3}
       propertyPath: m_Navigation.m_SelectOnUp
-      value:
+      value: 
       objectReference: {fileID: 1412486845469371483}
     - target: {fileID: 6727593798493375882, guid: 424deccfa80894397be86deb0cb59e81, type: 3}
       propertyPath: m_Navigation.m_SelectOnDown
-      value:
+      value: 
       objectReference: {fileID: 1412486845469371483}
     - target: {fileID: 6727593798493375882, guid: 424deccfa80894397be86deb0cb59e81, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
@@ -2187,7 +2187,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6727593798493375882, guid: 424deccfa80894397be86deb0cb59e81, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value:
+      value: 
       objectReference: {fileID: 7954097475741984973}
     - target: {fileID: 6727593798493375882, guid: 424deccfa80894397be86deb0cb59e81, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
@@ -2304,7 +2304,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
-  m_Name:
+  m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Button
 --- !u!1001 &7424418529811984526
 PrefabInstance:
@@ -2324,11 +2324,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6727593798493375882, guid: 424deccfa80894397be86deb0cb59e81, type: 3}
       propertyPath: m_Navigation.m_SelectOnUp
-      value:
+      value: 
       objectReference: {fileID: 5094995416289269168}
     - target: {fileID: 6727593798493375882, guid: 424deccfa80894397be86deb0cb59e81, type: 3}
       propertyPath: m_Navigation.m_SelectOnDown
-      value:
+      value: 
       objectReference: {fileID: 2642808981809588614}
     - target: {fileID: 6727593798493375882, guid: 424deccfa80894397be86deb0cb59e81, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
@@ -2336,7 +2336,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6727593798493375882, guid: 424deccfa80894397be86deb0cb59e81, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value:
+      value: 
       objectReference: {fileID: 7954097475741984973}
     - target: {fileID: 6727593798493375882, guid: 424deccfa80894397be86deb0cb59e81, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
@@ -2453,7 +2453,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
-  m_Name:
+  m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Button
 --- !u!1001 &7682221879852142256
 PrefabInstance:
@@ -2473,11 +2473,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6727593798493375882, guid: 424deccfa80894397be86deb0cb59e81, type: 3}
       propertyPath: m_Navigation.m_SelectOnUp
-      value:
+      value: 
       objectReference: {fileID: 2642808981809588614}
     - target: {fileID: 6727593798493375882, guid: 424deccfa80894397be86deb0cb59e81, type: 3}
       propertyPath: m_Navigation.m_SelectOnDown
-      value:
+      value: 
       objectReference: {fileID: 5094995416289269168}
     - target: {fileID: 6727593798493375882, guid: 424deccfa80894397be86deb0cb59e81, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
@@ -2485,7 +2485,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6727593798493375882, guid: 424deccfa80894397be86deb0cb59e81, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value:
+      value: 
       objectReference: {fileID: 7954097475741984973}
     - target: {fileID: 6727593798493375882, guid: 424deccfa80894397be86deb0cb59e81, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
@@ -2602,7 +2602,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
-  m_Name:
+  m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Button
 --- !u!1001 &8611686461616933625
 PrefabInstance:
@@ -2706,11 +2706,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5994291041825399679, guid: 6c8fb1586c19c46f5902885d2bc9bc68, type: 3}
       propertyPath: m_Navigation.m_SelectOnUp
-      value:
+      value: 
       objectReference: {fileID: 4203516220946054404}
     - target: {fileID: 5994291041825399679, guid: 6c8fb1586c19c46f5902885d2bc9bc68, type: 3}
       propertyPath: m_Navigation.m_SelectOnDown
-      value:
+      value: 
       objectReference: {fileID: 4017645117296051002}
     - target: {fileID: 5994291041825399679, guid: 6c8fb1586c19c46f5902885d2bc9bc68, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
@@ -2718,7 +2718,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5994291041825399679, guid: 6c8fb1586c19c46f5902885d2bc9bc68, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value:
+      value: 
       objectReference: {fileID: 7954097475741984973}
     - target: {fileID: 5994291041825399679, guid: 6c8fb1586c19c46f5902885d2bc9bc68, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
@@ -2746,7 +2746,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
-  m_Name:
+  m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Button
 --- !u!224 &3944264140139486375 stripped
 RectTransform:

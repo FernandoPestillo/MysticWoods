@@ -1,6 +1,6 @@
 {
   "name": "MysticWoods.Player",
   "rootNamespace": "MysticWoods.Gameplay.Player",
-  "references": ["Unity.InputSystem"],
+  "references": ["Unity.InputSystem", "MysticWoods.Combat"],
   "autoReferenced": true
 }
