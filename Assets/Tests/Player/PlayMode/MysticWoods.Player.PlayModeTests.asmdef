@@ -1,0 +1,10 @@
+{
+  "name": "MysticWoods.Player.PlayModeTests",
+  "references": [
+    "MysticWoods.Player",
+    "Unity.InputSystem"
+  ],
+  "optionalUnityReferences": [
+    "TestAssemblies"
+  ]
+}

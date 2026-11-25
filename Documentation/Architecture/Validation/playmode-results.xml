@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="10" result="Passed" total="10" passed="10" failed="0" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-11-11 15:53:40Z" end-time="2026-11-11 15:53:46Z" duration="6.0469805">
+  <test-suite type="TestSuite" id="1019" name="MysticWoods" fullname="MysticWoods" runstate="Runnable" testcasecount="10" result="Passed" start-time="2026-11-11 15:53:40Z" end-time="2026-11-11 15:53:46Z" duration="6.046981" total="10" passed="10" failed="0" inconclusive="0" skipped="0" asserts="0">
+    <properties>
+      <property name="platform" value="PlayMode" />
+    </properties>
+    <test-suite type="Assembly" id="1012" name="MysticWoods.Player.PlayModeTests.dll" fullname="/Users/fernandopestillo/Documents/Codex/2026-11-06/e/work/unity-validation/Library/ScriptAssemblies/MysticWoods.Player.PlayModeTests.dll" runstate="Runnable" testcasecount="10" result="Passed" start-time="2026-11-11 15:53:40Z" end-time="2026-11-11 15:53:46Z" duration="6.042189" total="10" passed="10" failed="0" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="14669" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="PlayMode" />
+        <property name="EditorOnly" value="False" />
+      </properties>
+      <test-suite type="TestSuite" id="1013" name="MysticWoods" fullname="MysticWoods" runstate="Runnable" testcasecount="10" result="Passed" start-time="2026-11-11 15:53:40Z" end-time="2026-11-11 15:53:46Z" duration="6.041743" total="10" passed="10" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <test-suite type="TestSuite" id="1014" name="Tests" fullname="MysticWoods.Tests" runstate="Runnable" testcasecount="10" result="Passed" start-time="2026-11-11 15:53:40Z" end-time="2026-11-11 15:53:46Z" duration="6.041430" total="10" passed="10" failed="0" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <test-suite type="TestSuite" id="1015" name="Player" fullname="MysticWoods.Tests.Player" runstate="Runnable" testcasecount="10" result="Passed" start-time="2026-11-11 15:53:40Z" end-time="2026-11-11 15:53:46Z" duration="6.041117" total="10" passed="10" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-suite type="TestFixture" id="1001" name="PlayerFoundationPlayTests" fullname="MysticWoods.Tests.Player.PlayerFoundationPlayTests" classname="MysticWoods.Tests.Player.PlayerFoundationPlayTests" runstate="Runnable" testcasecount="10" result="Passed" start-time="2026-11-11 15:53:40Z" end-time="2026-11-11 15:53:46Z" duration="6.040337" total="10" passed="10" failed="0" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <test-case id="1006" name="ArrowKeysAndRightShiftUseTheSameActions" fullname="MysticWoods.Tests.Player.PlayerFoundationPlayTests.ArrowKeysAndRightShiftUseTheSameActions" methodname="ArrowKeysAndRightShiftUseTheSameActions" classname="MysticWoods.Tests.Player.PlayerFoundationPlayTests" runstate="Runnable" seed="1867207725" result="Passed" start-time="2026-11-11 15:53:40Z" end-time="2026-11-11 15:53:40Z" duration="0.264434" asserts="0">
+                <properties>
+                  <property name="_JOINTYPE" value="UnityCombinatorial" />
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1005" name="DiagonalAndShiftSpeedsAreNormalizedAndAffectOnlyLocomotionRate" fullname="MysticWoods.Tests.Player.PlayerFoundationPlayTests.DiagonalAndShiftSpeedsAreNormalizedAndAffectOnlyLocomotionRate" methodname="DiagonalAndShiftSpeedsAreNormalizedAndAffectOnlyLocomotionRate" classname="MysticWoods.Tests.Player.PlayerFoundationPlayTests" runstate="Runnable" seed="2016130428" result="Passed" start-time="2026-11-11 15:53:40Z" end-time="2026-11-11 15:53:40Z" duration="0.430327" asserts="0">
+                <properties>
+                  <property name="_JOINTYPE" value="UnityCombinatorial" />
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1011" name="FocusLossAndDisableClearMovementWithoutStickingOnReturn" fullname="MysticWoods.Tests.Player.PlayerFoundationPlayTests.FocusLossAndDisableClearMovementWithoutStickingOnReturn" methodname="FocusLossAndDisableClearMovementWithoutStickingOnReturn" classname="MysticWoods.Tests.Player.PlayerFoundationPlayTests" runstate="Runnable" seed="81693818" result="Passed" start-time="2026-11-11 15:53:40Z" end-time="2026-11-11 15:53:41Z" duration="0.732253" asserts="0">
+                <properties>
+                  <property name="_JOINTYPE" value="UnityCombinatorial" />
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1008" name="OppositeAndVerticalDirectionsNeverLeaveAStaleHorizontalFlip" fullname="MysticWoods.Tests.Player.PlayerFoundationPlayTests.OppositeAndVerticalDirectionsNeverLeaveAStaleHorizontalFlip" methodname="OppositeAndVerticalDirectionsNeverLeaveAStaleHorizontalFlip" classname="MysticWoods.Tests.Player.PlayerFoundationPlayTests" runstate="Runnable" seed="815084969" result="Passed" start-time="2026-11-11 15:53:41Z" end-time="2026-11-11 15:53:42Z" duration="0.881191" asserts="0">
+                <properties>
+                  <property name="_JOINTYPE" value="UnityCombinatorial" />
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1010" name="PauseFreezesMotionAndAnimationThenResumes" fullname="MysticWoods.Tests.Player.PlayerFoundationPlayTests.PauseFreezesMotionAndAnimationThenResumes" methodname="PauseFreezesMotionAndAnimationThenResumes" classname="MysticWoods.Tests.Player.PlayerFoundationPlayTests" runstate="Runnable" seed="1221663782" result="Passed" start-time="2026-11-11 15:53:42Z" end-time="2026-11-11 15:53:43Z" duration="0.580651" asserts="0">
+                <properties>
+                  <property name="_JOINTYPE" value="UnityCombinatorial" />
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1002" name="SandboxBootsWithoutLegacySystemsAndIdleDoesNotRestart" fullname="MysticWoods.Tests.Player.PlayerFoundationPlayTests.SandboxBootsWithoutLegacySystemsAndIdleDoesNotRestart" methodname="SandboxBootsWithoutLegacySystemsAndIdleDoesNotRestart" classname="MysticWoods.Tests.Player.PlayerFoundationPlayTests" runstate="Runnable" seed="1867757117" result="Passed" start-time="2026-11-11 15:53:43Z" end-time="2026-11-11 15:53:43Z" duration="0.529960" asserts="0">
+                <properties>
+                  <property name="_JOINTYPE" value="UnityCombinatorial" />
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1003" name="SandboxRendersWithoutErrorMaterials" fullname="MysticWoods.Tests.Player.PlayerFoundationPlayTests.SandboxRendersWithoutErrorMaterials" methodname="SandboxRendersWithoutErrorMaterials" classname="MysticWoods.Tests.Player.PlayerFoundationPlayTests" runstate="Runnable" seed="1035711004" result="Passed" start-time="2026-11-11 15:53:43Z" end-time="2026-11-11 15:53:43Z" duration="0.044480" asserts="0">
+                <properties>
+                  <property name="_JOINTYPE" value="UnityCombinatorial" />
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1009" name="SolidObstacleStopsPhysicsAndPresentation" fullname="MysticWoods.Tests.Player.PlayerFoundationPlayTests.SolidObstacleStopsPhysicsAndPresentation" methodname="SolidObstacleStopsPhysicsAndPresentation" classname="MysticWoods.Tests.Player.PlayerFoundationPlayTests" runstate="Runnable" seed="582898296" result="Passed" start-time="2026-11-11 15:53:43Z" end-time="2026-11-11 15:53:44Z" duration="1.328782" asserts="0">
+                <properties>
+                  <property name="_JOINTYPE" value="UnityCombinatorial" />
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1007" name="WalkAdvancesWithoutRestartAndDirectionKeepsItsCycle" fullname="MysticWoods.Tests.Player.PlayerFoundationPlayTests.WalkAdvancesWithoutRestartAndDirectionKeepsItsCycle" methodname="WalkAdvancesWithoutRestartAndDirectionKeepsItsCycle" classname="MysticWoods.Tests.Player.PlayerFoundationPlayTests" runstate="Runnable" seed="1486529395" result="Passed" start-time="2026-11-11 15:53:44Z" end-time="2026-11-11 15:53:45Z" duration="0.609548" asserts="0">
+                <properties>
+                  <property name="_JOINTYPE" value="UnityCombinatorial" />
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1004" name="WalkingAcceleratesAndBrakesAtConfiguredCadence" fullname="MysticWoods.Tests.Player.PlayerFoundationPlayTests.WalkingAcceleratesAndBrakesAtConfiguredCadence" methodname="WalkingAcceleratesAndBrakesAtConfiguredCadence" classname="MysticWoods.Tests.Player.PlayerFoundationPlayTests" runstate="Runnable" seed="753505978" result="Passed" start-time="2026-11-11 15:53:45Z" end-time="2026-11-11 15:53:46Z" duration="0.629995" asserts="0">
+                <properties>
+                  <property name="_JOINTYPE" value="UnityCombinatorial" />
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+                <output><![CDATA[Saving results to: /Users/fernandopestillo/Library/Application Support/DefaultCompany/MysticWoods/TestResults.xml
+]]></output>
+              </test-case>
+            </test-suite>
+          </test-suite>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

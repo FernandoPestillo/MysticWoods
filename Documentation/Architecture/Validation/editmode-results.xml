@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="17" result="Passed" total="17" passed="17" failed="0" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-11-11 15:52:28Z" end-time="2026-11-11 15:52:28Z" duration="0.0741359">
+  <test-suite type="TestSuite" id="1000" name="MysticWoods" fullname="MysticWoods" runstate="Runnable" testcasecount="17" result="Passed" start-time="2026-11-11 15:52:28Z" end-time="2026-11-11 15:52:28Z" duration="0.074136" total="17" passed="17" failed="0" inconclusive="0" skipped="0" asserts="0">
+    <properties>
+      <property name="platform" value="EditMode" />
+    </properties>
+    <test-suite type="Assembly" id="1020" name="MysticWoods.Player.EditModeTests.dll" fullname="/Users/fernandopestillo/Documents/Codex/2026-11-06/e/work/unity-validation/Library/ScriptAssemblies/MysticWoods.Player.EditModeTests.dll" runstate="Runnable" testcasecount="17" result="Passed" start-time="2026-11-11 15:52:28Z" end-time="2026-11-11 15:52:28Z" duration="0.069739" total="17" passed="17" failed="0" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="14600" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="EditMode" />
+        <property name="EditorOnly" value="True" />
+      </properties>
+      <test-suite type="TestSuite" id="1021" name="MysticWoods" fullname="MysticWoods" runstate="Runnable" testcasecount="17" result="Passed" start-time="2026-11-11 15:52:28Z" end-time="2026-11-11 15:52:28Z" duration="0.069335" total="17" passed="17" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <test-suite type="TestSuite" id="1022" name="Tests" fullname="MysticWoods.Tests" runstate="Runnable" testcasecount="17" result="Passed" start-time="2026-11-11 15:52:28Z" end-time="2026-11-11 15:52:28Z" duration="0.069116" total="17" passed="17" failed="0" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <test-suite type="TestSuite" id="1023" name="Player" fullname="MysticWoods.Tests.Player" runstate="Runnable" testcasecount="17" result="Passed" start-time="2026-11-11 15:52:28Z" end-time="2026-11-11 15:52:28Z" duration="0.068826" total="17" passed="17" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-suite type="TestFixture" id="1001" name="PlayerFoundationAssetTests" fullname="MysticWoods.Tests.Player.PlayerFoundationAssetTests" classname="MysticWoods.Tests.Player.PlayerFoundationAssetTests" runstate="Runnable" testcasecount="17" result="Passed" start-time="2026-11-11 15:52:28Z" end-time="2026-11-11 15:52:28Z" duration="0.068267" total="17" passed="17" failed="0" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <test-case id="1018" name="AnimatorContainsEightRealStatesAndOnlyPresentationParameter" fullname="MysticWoods.Tests.Player.PlayerFoundationAssetTests.AnimatorContainsEightRealStatesAndOnlyPresentationParameter" methodname="AnimatorContainsEightRealStatesAndOnlyPresentationParameter" classname="MysticWoods.Tests.Player.PlayerFoundationAssetTests" runstate="Runnable" seed="1925499228" result="Passed" start-time="2026-11-11 15:52:28Z" end-time="2026-11-11 15:52:28Z" duration="0.012620" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1005" name="ConfigGuardsInvalidValuesWithoutChangingAsset" fullname="MysticWoods.Tests.Player.PlayerFoundationAssetTests.ConfigGuardsInvalidValuesWithoutChangingAsset" methodname="ConfigGuardsInvalidValuesWithoutChangingAsset" classname="MysticWoods.Tests.Player.PlayerFoundationAssetTests" runstate="Runnable" seed="1761259597" result="Passed" start-time="2026-11-11 15:52:28Z" end-time="2026-11-11 15:52:28Z" duration="0.001709" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-suite type="ParameterizedMethod" id="1017" name="DirectionRemainsCardinalAndFollowsMotion" fullname="MysticWoods.Tests.Player.PlayerFoundationAssetTests.DirectionRemainsCardinalAndFollowsMotion" classname="MysticWoods.Tests.Player.PlayerFoundationAssetTests" runstate="Runnable" testcasecount="11" result="Passed" start-time="2026-11-11 15:52:28Z" end-time="2026-11-11 15:52:28Z" duration="0.003025" total="11" passed="11" failed="0" inconclusive="0" skipped="0" asserts="0">
+                <properties />
+                <test-case id="1006" name="DirectionRemainsCardinalAndFollowsMotion(1,0,Down,Right)" fullname="MysticWoods.Tests.Player.PlayerFoundationAssetTests.DirectionRemainsCardinalAndFollowsMotion(1,0,Down,Right)" methodname="DirectionRemainsCardinalAndFollowsMotion" classname="MysticWoods.Tests.Player.PlayerFoundationAssetTests" runstate="Runnable" seed="752798310" result="Passed" start-time="2026-11-11 15:52:28Z" end-time="2026-11-11 15:52:28Z" duration="0.000344" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1007" name="DirectionRemainsCardinalAndFollowsMotion(-1,0,Down,Left)" fullname="MysticWoods.Tests.Player.PlayerFoundationAssetTests.DirectionRemainsCardinalAndFollowsMotion(-1,0,Down,Left)" methodname="DirectionRemainsCardinalAndFollowsMotion" classname="MysticWoods.Tests.Player.PlayerFoundationAssetTests" runstate="Runnable" seed="1685624736" result="Passed" start-time="2026-11-11 15:52:28Z" end-time="2026-11-11 15:52:28Z" duration="0.000076" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1008" name="DirectionRemainsCardinalAndFollowsMotion(0,1,Right,Up)" fullname="MysticWoods.Tests.Player.PlayerFoundationAssetTests.DirectionRemainsCardinalAndFollowsMotion(0,1,Right,Up)" methodname="DirectionRemainsCardinalAndFollowsMotion" classname="MysticWoods.Tests.Player.PlayerFoundationAssetTests" runstate="Runnable" seed="1046728166" result="Passed" start-time="2026-11-11 15:52:28Z" end-time="2026-11-11 15:52:28Z" duration="0.000068" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1009" name="DirectionRemainsCardinalAndFollowsMotion(0,-1,Left,Down)" fullname="MysticWoods.Tests.Player.PlayerFoundationAssetTests.DirectionRemainsCardinalAndFollowsMotion(0,-1,Left,Down)" methodname="DirectionRemainsCardinalAndFollowsMotion" classname="MysticWoods.Tests.Player.PlayerFoundationAssetTests" runstate="Runnable" seed="1291504724" result="Passed" start-time="2026-11-11 15:52:28Z" end-time="2026-11-11 15:52:28Z" duration="0.000065" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1010" name="DirectionRemainsCardinalAndFollowsMotion(0,0,Left,Left)" fullname="MysticWoods.Tests.Player.PlayerFoundationAssetTests.DirectionRemainsCardinalAndFollowsMotion(0,0,Left,Left)" methodname="DirectionRemainsCardinalAndFollowsMotion" classname="MysticWoods.Tests.Player.PlayerFoundationAssetTests" runstate="Runnable" seed="626990167" result="Passed" start-time="2026-11-11 15:52:28Z" end-time="2026-11-11 15:52:28Z" duration="0.000064" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1011" name="DirectionRemainsCardinalAndFollowsMotion(0.02f,0,Down,Right)" fullname="MysticWoods.Tests.Player.PlayerFoundationAssetTests.DirectionRemainsCardinalAndFollowsMotion(0.02f,0,Down,Right)" methodname="DirectionRemainsCardinalAndFollowsMotion" classname="MysticWoods.Tests.Player.PlayerFoundationAssetTests" runstate="Runnable" seed="1018790949" result="Passed" start-time="2026-11-11 15:52:28Z" end-time="2026-11-11 15:52:28Z" duration="0.000075" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1012" name="DirectionRemainsCardinalAndFollowsMotion(-0.02f,0,Up,Left)" fullname="MysticWoods.Tests.Player.PlayerFoundationAssetTests.DirectionRemainsCardinalAndFollowsMotion(-0.02f,0,Up,Left)" methodname="DirectionRemainsCardinalAndFollowsMotion" classname="MysticWoods.Tests.Player.PlayerFoundationAssetTests" runstate="Runnable" seed="28750670" result="Passed" start-time="2026-11-11 15:52:28Z" end-time="2026-11-11 15:52:28Z" duration="0.000062" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1013" name="DirectionRemainsCardinalAndFollowsMotion(1,1,Down,Up)" fullname="MysticWoods.Tests.Player.PlayerFoundationAssetTests.DirectionRemainsCardinalAndFollowsMotion(1,1,Down,Up)" methodname="DirectionRemainsCardinalAndFollowsMotion" classname="MysticWoods.Tests.Player.PlayerFoundationAssetTests" runstate="Runnable" seed="815951782" result="Passed" start-time="2026-11-11 15:52:28Z" end-time="2026-11-11 15:52:28Z" duration="0.000067" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1014" name="DirectionRemainsCardinalAndFollowsMotion(1,1,Left,Right)" fullname="MysticWoods.Tests.Player.PlayerFoundationAssetTests.DirectionRemainsCardinalAndFollowsMotion(1,1,Left,Right)" methodname="DirectionRemainsCardinalAndFollowsMotion" classname="MysticWoods.Tests.Player.PlayerFoundationAssetTests" runstate="Runnable" seed="383172815" result="Passed" start-time="2026-11-11 15:52:28Z" end-time="2026-11-11 15:52:28Z" duration="0.000065" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1015" name="DirectionRemainsCardinalAndFollowsMotion(-1,-1,Up,Down)" fullname="MysticWoods.Tests.Player.PlayerFoundationAssetTests.DirectionRemainsCardinalAndFollowsMotion(-1,-1,Up,Down)" methodname="DirectionRemainsCardinalAndFollowsMotion" classname="MysticWoods.Tests.Player.PlayerFoundationAssetTests" runstate="Runnable" seed="735477975" result="Passed" start-time="2026-11-11 15:52:28Z" end-time="2026-11-11 15:52:28Z" duration="0.000061" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1016" name="DirectionRemainsCardinalAndFollowsMotion(-1,-1,Right,Left)" fullname="MysticWoods.Tests.Player.PlayerFoundationAssetTests.DirectionRemainsCardinalAndFollowsMotion(-1,-1,Right,Left)" methodname="DirectionRemainsCardinalAndFollowsMotion" classname="MysticWoods.Tests.Player.PlayerFoundationAssetTests" runstate="Runnable" seed="1870050589" result="Passed" start-time="2026-11-11 15:52:28Z" end-time="2026-11-11 15:52:28Z" duration="0.000063" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+              </test-suite>
+              <test-case id="1019" name="EveryFrameAlignsItsOpaqueFootprintWithoutTouchingPhysics" fullname="MysticWoods.Tests.Player.PlayerFoundationAssetTests.EveryFrameAlignsItsOpaqueFootprintWithoutTouchingPhysics" methodname="EveryFrameAlignsItsOpaqueFootprintWithoutTouchingPhysics" classname="MysticWoods.Tests.Player.PlayerFoundationAssetTests" runstate="Runnable" seed="202843554" result="Passed" start-time="2026-11-11 15:52:28Z" end-time="2026-11-11 15:52:28Z" duration="0.037611" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1004" name="InputContainsOnlyMovementAndRunWithBothKeyboardLayouts" fullname="MysticWoods.Tests.Player.PlayerFoundationAssetTests.InputContainsOnlyMovementAndRunWithBothKeyboardLayouts" methodname="InputContainsOnlyMovementAndRunWithBothKeyboardLayouts" classname="MysticWoods.Tests.Player.PlayerFoundationAssetTests" runstate="Runnable" seed="390622633" result="Passed" start-time="2026-11-11 15:52:28Z" end-time="2026-11-11 15:52:28Z" duration="0.003188" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1003" name="PrefabContainsOnlyFoundationBehavioursAndFootPhysics" fullname="MysticWoods.Tests.Player.PlayerFoundationAssetTests.PrefabContainsOnlyFoundationBehavioursAndFootPhysics" methodname="PrefabContainsOnlyFoundationBehavioursAndFootPhysics" classname="MysticWoods.Tests.Player.PlayerFoundationAssetTests" runstate="Runnable" seed="433258030" result="Passed" start-time="2026-11-11 15:52:28Z" end-time="2026-11-11 15:52:28Z" duration="0.001949" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1002" name="RuntimeAssemblyHasNoLegacyOrUIReference" fullname="MysticWoods.Tests.Player.PlayerFoundationAssetTests.RuntimeAssemblyHasNoLegacyOrUIReference" methodname="RuntimeAssemblyHasNoLegacyOrUIReference" classname="MysticWoods.Tests.Player.PlayerFoundationAssetTests" runstate="Runnable" seed="1338818834" result="Passed" start-time="2026-11-11 15:52:28Z" end-time="2026-11-11 15:52:28Z" duration="0.000308" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+                <output><![CDATA[Saving results to: /Users/fernandopestillo/Library/Application Support/DefaultCompany/MysticWoods/TestResults.xml
+]]></output>
+              </test-case>
+            </test-suite>
+          </test-suite>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

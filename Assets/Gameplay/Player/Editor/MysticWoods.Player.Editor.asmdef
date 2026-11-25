@@ -1,0 +1,6 @@
+{
+  "name": "MysticWoods.Player.Editor",
+  "rootNamespace": "MysticWoods.Gameplay.Player.Editor",
+  "references": ["MysticWoods.Player", "MysticWoods.Player.Sandbox", "Unity.InputSystem"],
+  "includePlatforms": ["Editor"]
+}

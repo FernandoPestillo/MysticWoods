@@ -1,0 +1,1871 @@
+{
+  "assetCounts": {
+    ".meta": 619,
+    "": 2,
+    ".asset": 173,
+    ".prefab": 47,
+    ".unity": 35,
+    ".ttf": 7,
+    ".jpg": 12,
+    ".png": 57,
+    ".cs": 97,
+    ".pdf": 1,
+    ".txt": 7,
+    ".shader": 21,
+    ".cginc": 4,
+    ".shadergraph": 4,
+    ".hlsl": 1,
+    ".json": 3,
+    ".mat": 23,
+    ".psd": 6,
+    ".TTF": 1,
+    ".TXT": 4,
+    ".rsp": 1,
+    ".asmdef": 1,
+    ".dll": 11,
+    ".xml": 1,
+    ".controller": 4,
+    ".anim": 26
+  },
+  "projectScriptCount": 33,
+  "dependencies": {
+    "RestartMenu": [
+      "GameMenuController"
+    ],
+    "MenuPrincipalManager": [
+      "MainMenuPreferences",
+      "MenuCommandsController",
+      "MenuSettingsController"
+    ],
+    "PlayerController": [
+      "CadencedMovement2D",
+      "HeartSystem",
+      "SwordHitbox"
+    ],
+    "EnemyMeleeAttack": [
+      "CadencedMovement2D",
+      "IDamageable"
+    ],
+    "MenuFinalManager": [
+      "MainMenuPreferences"
+    ],
+    "Sword_attack": [],
+    "SlimeController": [
+      "CadencedMovement2D",
+      "DetectionController",
+      "EnemyMeleeAttack",
+      "IDamageable"
+    ],
+    "EntradaBoss": [],
+    "IdleSpriteMotion": [],
+    "AreaFinal": [],
+    "PauseMenu": [
+      "GameMenuController",
+      "PlayerController"
+    ],
+    "CadencedMovement2D": [],
+    "SwordHitbox": [
+      "IDamageable"
+    ],
+    "SlimeBoss": [
+      "CadencedMovement2D",
+      "DetectionController",
+      "EnemyMeleeAttack",
+      "IDamageable"
+    ],
+    "KeysManager": [
+      "GameplayNotice"
+    ],
+    "HeartSystem": [
+      "CadencedMovement2D",
+      "IDamageable",
+      "PlayerController"
+    ],
+    "TransparetObject": [
+      "PlayerController"
+    ],
+    "DetectionController": [
+      "IDamageable"
+    ],
+    "PortaBoss": [
+      "KeysManager",
+      "PlayerController"
+    ],
+    "SkeletonController": [
+      "CadencedMovement2D",
+      "DetectionController",
+      "EnemyMeleeAttack",
+      "IDamageable"
+    ],
+    "ChestController": [
+      "KeysManager"
+    ],
+    "KeyController": [
+      "KeysManager"
+    ],
+    "IDamageable": [],
+    "MenuCommandsController": [],
+    "GameplayNotice": [
+      "GameMenuController",
+      "HeartSystem",
+      "PlayerController"
+    ],
+    "GameMenuController": [
+      "HeartSystem",
+      "MainMenuPreferences",
+      "MenuCommandsController",
+      "MenuSettingsController",
+      "PlayerController"
+    ],
+    "MainMenuPreferences": [],
+    "MenuSettingsController": [
+      "MainMenuPreferences"
+    ],
+    "MenuPanelFade": [],
+    "MenuButtonFeedback": [],
+    "ForestTransitionTile": [],
+    "ForestPickupMotion": [],
+    "ForestWorldRendering": []
+  },
+  "mutualReferences": [
+    [
+      "HeartSystem",
+      "PlayerController"
+    ]
+  ],
+  "scriptAssetReferences": {
+    "RestartMenu": [
+      "Assets/_Recovery/1.unity",
+      "Assets/UI/GameMenus/GameMenus.prefab"
+    ],
+    "MenuPrincipalManager": [
+      "Assets/_Recovery/0.unity",
+      "Assets/UI/MainMenu/MainMenu.prefab"
+    ],
+    "PlayerController": [
+      "Assets/Animations/Player/Player.prefab"
+    ],
+    "EnemyMeleeAttack": [
+      "Assets/Animations/Enemies/Slime/Slime.prefab",
+      "Assets/Animations/Enemies/Skeleton/Esqueleto.prefab",
+      "Assets/Animations/Enemies/Boss/SlimeBoss.prefab"
+    ],
+    "MenuFinalManager": [
+      "Assets/_Recovery/2.unity",
+      "Assets/UI/GameMenus/VictoryMenu.prefab"
+    ],
+    "Sword_attack": [],
+    "SlimeController": [
+      "Assets/Animations/Enemies/Slime/Slime.prefab"
+    ],
+    "EntradaBoss": [
+      "Assets/_Recovery/1.unity",
+      "Assets/Art/Environment/HighDetail/Prefabs/ArenaEntrance.prefab"
+    ],
+    "IdleSpriteMotion": [
+      "Assets/Animations/Player/Player.prefab",
+      "Assets/Animations/Enemies/Slime/Slime.prefab",
+      "Assets/Animations/Enemies/Skeleton/Esqueleto.prefab",
+      "Assets/Animations/Enemies/Boss/SlimeBoss.prefab"
+    ],
+    "AreaFinal": [
+      "Assets/_Recovery/1.unity",
+      "Assets/Art/Environment/HighDetail/Prefabs/LevelExit.prefab"
+    ],
+    "PauseMenu": [
+      "Assets/_Recovery/1.unity",
+      "Assets/UI/GameMenus/GameMenus.prefab"
+    ],
+    "CadencedMovement2D": [
+      "Assets/Animations/Player/Player.prefab",
+      "Assets/Animations/Enemies/Slime/Slime.prefab",
+      "Assets/Animations/Enemies/Skeleton/Esqueleto.prefab",
+      "Assets/Animations/Enemies/Boss/SlimeBoss.prefab"
+    ],
+    "SwordHitbox": [
+      "Assets/Animations/Player/Player.prefab"
+    ],
+    "SlimeBoss": [
+      "Assets/Scenes/FaseMysticWoods.unity",
+      "Assets/_Recovery/1.unity",
+      "Assets/Animations/Enemies/Boss/SlimeBoss.prefab"
+    ],
+    "KeysManager": [
+      "Assets/Scenes/FaseMysticWoods.unity",
+      "Assets/_Recovery/1.unity"
+    ],
+    "HeartSystem": [
+      "Assets/Scenes/FaseMysticWoods.unity",
+      "Assets/_Recovery/1.unity",
+      "Assets/Animations/Player/Player.prefab"
+    ],
+    "TransparetObject": [
+      "Assets/Scenes/FaseMysticWoods.unity",
+      "Assets/_Recovery/1.unity",
+      "Assets/Art/Environment/HighDetail/Prefabs/OakA.prefab",
+      "Assets/Art/Environment/HighDetail/Prefabs/OakC.prefab",
+      "Assets/Art/Environment/HighDetail/Prefabs/OakB.prefab"
+    ],
+    "DetectionController": [
+      "Assets/Scenes/FaseMysticWoods.unity",
+      "Assets/_Recovery/1.unity",
+      "Assets/Animations/Enemies/Slime/Slime.prefab",
+      "Assets/Animations/Enemies/Skeleton/Esqueleto.prefab",
+      "Assets/Animations/Enemies/Boss/SlimeBoss.prefab"
+    ],
+    "PortaBoss": [
+      "Assets/_Recovery/1.unity",
+      "Assets/Art/Environment/HighDetail/Prefabs/BossGate.prefab"
+    ],
+    "SkeletonController": [
+      "Assets/Animations/Enemies/Skeleton/Esqueleto.prefab"
+    ],
+    "ChestController": [
+      "Assets/_Recovery/1.unity"
+    ],
+    "KeyController": [
+      "Assets/_Recovery/1.unity",
+      "Assets/Art/Environment/HighDetail/Prefabs/GoldKey.prefab"
+    ],
+    "IDamageable": [],
+    "MenuCommandsController": [
+      "Assets/UI/GameMenus/GameMenus.prefab",
+      "Assets/UI/Shared/CommandsPanel.prefab",
+      "Assets/UI/MainMenu/MainMenu.prefab"
+    ],
+    "GameplayNotice": [
+      "Assets/Scenes/FaseMysticWoods.unity",
+      "Assets/UI/GameMenus/GameplayNotices.prefab"
+    ],
+    "GameMenuController": [
+      "Assets/UI/GameMenus/GameMenus.prefab"
+    ],
+    "MainMenuPreferences": [],
+    "MenuSettingsController": [
+      "Assets/UI/GameMenus/GameMenus.prefab",
+      "Assets/UI/Shared/SettingsPanel.prefab",
+      "Assets/UI/MainMenu/MainMenu.prefab"
+    ],
+    "MenuPanelFade": [
+      "Assets/UI/Shared/CommandsPanel.prefab",
+      "Assets/UI/Shared/MenuCard.prefab",
+      "Assets/UI/Shared/SettingsPanel.prefab",
+      "Assets/UI/MainMenu/MainMenu.prefab"
+    ],
+    "MenuButtonFeedback": [
+      "Assets/UI/Shared/PrimaryButton.prefab",
+      "Assets/UI/Shared/CommandsPanel.prefab",
+      "Assets/UI/Shared/SecondaryButton.prefab",
+      "Assets/UI/Shared/SettingsPanel.prefab",
+      "Assets/UI/MainMenu/MainMenu.prefab"
+    ],
+    "ForestTransitionTile": [],
+    "ForestPickupMotion": [
+      "Assets/Art/Environment/HighDetail/Prefabs/GoldKey.prefab"
+    ],
+    "ForestWorldRendering": [
+      "Assets/Scenes/FaseMysticWoods.unity"
+    ]
+  },
+  "playerFrames": {
+    "player_0": {
+      "rect": [
+        46,
+        1477,
+        73,
+        101
+      ],
+      "pivot": [
+        0.46703767,
+        0.42190594
+      ],
+      "footPixels": [
+        36.5,
+        5
+      ],
+      "opaqueBounds": [
+        5,
+        5,
+        68,
+        96
+      ],
+      "offsetUnits": [
+        -0.03125000116883117,
+        0.4884740251948052
+      ],
+      "fileID": 1807245778
+    },
+    "player_1": {
+      "rect": [
+        207,
+        1477,
+        72,
+        103
+      ],
+      "pivot": [
+        0.46657986,
+        0.40400485
+      ],
+      "footPixels": [
+        36.0,
+        5
+      ],
+      "opaqueBounds": [
+        5,
+        5,
+        67,
+        98
+      ],
+      "offsetUnits": [
+        -0.031250001038961035,
+        0.4754870071428572
+      ],
+      "fileID": -1270074335
+    },
+    "player_2": {
+      "rect": [
+        371,
+        1477,
+        71,
+        100
+      ],
+      "pivot": [
+        0.46610915,
+        0.426125
+      ],
+      "footPixels": [
+        35.5,
+        5
+      ],
+      "opaqueBounds": [
+        5,
+        5,
+        66,
+        95
+      ],
+      "offsetUnits": [
+        -0.031250004545454554,
+        0.48847402597402595
+      ],
+      "fileID": -1071718079
+    },
+    "player_3": {
+      "rect": [
+        531,
+        1477,
+        70,
+        100
+      ],
+      "pivot": [
+        0.465625,
+        0.416125
+      ],
+      "footPixels": [
+        35.0,
+        5
+      ],
+      "opaqueBounds": [
+        5,
+        5,
+        65,
+        95
+      ],
+      "offsetUnits": [
+        -0.03125,
+        0.47548701298701307
+      ],
+      "fileID": 230657405
+    },
+    "player_4": {
+      "rect": [
+        692,
+        1477,
+        70,
+        100
+      ],
+      "pivot": [
+        0.465625,
+        0.426125
+      ],
+      "footPixels": [
+        35.0,
+        5
+      ],
+      "opaqueBounds": [
+        5,
+        5,
+        65,
+        95
+      ],
+      "offsetUnits": [
+        -0.03125,
+        0.48847402597402595
+      ],
+      "fileID": 565636553
+    },
+    "player_5": {
+      "rect": [
+        852,
+        1477,
+        71,
+        101
+      ],
+      "pivot": [
+        0.46610915,
+        0.42190594
+      ],
+      "footPixels": [
+        35.5,
+        5
+      ],
+      "opaqueBounds": [
+        5,
+        5,
+        66,
+        96
+      ],
+      "offsetUnits": [
+        -0.031250004545454554,
+        0.4884740251948052
+      ],
+      "fileID": 130462067
+    },
+    "player_6": {
+      "rect": [
+        44,
+        1338,
+        76,
+        101
+      ],
+      "pivot": [
+        0.46175987,
+        0.41200495
+      ],
+      "footPixels": [
+        38.0,
+        5
+      ],
+      "opaqueBounds": [
+        5,
+        5,
+        71,
+        96
+      ],
+      "offsetUnits": [
+        -0.0377435049350649,
+        0.47548701233766233
+      ],
+      "fileID": -25142407
+    },
+    "player_7": {
+      "rect": [
+        210,
+        1338,
+        70,
+        101
+      ],
+      "pivot": [
+        0.465625,
+        0.41200495
+      ],
+      "footPixels": [
+        35.0,
+        5
+      ],
+      "opaqueBounds": [
+        5,
+        5,
+        65,
+        96
+      ],
+      "offsetUnits": [
+        -0.03125,
+        0.47548701233766233
+      ],
+      "fileID": 1307924529
+    },
+    "player_8": {
+      "rect": [
+        370,
+        1338,
+        72,
+        101
+      ],
+      "pivot": [
+        0.47352431,
+        0.41200495
+      ],
+      "footPixels": [
+        36.0,
+        5
+      ],
+      "opaqueBounds": [
+        5,
+        5,
+        67,
+        96
+      ],
+      "offsetUnits": [
+        -0.024756489350649377,
+        0.47548701233766233
+      ],
+      "fileID": -1363790707
+    },
+    "player_9": {
+      "rect": [
+        530,
+        1338,
+        72,
+        101
+      ],
+      "pivot": [
+        0.45963542,
+        0.41200495
+      ],
+      "footPixels": [
+        36.0,
+        5
+      ],
+      "opaqueBounds": [
+        5,
+        5,
+        67,
+        96
+      ],
+      "offsetUnits": [
+        -0.0377435033766234,
+        0.47548701233766233
+      ],
+      "fileID": -1811713867
+    },
+    "player_10": {
+      "rect": [
+        690,
+        1338,
+        73,
+        101
+      ],
+      "pivot": [
+        0.46703767,
+        0.41200495
+      ],
+      "footPixels": [
+        36.5,
+        5
+      ],
+      "opaqueBounds": [
+        5,
+        5,
+        68,
+        96
+      ],
+      "offsetUnits": [
+        -0.03125000116883117,
+        0.47548701233766233
+      ],
+      "fileID": -494292427
+    },
+    "player_11": {
+      "rect": [
+        852,
+        1338,
+        72,
+        101
+      ],
+      "pivot": [
+        0.46657986,
+        0.41200495
+      ],
+      "footPixels": [
+        36.0,
+        5
+      ],
+      "opaqueBounds": [
+        5,
+        5,
+        67,
+        96
+      ],
+      "offsetUnits": [
+        -0.031250001038961035,
+        0.47548701233766233
+      ],
+      "fileID": -621221719
+    },
+    "player_12": {
+      "rect": [
+        46,
+        1186,
+        72,
+        105
+      ],
+      "pivot": [
+        0.46657986,
+        0.40583333
+      ],
+      "footPixels": [
+        36.0,
+        5
+      ],
+      "opaqueBounds": [
+        5,
+        5,
+        67,
+        100
+      ],
+      "offsetUnits": [
+        -0.031250001038961035,
+        0.4884740214285714
+      ],
+      "fileID": 277491789
+    },
+    "player_13": {
+      "rect": [
+        207,
+        1187,
+        72,
+        105
+      ],
+      "pivot": [
+        0.47352431,
+        0.39630952
+      ],
+      "footPixels": [
+        36.0,
+        5
+      ],
+      "opaqueBounds": [
+        5,
+        5,
+        67,
+        100
+      ],
+      "offsetUnits": [
+        -0.024756489350649377,
+        0.47548700779220776
+      ],
+      "fileID": -2113026842
+    },
+    "player_14": {
+      "rect": [
+        370,
+        1186,
+        72,
+        105
+      ],
+      "pivot": [
+        0.46657986,
+        0.40583333
+      ],
+      "footPixels": [
+        36.0,
+        5
+      ],
+      "opaqueBounds": [
+        5,
+        5,
+        67,
+        100
+      ],
+      "offsetUnits": [
+        -0.031250001038961035,
+        0.4884740214285714
+      ],
+      "fileID": 1638843649
+    },
+    "player_15": {
+      "rect": [
+        529,
+        1186,
+        73,
+        106
+      ],
+      "pivot": [
+        0.46018836,
+        0.39257075
+      ],
+      "footPixels": [
+        36.5,
+        5
+      ],
+      "opaqueBounds": [
+        5,
+        5,
+        68,
+        101
+      ],
+      "offsetUnits": [
+        -0.037743502857142834,
+        0.47548700649350656
+      ],
+      "fileID": 1559271971
+    },
+    "player_16": {
+      "rect": [
+        691,
+        1186,
+        72,
+        105
+      ],
+      "pivot": [
+        0.46657986,
+        0.40583333
+      ],
+      "footPixels": [
+        36.0,
+        5
+      ],
+      "opaqueBounds": [
+        5,
+        5,
+        67,
+        100
+      ],
+      "offsetUnits": [
+        -0.031250001038961035,
+        0.4884740214285714
+      ],
+      "fileID": -1932344272
+    },
+    "player_17": {
+      "rect": [
+        852,
+        1186,
+        72,
+        105
+      ],
+      "pivot": [
+        0.46657986,
+        0.40583333
+      ],
+      "footPixels": [
+        36.0,
+        5
+      ],
+      "opaqueBounds": [
+        5,
+        5,
+        67,
+        100
+      ],
+      "offsetUnits": [
+        -0.031250001038961035,
+        0.4884740214285714
+      ],
+      "fileID": 2006210656
+    },
+    "player_18": {
+      "rect": [
+        45,
+        1033,
+        75,
+        106
+      ],
+      "pivot": [
+        0.46791667,
+        0.39257075
+      ],
+      "footPixels": [
+        37.5,
+        5
+      ],
+      "opaqueBounds": [
+        5,
+        5,
+        70,
+        101
+      ],
+      "offsetUnits": [
+        -0.031249996753246762,
+        0.47548700649350656
+      ],
+      "fileID": -1617533754
+    },
+    "player_19": {
+      "rect": [
+        205,
+        1033,
+        72,
+        106
+      ],
+      "pivot": [
+        0.46657986,
+        0.39257075
+      ],
+      "footPixels": [
+        36.0,
+        5
+      ],
+      "opaqueBounds": [
+        5,
+        5,
+        67,
+        101
+      ],
+      "offsetUnits": [
+        -0.031250001038961035,
+        0.47548700649350656
+      ],
+      "fileID": -398298970
+    },
+    "player_20": {
+      "rect": [
+        369,
+        1033,
+        71,
+        105
+      ],
+      "pivot": [
+        0.46610915,
+        0.39630952
+      ],
+      "footPixels": [
+        35.5,
+        5
+      ],
+      "opaqueBounds": [
+        5,
+        5,
+        66,
+        100
+      ],
+      "offsetUnits": [
+        -0.031250004545454554,
+        0.47548700779220776
+      ],
+      "fileID": 603347016
+    },
+    "player_21": {
+      "rect": [
+        529,
+        1033,
+        71,
+        106
+      ],
+      "pivot": [
+        0.4590669,
+        0.39257075
+      ],
+      "footPixels": [
+        35.5,
+        5
+      ],
+      "opaqueBounds": [
+        5,
+        5,
+        66,
+        101
+      ],
+      "offsetUnits": [
+        -0.03774350779220781,
+        0.47548700649350656
+      ],
+      "fileID": -309794422
+    },
+    "player_22": {
+      "rect": [
+        690,
+        1033,
+        71,
+        106
+      ],
+      "pivot": [
+        0.4590669,
+        0.39257075
+      ],
+      "footPixels": [
+        35.5,
+        5
+      ],
+      "opaqueBounds": [
+        5,
+        5,
+        66,
+        101
+      ],
+      "offsetUnits": [
+        -0.03774350779220781,
+        0.47548700649350656
+      ],
+      "fileID": 814551481
+    },
+    "player_23": {
+      "rect": [
+        851,
+        1033,
+        71,
+        106
+      ],
+      "pivot": [
+        0.4590669,
+        0.39257075
+      ],
+      "footPixels": [
+        35.5,
+        5
+      ],
+      "opaqueBounds": [
+        5,
+        5,
+        66,
+        101
+      ],
+      "offsetUnits": [
+        -0.03774350779220781,
+        0.47548700649350656
+      ],
+      "fileID": 415267008
+    },
+    "player_24": {
+      "rect": [
+        42,
+        888,
+        83,
+        109
+      ],
+      "pivot": [
+        0.47703313,
+        0.39094037
+      ],
+      "footPixels": [
+        41.5,
+        5
+      ],
+      "opaqueBounds": [
+        5,
+        5,
+        78,
+        104
+      ],
+      "offsetUnits": [
+        -0.024756496233766183,
+        0.48847403025974023
+      ],
+      "fileID": 1541893020
+    },
+    "player_25": {
+      "rect": [
+        205,
+        888,
+        77,
+        109
+      ],
+      "pivot": [
+        0.46875,
+        0.39094037
+      ],
+      "footPixels": [
+        38.5,
+        5
+      ],
+      "opaqueBounds": [
+        5,
+        5,
+        72,
+        104
+      ],
+      "offsetUnits": [
+        -0.03125,
+        0.48847403025974023
+      ],
+      "fileID": -21404631
+    },
+    "player_26": {
+      "rect": [
+        370,
+        888,
+        74,
+        109
+      ],
+      "pivot": [
+        0.47423986,
+        0.38176606
+      ],
+      "footPixels": [
+        37.0,
+        5
+      ],
+      "opaqueBounds": [
+        5,
+        5,
+        69,
+        104
+      ],
+      "offsetUnits": [
+        -0.0247564981818182,
+        0.47548702
+      ],
+      "fileID": -203227806
+    },
+    "player_27": {
+      "rect": [
+        528,
+        888,
+        80,
+        110
+      ],
+      "pivot": [
+        0.46367188,
+        0.38738636
+      ],
+      "footPixels": [
+        40.0,
+        5
+      ],
+      "opaqueBounds": [
+        5,
+        5,
+        75,
+        105
+      ],
+      "offsetUnits": [
+        -0.03774350129870133,
+        0.48847402077922075
+      ],
+      "fileID": -159853372
+    },
+    "player_28": {
+      "rect": [
+        691,
+        888,
+        78,
+        109
+      ],
+      "pivot": [
+        0.46274038,
+        0.39094037
+      ],
+      "footPixels": [
+        39.0,
+        5
+      ],
+      "opaqueBounds": [
+        5,
+        5,
+        73,
+        104
+      ],
+      "offsetUnits": [
+        -0.037743511168831186,
+        0.48847403025974023
+      ],
+      "fileID": -1096372175
+    },
+    "player_29": {
+      "rect": [
+        850,
+        888,
+        76,
+        109
+      ],
+      "pivot": [
+        0.46833882,
+        0.39094037
+      ],
+      "footPixels": [
+        38.0,
+        5
+      ],
+      "opaqueBounds": [
+        5,
+        5,
+        71,
+        104
+      ],
+      "offsetUnits": [
+        -0.03124999584415587,
+        0.48847403025974023
+      ],
+      "fileID": -668386012
+    },
+    "player_30": {
+      "rect": [
+        45,
+        732,
+        75,
+        105
+      ],
+      "pivot": [
+        0.47458333,
+        0.39630952
+      ],
+      "footPixels": [
+        37.5,
+        5
+      ],
+      "opaqueBounds": [
+        5,
+        5,
+        70,
+        100
+      ],
+      "offsetUnits": [
+        -0.024756496753246746,
+        0.47548700779220776
+      ],
+      "fileID": -1529703933
+    },
+    "player_31": {
+      "rect": [
+        210,
+        732,
+        69,
+        106
+      ],
+      "pivot": [
+        0.46512681,
+        0.39257075
+      ],
+      "footPixels": [
+        34.5,
+        5
+      ],
+      "opaqueBounds": [
+        5,
+        5,
+        64,
+        101
+      ],
+      "offsetUnits": [
+        -0.031250001428571456,
+        0.47548700649350656
+      ],
+      "fileID": 637695433
+    },
+    "player_32": {
+      "rect": [
+        369,
+        732,
+        73,
+        103
+      ],
+      "pivot": [
+        0.47388699,
+        0.40400485
+      ],
+      "footPixels": [
+        36.5,
+        5
+      ],
+      "opaqueBounds": [
+        5,
+        5,
+        68,
+        98
+      ],
+      "offsetUnits": [
+        -0.024756489999999985,
+        0.4754870071428572
+      ],
+      "fileID": 921908355
+    },
+    "player_33": {
+      "rect": [
+        528,
+        732,
+        74,
+        106
+      ],
+      "pivot": [
+        0.46748311,
+        0.39257075
+      ],
+      "footPixels": [
+        37.0,
+        5
+      ],
+      "opaqueBounds": [
+        5,
+        5,
+        69,
+        101
+      ],
+      "offsetUnits": [
+        -0.031249998181818214,
+        0.47548700649350656
+      ],
+      "fileID": -1634116472
+    },
+    "player_34": {
+      "rect": [
+        689,
+        733,
+        74,
+        104
+      ],
+      "pivot": [
+        0.47423986,
+        0.40012019
+      ],
+      "footPixels": [
+        37.0,
+        5
+      ],
+      "opaqueBounds": [
+        5,
+        5,
+        69,
+        99
+      ],
+      "offsetUnits": [
+        -0.0247564981818182,
+        0.4754870098701299
+      ],
+      "fileID": 301551174
+    },
+    "player_35": {
+      "rect": [
+        850,
+        733,
+        74,
+        104
+      ],
+      "pivot": [
+        0.47423986,
+        0.40012019
+      ],
+      "footPixels": [
+        37.0,
+        5
+      ],
+      "opaqueBounds": [
+        5,
+        5,
+        69,
+        99
+      ],
+      "offsetUnits": [
+        -0.0247564981818182,
+        0.4754870098701299
+      ],
+      "fileID": 72049337
+    },
+    "player_36": {
+      "rect": [
+        39,
+        573,
+        81,
+        103
+      ],
+      "pivot": [
+        0.58912037,
+        0.40400485
+      ],
+      "footPixels": [
+        40.5,
+        5
+      ],
+      "opaqueBounds": [
+        5,
+        5,
+        76,
+        98
+      ],
+      "offsetUnits": [
+        0.09374999961038957,
+        0.4754870071428572
+      ],
+      "fileID": -351522629
+    },
+    "player_37": {
+      "rect": [
+        202,
+        556,
+        115,
+        120
+      ],
+      "pivot": [
+        0.37880435,
+        0.6275
+      ],
+      "footPixels": [
+        57.5,
+        5
+      ],
+      "opaqueBounds": [
+        5,
+        5,
+        110,
+        115
+      ],
+      "offsetUnits": [
+        -0.18100649025974028,
+        0.9129870129870129
+      ],
+      "fileID": 1641516602
+    },
+    "player_38": {
+      "rect": [
+        367,
+        565,
+        95,
+        111
+      ],
+      "pivot": [
+        0.31743421,
+        0.51396396
+      ],
+      "footPixels": [
+        47.5,
+        5
+      ],
+      "opaqueBounds": [
+        5,
+        5,
+        90,
+        106
+      ],
+      "offsetUnits": [
+        -0.22524350714285715,
+        0.6759740202597402
+      ],
+      "fileID": 1194180856
+    },
+    "player_39": {
+      "rect": [
+        528,
+        573,
+        73,
+        103
+      ],
+      "pivot": [
+        0.46703767,
+        0.40400485
+      ],
+      "footPixels": [
+        36.5,
+        5
+      ],
+      "opaqueBounds": [
+        5,
+        5,
+        68,
+        98
+      ],
+      "offsetUnits": [
+        -0.03125000116883117,
+        0.4754870071428572
+      ],
+      "fileID": 229452812
+    },
+    "player_40": {
+      "rect": [
+        42,
+        417,
+        84,
+        101
+      ],
+      "pivot": [
+        0.29947917,
+        0.42190594
+      ],
+      "footPixels": [
+        42.0,
+        5
+      ],
+      "opaqueBounds": [
+        5,
+        5,
+        79,
+        96
+      ],
+      "offsetUnits": [
+        -0.21874999636363635,
+        0.4884740251948052
+      ],
+      "fileID": -1851932525
+    },
+    "player_41": {
+      "rect": [
+        180,
+        415,
+        144,
+        107
+      ],
+      "pivot": [
+        0.48741319,
+        0.5875
+      ],
+      "footPixels": [
+        74.5,
+        5
+      ],
+      "opaqueBounds": [
+        5,
+        5,
+        144,
+        102
+      ],
+      "offsetUnits": [
+        -0.056006501818181766,
+        0.751461038961039
+      ],
+      "fileID": 450321431
+    },
+    "player_42": {
+      "rect": [
+        345,
+        418,
+        101,
+        104
+      ],
+      "pivot": [
+        0.67667079,
+        0.40012019
+      ],
+      "footPixels": [
+        50.5,
+        5
+      ],
+      "opaqueBounds": [
+        5,
+        5,
+        96,
+        99
+      ],
+      "offsetUnits": [
+        0.23173701025974014,
+        0.4754870098701299
+      ],
+      "fileID": 461856988
+    },
+    "player_43": {
+      "rect": [
+        526,
+        417,
+        78,
+        101
+      ],
+      "pivot": [
+        0.4755609,
+        0.42190594
+      ],
+      "footPixels": [
+        39.0,
+        5
+      ],
+      "opaqueBounds": [
+        5,
+        5,
+        73,
+        96
+      ],
+      "offsetUnits": [
+        -0.024756490909090878,
+        0.4884740251948052
+      ],
+      "fileID": 1075708778
+    },
+    "player_44": {
+      "rect": [
+        46,
+        248,
+        84,
+        108
+      ],
+      "pivot": [
+        0.32217262,
+        0.43912037
+      ],
+      "footPixels": [
+        41.5,
+        5
+      ],
+      "opaqueBounds": [
+        5,
+        5,
+        78,
+        103
+      ],
+      "offsetUnits": [
+        -0.18749999896103892,
+        0.5509740254545454
+      ],
+      "fileID": -1072176150
+    },
+    "player_45": {
+      "rect": [
+        181,
+        248,
+        109,
+        121
+      ],
+      "pivot": [
+        0.59288991,
+        0.35216942
+      ],
+      "footPixels": [
+        54.5,
+        5
+      ],
+      "opaqueBounds": [
+        5,
+        5,
+        104,
+        116
+      ],
+      "offsetUnits": [
+        0.13149350896103906,
+        0.48847402363636366
+      ],
+      "fileID": 1445113570
+    },
+    "player_46": {
+      "rect": [
+        342,
+        248,
+        101,
+        108
+      ],
+      "pivot": [
+        0.62407178,
+        0.43912037
+      ],
+      "footPixels": [
+        50.0,
+        5
+      ],
+      "opaqueBounds": [
+        5,
+        5,
+        95,
+        103
+      ],
+      "offsetUnits": [
+        0.16923701012987008,
+        0.5509740254545454
+      ],
+      "fileID": 899162061
+    },
+    "player_47": {
+      "rect": [
+        528,
+        248,
+        74,
+        109
+      ],
+      "pivot": [
+        0.46748311,
+        0.39094037
+      ],
+      "footPixels": [
+        37.0,
+        5
+      ],
+      "opaqueBounds": [
+        5,
+        5,
+        69,
+        104
+      ],
+      "offsetUnits": [
+        -0.031249998181818214,
+        0.48847403025974023
+      ],
+      "fileID": -796103289
+    },
+    "player_48": {
+      "rect": [
+        31,
+        51,
+        93,
+        95
+      ],
+      "pivot": [
+        0.37063172,
+        0.43802632
+      ],
+      "footPixels": [
+        46.5,
+        5
+      ],
+      "opaqueBounds": [
+        5,
+        5,
+        88,
+        90
+      ],
+      "offsetUnits": [
+        -0.15625000051948057,
+        0.4754870181818182
+      ],
+      "fileID": 1086951757
+    },
+    "player_49": {
+      "rect": [
+        188,
+        54,
+        117,
+        83
+      ],
+      "pivot": [
+        0.37232906,
+        0.51340361
+      ],
+      "footPixels": [
+        58.5,
+        5
+      ],
+      "opaqueBounds": [
+        5,
+        5,
+        112,
+        78
+      ],
+      "offsetUnits": [
+        -0.1939935062337662,
+        0.4884740211688312
+      ],
+      "fileID": -118605441
+    },
+    "player_50": {
+      "rect": [
+        357,
+        51,
+        114,
+        79
+      ],
+      "pivot": [
+        0.33114035,
+        0.60031646
+      ],
+      "footPixels": [
+        57.0,
+        5
+      ],
+      "opaqueBounds": [
+        5,
+        5,
+        109,
+        74
+      ],
+      "offsetUnits": [
+        -0.2500000012987012,
+        0.5509740303896105
+      ],
+      "fileID": -854652952
+    }
+  },
+  "clips": [
+    {
+      "path": "Assets/Animations/Player/Player_Attack/Player_Attack_Down.anim",
+      "frames": [
+        "player_36",
+        "player_37",
+        "player_38",
+        "player_39",
+        "player_39"
+      ],
+      "fps": 100.0,
+      "length": 0.5,
+      "bindings": [
+        "m_Sprite",
+        "0"
+      ],
+      "flipKeys": false
+    },
+    {
+      "path": "Assets/Animations/Player/Player_Attack/Player_Attack_Left.anim",
+      "frames": [
+        "player_40",
+        "player_41",
+        "player_42",
+        "player_43",
+        "player_43"
+      ],
+      "fps": 100.0,
+      "length": 0.5,
+      "bindings": [
+        "m_FlipX",
+        "m_Sprite",
+        "555744692",
+        "0",
+        "m_FlipX"
+      ],
+      "flipKeys": true
+    },
+    {
+      "path": "Assets/Animations/Player/Player_Attack/Player_Attack_Right.anim",
+      "frames": [
+        "player_40",
+        "player_41",
+        "player_42",
+        "player_43",
+        "player_43"
+      ],
+      "fps": 100.0,
+      "length": 0.5,
+      "bindings": [
+        "m_Sprite",
+        "0"
+      ],
+      "flipKeys": false
+    },
+    {
+      "path": "Assets/Animations/Player/Player_Attack/Player_Attack_Up.anim",
+      "frames": [
+        "player_44",
+        "player_45",
+        "player_46",
+        "player_47",
+        "player_47"
+      ],
+      "fps": 100.0,
+      "length": 0.5,
+      "bindings": [
+        "m_Sprite",
+        "0"
+      ],
+      "flipKeys": false
+    },
+    {
+      "path": "Assets/Animations/Player/Player_Die.anim",
+      "frames": [
+        "player_48",
+        "player_49",
+        "player_50"
+      ],
+      "fps": 8.0,
+      "length": 0.375,
+      "bindings": [
+        "m_Sprite",
+        "0"
+      ],
+      "flipKeys": false
+    },
+    {
+      "path": "Assets/Animations/Player/Player_Idle/Player_Idle_Down.anim",
+      "frames": [
+        "player_0",
+        "player_0"
+      ],
+      "fps": 10.0,
+      "length": 1.8,
+      "bindings": [
+        "m_Sprite",
+        "0"
+      ],
+      "flipKeys": false
+    },
+    {
+      "path": "Assets/Animations/Player/Player_Idle/Player_Idle_Left.anim",
+      "frames": [
+        "player_6",
+        "player_6"
+      ],
+      "fps": 10.0,
+      "length": 1.8,
+      "bindings": [
+        "m_FlipX",
+        "m_Sprite",
+        "555744692",
+        "0",
+        "m_FlipX"
+      ],
+      "flipKeys": true
+    },
+    {
+      "path": "Assets/Animations/Player/Player_Idle/Player_Idle_Right.anim",
+      "frames": [
+        "player_6",
+        "player_6"
+      ],
+      "fps": 10.0,
+      "length": 1.8,
+      "bindings": [
+        "m_Sprite",
+        "0"
+      ],
+      "flipKeys": false
+    },
+    {
+      "path": "Assets/Animations/Player/Player_Idle/Player_Idle_Up.anim",
+      "frames": [
+        "player_12",
+        "player_12"
+      ],
+      "fps": 10.0,
+      "length": 1.8,
+      "bindings": [
+        "m_Sprite",
+        "0"
+      ],
+      "flipKeys": false
+    },
+    {
+      "path": "Assets/Animations/Player/Player_Movement/Player_Down.anim",
+      "frames": [
+        "player_18",
+        "player_19",
+        "player_20",
+        "player_21",
+        "player_22",
+        "player_23"
+      ],
+      "fps": 10.0,
+      "length": 0.6,
+      "bindings": [
+        "m_Sprite",
+        "0"
+      ],
+      "flipKeys": false
+    },
+    {
+      "path": "Assets/Animations/Player/Player_Movement/Player_Left.anim",
+      "frames": [
+        "player_24",
+        "player_25",
+        "player_26",
+        "player_27",
+        "player_28",
+        "player_29"
+      ],
+      "fps": 10.0,
+      "length": 0.6,
+      "bindings": [
+        "m_FlipX",
+        "m_Sprite",
+        "555744692",
+        "0",
+        "m_FlipX"
+      ],
+      "flipKeys": true
+    },
+    {
+      "path": "Assets/Animations/Player/Player_Movement/Player_Right.anim",
+      "frames": [
+        "player_24",
+        "player_25",
+        "player_26",
+        "player_27",
+        "player_28",
+        "player_29"
+      ],
+      "fps": 10.0,
+      "length": 0.6,
+      "bindings": [
+        "m_Sprite",
+        "0"
+      ],
+      "flipKeys": false
+    },
+    {
+      "path": "Assets/Animations/Player/Player_Movement/Player_Up.anim",
+      "frames": [
+        "player_30",
+        "player_31",
+        "player_32",
+        "player_33",
+        "player_34",
+        "player_35"
+      ],
+      "fps": 10.0,
+      "length": 0.6,
+      "bindings": [
+        "m_Sprite",
+        "0"
+      ],
+      "flipKeys": false
+    }
+  ]
+}

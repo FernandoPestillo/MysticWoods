@@ -1,0 +1,5 @@
+{
+  "name": "MysticWoods.Player.Sandbox",
+  "rootNamespace": "MysticWoods.Gameplay.Player.Sandbox",
+  "references": ["MysticWoods.Player"]
+}

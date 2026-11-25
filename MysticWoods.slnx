@@ -1,3 +1,8 @@
 ﻿<Solution>
   <Project Path="Assembly-CSharp.csproj" />
+  <Project Path="MysticWoods.Player.csproj" />
+  <Project Path="MysticWoods.Player.Editor.csproj" />
+  <Project Path="MysticWoods.Player.PlayModeTests.csproj" />
+  <Project Path="MysticWoods.Player.Sandbox.csproj" />
+  <Project Path="MysticWoods.Player.EditModeTests.csproj" />
 </Solution>

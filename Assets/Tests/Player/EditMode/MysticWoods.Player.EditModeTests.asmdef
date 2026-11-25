@@ -1,0 +1,6 @@
+{
+  "name": "MysticWoods.Player.EditModeTests",
+  "references": ["MysticWoods.Player", "MysticWoods.Player.Editor", "Unity.InputSystem"],
+  "includePlatforms": ["Editor"],
+  "optionalUnityReferences": ["TestAssemblies"]
+}
