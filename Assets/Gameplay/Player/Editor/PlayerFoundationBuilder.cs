@@ -38,7 +38,7 @@ namespace MysticWoods.Gameplay.Player.Editor
         }
         public static void Create()
         {
-            sprites = AssetDatabase.LoadAllAssetsAtPath("Assets/Art/Characters/HighDetail/player-hd.png")
+            sprites = AssetDatabase.LoadAllAssetsAtPath("Assets/Art/Characters/Textures/player-hd.png")
                 .OfType<Sprite>().ToDictionary(s => s.name);
             alignment = JsonUtility.FromJson<AlignmentData>(File.ReadAllText(Root + "Editor/PlayerSpriteAlignment.json"))
                 .frames.ToDictionary(f => f.name);
@@ -130,7 +130,7 @@ namespace MysticWoods.Gameplay.Player.Editor
             var sprite = new GameObject("Sprite");sprite.transform.SetParent(visual.transform,false);
             sprite.transform.localPosition = new Vector3(alignment["player_0"].x,alignment["player_0"].y,0);
             var renderer = sprite.AddComponent<SpriteRenderer>();renderer.sprite = sprites["player_0"];renderer.spriteSortPoint = SpriteSortPoint.Pivot;renderer.sortingOrder = 10;
-            renderer.sharedMaterial = AssetDatabase.LoadAssetAtPath<Material>("Assets/Art/Characters/HighDetail/IdleSprite.mat");
+            renderer.sharedMaterial = AssetDatabase.LoadAssetAtPath<Material>("Assets/Art/Characters/Materials/IdleSprite.mat");
             var presentation = visual.AddComponent<PlayerAnimationController>();Reference(presentation,"movement",motor);Reference(presentation,"sprite",renderer);
             PrefabUtility.SaveAsPrefabAsset(root, PrefabPath);UnityEngine.Object.DestroyImmediate(root);
         }

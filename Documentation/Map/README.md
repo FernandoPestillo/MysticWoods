@@ -30,13 +30,13 @@ Em `High Detail Forest/Grid`, os Tilemaps são:
 
 A grama não restringe o jogador às trilhas. O tile legado `grass` também usa Collider Type None. Copas e luzes não bloqueiam a passagem. Os prefabs de árvores, rochas, troncos e cercas possuem colisões simples nos pontos de apoio. A copa e os arcos ficam transparentes quando encobrem o jogador.
 
-Os prefabs de portão, entrada, barreiras e saída também estão conectados às instâncias da cena. Os prefabs ficam em `Assets/Art/Environment/HighDetail/Prefabs/`. `GoldKey` contém o coletor, o sprite animado e a luz de destaque; sua instância na cena referencia o KeysManager do HUD. Ao inserir outra chave em outra cena, configure essa referência.
+Os prefabs de portão, entrada, barreiras e saída também estão conectados às instâncias da cena. Os prefabs ficam em `Assets/Art/Environment/Prefabs/`. `GoldKey` contém o coletor, o sprite animado e a luz de destaque; sua instância na cena referencia o KeysManager do HUD. Ao inserir outra chave em outra cena, configure essa referência.
 
 A profundidade utiliza as sorting layers existentes: Bottom para o chão, Objects para personagens e objetos, e Foreground para vaga-lumes. A câmera ordena transparências pelo eixo Y e permanece contida no retângulo pintado de 96×80 células.
 
 ## Arte, materiais e compatibilidade
 
-Os cinco PNGs estão em `Assets/Art/Environment/HighDetail/Textures/`, separados dos assets originais. Foram gerados com a ferramenta integrada **imagegen**, usando os terrenos, objetos, cercas, chave e arquitetura existentes e o fundo da tela inicial como referências.
+Os cinco PNGs estão em `Assets/Art/Environment/Textures/`, separados dos assets originais. Foram gerados com a ferramenta integrada **imagegen**, usando os terrenos, objetos, cercas, chave e arquitetura existentes e o fundo da tela inicial como referências.
 
 Os prompts completos ficam em [imagegen-prompts.json](imagegen-prompts.json). [sprite-mapping.json](sprite-mapping.json) registra dimensões, hashes SHA-256, nomes, recortes e pivôs dos 22 sprites de objetos/efeitos. Os PNGs foram incorporados sem repintura posterior; os retângulos foram obtidos por análise da transparência.
 

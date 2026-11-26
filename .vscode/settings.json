@@ -1,4 +1,5 @@
 {
+    // Hide only generated or binary noise; art, audio, prefabs, scenes and materials stay visible.
     "files.exclude": {
         "**/.DS_Store": true,
         "**/.git": true,
@@ -13,36 +14,7 @@
         "**/*.unityproj": true,
         "**/*.dll": true,
         "**/*.exe": true,
-        "**/*.pdf": true,
-        "**/*.mid": true,
-        "**/*.midi": true,
-        "**/*.wav": true,
-        "**/*.gif": true,
-        "**/*.ico": true,
-        "**/*.jpg": true,
-        "**/*.jpeg": true,
-        "**/*.png": true,
-        "**/*.psd": true,
-        "**/*.tga": true,
-        "**/*.tif": true,
-        "**/*.tiff": true,
-        "**/*.3ds": true,
-        "**/*.3DS": true,
-        "**/*.fbx": true,
-        "**/*.FBX": true,
-        "**/*.lxo": true,
-        "**/*.LXO": true,
-        "**/*.ma": true,
-        "**/*.MA": true,
-        "**/*.obj": true,
-        "**/*.OBJ": true,
-        "**/*.asset": true,
-        "**/*.cubemap": true,
-        "**/*.flare": true,
-        "**/*.mat": true,
         "**/*.meta": true,
-        "**/*.prefab": true,
-        "**/*.unity": true,
         "build/": true,
         "Build/": true,
         "Library/": true,
@@ -51,10 +23,39 @@
         "Obj/": true,
         "Logs/": true,
         "logs/": true,
-        "ProjectSettings/": true,
         "UserSettings/": true,
         "temp/": true,
         "Temp/": true
+    },
+    // Keep large generated folders out of search and the file watcher.
+    "search.exclude": {
+        "Library/": true,
+        "Temp/": true,
+        "Logs/": true,
+        "Builds/": true,
+        "**/*.meta": true
+    },
+    "files.watcherExclude": {
+        "**/Library/**": true,
+        "**/Temp/**": true,
+        "**/Logs/**": true
+    },
+    // Unity serialises these as YAML; open them with syntax highlighting.
+    "files.associations": {
+        "*.unity": "yaml",
+        "*.prefab": "yaml",
+        "*.asset": "yaml",
+        "*.mat": "yaml",
+        "*.anim": "yaml",
+        "*.controller": "yaml",
+        "*.overrideController": "yaml",
+        "*.physicsMaterial2D": "yaml",
+        "*.spriteatlas": "yaml",
+        "*.spriteatlasv2": "yaml",
+        "*.inputactions": "json",
+        "*.asmdef": "json",
+        "*.uss": "css",
+        "*.uxml": "xml"
     },
     "dotnet.defaultSolution": "MysticWoods.slnx"
 }

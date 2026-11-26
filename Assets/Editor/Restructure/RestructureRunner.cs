@@ -67,7 +67,7 @@ namespace MysticWoods.EditorTools
         {
             var report = new StringBuilder("[Restructure] VERIFY\n");
             bool ok = true;
-            foreach (string guid in AssetDatabase.FindAssets("t:Prefab", new[] { "Assets/Animations", "Assets/Art", "Assets/Gameplay", "Assets/UI" }))
+            foreach (string guid in AssetDatabase.FindAssets("t:Prefab", new[] { "Assets/Art", "Assets/Gameplay", "Assets/UI" }))
             {
                 string path = AssetDatabase.GUIDToAssetPath(guid);
                 var prefab = AssetDatabase.LoadAssetAtPath<GameObject>(path);

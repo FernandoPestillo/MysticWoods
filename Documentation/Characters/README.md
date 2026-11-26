@@ -4,7 +4,7 @@ Esta etapa adapta o aventureiro, o slime, o esqueleto e o chefe slime à direç�
 
 ## Assets e edição
 
-Os novos atlas ficam em `Assets/Art/Characters/HighDetail/`, separados dos originais em `Assets/Mystic Woods/characters/`.
+Os novos atlas ficam em `Assets/Art/Characters/`, separados dos originais em `Assets/Mystic Woods/characters/`.
 
 | Atlas | Dimensões | Quadros | Pixels por unidade |
 | --- | --- | --- | --- |

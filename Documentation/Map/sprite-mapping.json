@@ -1,21 +1,21 @@
 {
   "textures": [
     {
-      "path": "Assets/Art/Environment/HighDetail/Textures/forest-floor.png",
+      "path": "Assets/Art/Environment/Textures/forest-floor.png",
       "width": 1254,
       "height": 1254,
       "sha256": "9ff467071dd6f7903932da18cc7e254a9e06469ccf30476f76b63c989cc271ed",
       "sprites": []
     },
     {
-      "path": "Assets/Art/Environment/HighDetail/Textures/earth-path.png",
+      "path": "Assets/Art/Environment/Textures/earth-path.png",
       "width": 1254,
       "height": 1254,
       "sha256": "46b9024e53f9a98e66be6ff68639fa0f3b6a6769e4886c8a5a73ce8cb0dff438",
       "sprites": []
     },
     {
-      "path": "Assets/Art/Environment/HighDetail/Textures/woodland-props.png",
+      "path": "Assets/Art/Environment/Textures/woodland-props.png",
       "width": 1086,
       "height": 1448,
       "sha256": "ae7954cfcedbebae6a47da0a64c69e762bf5636c673563185bd967d96405f086",
@@ -191,7 +191,7 @@
       ]
     },
     {
-      "path": "Assets/Art/Environment/HighDetail/Textures/woodland-ruins.png",
+      "path": "Assets/Art/Environment/Textures/woodland-ruins.png",
       "width": 1086,
       "height": 1448,
       "sha256": "06b6c30cafc17aa76413aa832c2efda7793f460811ac8ea850755350f1094c57",
@@ -283,7 +283,7 @@
       ]
     },
     {
-      "path": "Assets/Art/Environment/HighDetail/Textures/gold-key-effects.png",
+      "path": "Assets/Art/Environment/Textures/gold-key-effects.png",
       "width": 1254,
       "height": 1254,
       "sha256": "76e1de37f8a850a2fe4703e32c1388b3018b42afc4579317d6dcc30e41bf6ccc",

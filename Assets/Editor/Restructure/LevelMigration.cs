@@ -30,7 +30,7 @@ namespace MysticWoods.EditorTools
         public const string LevelPath = "Assets/Scenes/FaseMysticWoods.unity";
         private const string BuiltinSprite = "Sprites-Default";
         private static readonly string[] EnvironmentPrefabs =
-            { "Assets/Art/Environment/HighDetail/Prefabs", "Assets/Animations/Bau" };
+            { "Assets/Art/Environment/Prefabs" };
 
         public static void Run()
         {

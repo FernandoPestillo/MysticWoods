@@ -36,7 +36,7 @@ Objetos novos na cena:
 - `High Detail Forest/Scenery Details/{Edges, Ground Decor, Ruin Rubble}`: só SpriteRenderers estáticos, sem colisão.
 - `Woodland Props`: as árvores e plantas novas, como instâncias de prefab.
 
-### Prefabs novos (`Assets/Art/Environment/HighDetail/Prefabs/`)
+### Prefabs novos (`Assets/Art/Environment/Prefabs/`)
 
 | Prefab | Base clonada | Colisão |
 |---|---|---|

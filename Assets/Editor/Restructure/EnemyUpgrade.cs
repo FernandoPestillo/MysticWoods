@@ -16,9 +16,9 @@ namespace MysticWoods.EditorTools
     internal static class EnemyUpgrade
     {
         public const string ConfigRoot = "Assets/Gameplay/Enemies/Configuration/";
-        public const string SlimePrefab = "Assets/Animations/Enemies/Slime/Slime.prefab";
-        public const string SkeletonPrefab = "Assets/Animations/Enemies/Skeleton/Esqueleto.prefab";
-        public const string BossPrefab = "Assets/Animations/Enemies/Boss/SlimeBoss.prefab";
+        public const string SlimePrefab = "Assets/Gameplay/Enemies/Prefabs/Slime.prefab";
+        public const string SkeletonPrefab = "Assets/Gameplay/Enemies/Prefabs/Esqueleto.prefab";
+        public const string BossPrefab = "Assets/Gameplay/Enemies/Prefabs/SlimeBoss.prefab";
         private static readonly string[] Legacy = { "SlimeController", "SkeletonController", "SlimeBoss", "EnemyMeleeAttack", "IdleSpriteMotion", "CadencedMovement2D" };
 
         public static void Run()
@@ -115,7 +115,7 @@ namespace MysticWoods.EditorTools
         /// <summary>The skeleton's death clip flowed straight into Revive; gate it so the final death sticks.</summary>
         private static void AddReviveGate()
         {
-            var controller = AssetDatabase.LoadAssetAtPath<AnimatorController>("Assets/Animations/Enemies/Skeleton/Skeleton.controller");
+            var controller = AssetDatabase.LoadAssetAtPath<AnimatorController>("Assets/Gameplay/Enemies/Animation/Skeleton/Skeleton.controller");
             if (controller == null) return;
             if (controller.parameters.All(p => p.name != "canRevive"))
             {

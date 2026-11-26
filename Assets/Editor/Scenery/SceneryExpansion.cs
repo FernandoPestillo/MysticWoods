@@ -22,7 +22,7 @@ namespace MysticWoods.EditorTools
     /// </summary>
     public static class SceneryExpansion
     {
-        private const string Root = "Assets/Art/Environment/HighDetail/";
+        private const string Root = "Assets/Art/Environment/";
         private const string Textures = Root + "Textures/";
         private const string Prefabs = Root + "Prefabs/";
         private const string SlicesPath = "Documentation/Scenery/sprite-slices.json";

@@ -1,6 +1,6 @@
 ﻿<Solution>
-  <Project Path="Assembly-CSharp.csproj" />
   <Project Path="MysticWoods.Enemies.csproj" />
+  <Project Path="Assembly-CSharp.csproj" />
   <Project Path="MysticWoods.Player.csproj" />
   <Project Path="MysticWoods.Combat.csproj" />
   <Project Path="Assembly-CSharp-Editor.csproj" />

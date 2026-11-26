@@ -12,8 +12,8 @@ namespace MysticWoods.EditorTools
     {
         public const string EffectsRoot = "Assets/Art/Effects/";
         public const string RenderingRoot = "Assets/Settings/Rendering/";
-        public const string IdleSpriteMaterial = "Assets/Art/Characters/HighDetail/IdleSprite.mat";
-        public const string TelegraphMaterial = "Assets/Art/Characters/HighDetail/AttackTelegraph.mat";
+        public const string IdleSpriteMaterial = "Assets/Art/Characters/Materials/IdleSprite.mat";
+        public const string TelegraphMaterial = "Assets/Art/Characters/Materials/AttackTelegraph.mat";
         public const string LitSpriteMaterial = "Packages/com.unity.render-pipelines.universal/Runtime/Materials/Sprite-Lit-Default.mat";
         public const string UnlitSpriteMaterial = "Packages/com.unity.render-pipelines.universal/Runtime/Materials/Sprite-Unlit-Default.mat";
 

@@ -22,9 +22,9 @@ namespace MysticWoods.Tests.Combat
     /// </summary>
     public sealed class CombatAiPlayTests
     {
-        private const string Slime = "Assets/Animations/Enemies/Slime/Slime.prefab";
-        private const string Skeleton = "Assets/Animations/Enemies/Skeleton/Esqueleto.prefab";
-        private const string Boss = "Assets/Animations/Enemies/Boss/SlimeBoss.prefab";
+        private const string Slime = "Assets/Gameplay/Enemies/Prefabs/Slime.prefab";
+        private const string Skeleton = "Assets/Gameplay/Enemies/Prefabs/Esqueleto.prefab";
+        private const string Boss = "Assets/Gameplay/Enemies/Prefabs/SlimeBoss.prefab";
         private PlayerController player;
         private Health playerHealth;
         private Rigidbody2D body;

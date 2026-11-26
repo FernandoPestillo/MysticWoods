@@ -103,7 +103,7 @@ namespace MysticWoods.Tests.Player
         {
             var prefab=AssetDatabase.LoadAssetAtPath<GameObject>(PlayerFoundationBuilder.PrefabPath);
             var player=UnityEngine.Object.Instantiate(prefab);var renderer=player.GetComponentInChildren<SpriteRenderer>();
-            var texture=new Texture2D(2,2);texture.LoadImage(File.ReadAllBytes("Assets/Art/Characters/HighDetail/player-hd.png"));var pixels=texture.GetPixels32();
+            var texture=new Texture2D(2,2);texture.LoadImage(File.ReadAllBytes("Assets/Art/Characters/Textures/player-hd.png"));var pixels=texture.GetPixels32();
             try
             {
                 var controller=AssetDatabase.LoadAssetAtPath<AnimatorController>(PlayerFoundationBuilder.ControllerPath);

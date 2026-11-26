@@ -2,7 +2,7 @@
   "artwork": [
     {
       "name": "player",
-      "path": "Assets/Art/Characters/HighDetail/player-hd.png",
+      "path": "Assets/Art/Characters/Textures/player-hd.png",
       "size": [
         971,
         1619
@@ -1444,7 +1444,7 @@
     },
     {
       "name": "slime",
-      "path": "Assets/Art/Characters/HighDetail/slime-hd.png",
+      "path": "Assets/Art/Characters/Textures/slime-hd.png",
       "size": [
         1484,
         1060
@@ -2158,7 +2158,7 @@
     },
     {
       "name": "skeleton",
-      "path": "Assets/Art/Characters/HighDetail/skeleton-hd.png",
+      "path": "Assets/Art/Characters/Textures/skeleton-hd.png",
       "size": [
         1374,
         1145
@@ -2874,19 +2874,19 @@
   "bindings": [
     "Assets/Animations/Player/Player.prefab",
     "Assets/Animations/Player/Player_Die.anim",
-    "Assets/Animations/Enemies/Slime/Slime.prefab",
-    "Assets/Animations/Enemies/Slime/Slime_Hit.anim",
-    "Assets/Animations/Enemies/Slime/Slime_Death.anim",
-    "Assets/Animations/Enemies/Slime/Slime_Idle.anim",
-    "Assets/Animations/Enemies/Slime/Slime_Run.anim",
-    "Assets/Animations/Enemies/Skeleton/Skeleton_Idle.anim",
-    "Assets/Animations/Enemies/Skeleton/Skeleton_Attack.anim",
-    "Assets/Animations/Enemies/Skeleton/Esqueleto.prefab",
-    "Assets/Animations/Enemies/Skeleton/Skeleton_Hit.anim",
-    "Assets/Animations/Enemies/Skeleton/Skeleton_Revive.anim",
-    "Assets/Animations/Enemies/Skeleton/Skeleton_Death.anim",
-    "Assets/Animations/Enemies/Skeleton/Skeleton_Run.anim",
-    "Assets/Animations/Enemies/Boss/SlimeBoss.prefab",
+    "Assets/Gameplay/Enemies/Prefabs/Slime.prefab",
+    "Assets/Gameplay/Enemies/Animation/Slime/Slime_Hit.anim",
+    "Assets/Gameplay/Enemies/Animation/Slime/Slime_Death.anim",
+    "Assets/Gameplay/Enemies/Animation/Slime/Slime_Idle.anim",
+    "Assets/Gameplay/Enemies/Animation/Slime/Slime_Run.anim",
+    "Assets/Gameplay/Enemies/Animation/Skeleton/Skeleton_Idle.anim",
+    "Assets/Gameplay/Enemies/Animation/Skeleton/Skeleton_Attack.anim",
+    "Assets/Gameplay/Enemies/Prefabs/Esqueleto.prefab",
+    "Assets/Gameplay/Enemies/Animation/Skeleton/Skeleton_Hit.anim",
+    "Assets/Gameplay/Enemies/Animation/Skeleton/Skeleton_Revive.anim",
+    "Assets/Gameplay/Enemies/Animation/Skeleton/Skeleton_Death.anim",
+    "Assets/Gameplay/Enemies/Animation/Skeleton/Skeleton_Run.anim",
+    "Assets/Gameplay/Enemies/Prefabs/SlimeBoss.prefab",
     "Assets/Animations/Player/Player_Attack/Player_Attack_Left.anim",
     "Assets/Animations/Player/Player_Attack/Player_Attack_Down.anim",
     "Assets/Animations/Player/Player_Attack/Player_Attack_Right.anim",

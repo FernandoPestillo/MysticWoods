@@ -16,9 +16,9 @@ namespace MysticWoods.Tests.Combat
     {
         private static readonly string[] EnemyPrefabs =
         {
-            "Assets/Animations/Enemies/Slime/Slime.prefab",
-            "Assets/Animations/Enemies/Skeleton/Esqueleto.prefab",
-            "Assets/Animations/Enemies/Boss/SlimeBoss.prefab",
+            "Assets/Gameplay/Enemies/Prefabs/Slime.prefab",
+            "Assets/Gameplay/Enemies/Prefabs/Esqueleto.prefab",
+            "Assets/Gameplay/Enemies/Prefabs/SlimeBoss.prefab",
         };
 
         [Test]

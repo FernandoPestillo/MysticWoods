@@ -21,7 +21,7 @@ namespace MysticWoods.EditorTools
     /// </summary>
     internal static class PlayerUpgrade
     {
-        private const string Atlas = "Assets/Art/Characters/HighDetail/player-hd.png";
+        private const string Atlas = "Assets/Art/Characters/Textures/player-hd.png";
         [System.Serializable] private sealed class AlignmentData { public Alignment[] frames; }
         [System.Serializable] private sealed class Alignment { public string name; public float x; public float y; }
 

@@ -151,7 +151,7 @@ namespace MysticWoods.EditorTools
             Make(GlowPath, (float)BlendMode.One, (float)BlendMode.One, 1.25f, null);
 
             // Fireflies were drawn with a legacy particle shader; keep their texture, gain bloom.
-            var fireflies = AssetDatabase.LoadAssetAtPath<Material>("Assets/Art/Environment/HighDetail/Materials/Fireflies.mat");
+            var fireflies = AssetDatabase.LoadAssetAtPath<Material>("Assets/Art/Environment/Materials/Fireflies.mat");
             if (fireflies != null && fireflies.shader != shader)
             {
                 var texture = fireflies.HasProperty("_MainTex") ? fireflies.GetTexture("_MainTex") : null;
