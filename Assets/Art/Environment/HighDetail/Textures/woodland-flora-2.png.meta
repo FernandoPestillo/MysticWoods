@@ -1,0 +1,492 @@
+fileFormatVersion: 2
+guid: f8549637821224d5cb9f5c5df46ab736
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1118145800529266857
+    second: woodland-flora-2_0
+  - first:
+      213: -5853702572152666221
+    second: woodland-flora-2_1
+  - first:
+      213: -367926864746216609
+    second: woodland-flora-2_2
+  - first:
+      213: -1243263155085424541
+    second: woodland-flora-2_3
+  - first:
+      213: -1700367415112240726
+    second: woodland-flora-2_4
+  - first:
+      213: -915175821166716490
+    second: woodland-flora-2_5
+  - first:
+      213: 4390441989217512658
+    second: woodland-flora-2_6
+  - first:
+      213: 4891410138722447484
+    second: woodland-flora-2_7
+  - first:
+      213: 6948260056319835796
+    second: woodland-flora-2_8
+  - first:
+      213: -1049459821268847251
+    second: woodland-flora-2_9
+  - first:
+      213: 2422231952074525760
+    second: woodland-flora-2_10
+  - first:
+      213: 5420779156170296306
+    second: woodland-flora-2_11
+  - first:
+      213: 2867346806812484773
+    second: FirTree
+  - first:
+      213: -7024693904593537761
+    second: BirchTree
+  - first:
+      213: -4522846436543179806
+    second: DeadTree
+  - first:
+      213: 499746805020419529
+    second: MossStump
+  - first:
+      213: -853481774514153833
+    second: Sapling
+  - first:
+      213: 4398269983755168238
+    second: GlowShrooms
+  - first:
+      213: -7386985348063832734
+    second: BerryBush
+  - first:
+      213: -638600259620107443
+    second: TallGrass
+  - first:
+      213: -292387721698755833
+    second: Bramble
+  - first:
+      213: 2996094024902999914
+    second: CrystalRock
+  - first:
+      213: 9184010654797891343
+    second: RootBall
+  - first:
+      213: 5567276084177258563
+    second: Bellflowers
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationMethod: 0
+  spriteTessellationDetail: -1
+  spriteGeometrySubdivision: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: FirTree
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 1011
+        width: 318
+        height: 421
+      alignment: 9
+      pivot: {x: 0.5, y: 0.023752969}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a4a8eb9abcdac720800000000000000
+      internalID: 2867346806812484773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BirchTree
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 1011
+        width: 292
+        height: 417
+      alignment: 9
+      pivot: {x: 0.5, y: 0.023980815}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f15b9d8bc16438e90800000000000000
+      internalID: -7024693904593537761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeadTree
+      rect:
+        serializedVersion: 2
+        x: 734
+        y: 1011
+        width: 333
+        height: 411
+      alignment: 9
+      pivot: {x: 0.5, y: 0.024330901}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e3d338012f9b31c0800000000000000
+      internalID: -4522846436543179806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MossStump
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 665
+        width: 335
+        height: 239
+      alignment: 9
+      pivot: {x: 0.5, y: 0.041841004}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c5e0e642157fe600800000000000000
+      internalID: 499746805020419529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sapling
+      rect:
+        serializedVersion: 2
+        x: 439
+        y: 670
+        width: 209
+        height: 277
+      alignment: 9
+      pivot: {x: 0.5, y: 0.036101084}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79650d719d2d724f0800000000000000
+      internalID: -853481774514153833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GlowShrooms
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 667
+        width: 291
+        height: 286
+      alignment: 9
+      pivot: {x: 0.5, y: 0.034965035}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee96df74f3bc90d30800000000000000
+      internalID: 4398269983755168238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BerryBush
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 358
+        width: 315
+        height: 221
+      alignment: 9
+      pivot: {x: 0.5, y: 0.04524887}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 265d3afb6f72c7990800000000000000
+      internalID: -7386985348063832734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TallGrass
+      rect:
+        serializedVersion: 2
+        x: 389
+        y: 358
+        width: 302
+        height: 251
+      alignment: 9
+      pivot: {x: 0.5, y: 0.03984064}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4b0fd3827c3327f0800000000000000
+      internalID: -638600259620107443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bramble
+      rect:
+        serializedVersion: 2
+        x: 736
+        y: 358
+        width: 330
+        height: 208
+      alignment: 9
+      pivot: {x: 0.5, y: 0.048076924}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70bb57f8aea31fbf0800000000000000
+      internalID: -292387721698755833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CrystalRock
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 30
+        width: 326
+        height: 246
+      alignment: 9
+      pivot: {x: 0.5, y: 0.040650405}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6f730444a3449920800000000000000
+      internalID: 2996094024902999914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RootBall
+      rect:
+        serializedVersion: 2
+        x: 371
+        y: 32
+        width: 339
+        height: 266
+      alignment: 9
+      pivot: {x: 0.5, y: 0.037593983}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0781a41809247f70800000000000000
+      internalID: 9184010654797891343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bellflowers
+      rect:
+        serializedVersion: 2
+        x: 733
+        y: 32
+        width: 332
+        height: 250
+      alignment: 9
+      pivot: {x: 0.5, y: 0.04}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 348c9e31a10f24d40800000000000000
+      internalID: 5567276084177258563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Bellflowers: 5567276084177258563
+      BerryBush: -7386985348063832734
+      BirchTree: -7024693904593537761
+      Bramble: -292387721698755833
+      CrystalRock: 2996094024902999914
+      DeadTree: -4522846436543179806
+      FirTree: 2867346806812484773
+      GlowShrooms: 4398269983755168238
+      MossStump: 499746805020419529
+      RootBall: 9184010654797891343
+      Sapling: -853481774514153833
+      TallGrass: -638600259620107443
+      woodland-flora-2_0: -1118145800529266857
+      woodland-flora-2_1: -5853702572152666221
+      woodland-flora-2_10: 2422231952074525760
+      woodland-flora-2_11: 5420779156170296306
+      woodland-flora-2_2: -367926864746216609
+      woodland-flora-2_3: -1243263155085424541
+      woodland-flora-2_4: -1700367415112240726
+      woodland-flora-2_5: -915175821166716490
+      woodland-flora-2_6: 4390441989217512658
+      woodland-flora-2_7: 4891410138722447484
+      woodland-flora-2_8: 6948260056319835796
+      woodland-flora-2_9: -1049459821268847251
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

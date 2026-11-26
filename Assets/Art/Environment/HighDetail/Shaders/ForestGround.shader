@@ -7,6 +7,7 @@ Shader "Mystic Woods/Forest Ground"
         [PerRendererData] _MainTex ("Generated terrain", 2D) = "white" {}
         _TextureWorldSize ("Texture world size", Float) = 4
         _Transitions ("Neighbor transitions", Float) = 0
+        _EdgeSoftness ("Border fade width (cells)", Range(0.05, 0.5)) = 0.27
         _Tint ("Terrain tint", Color) = (1,1,1,1)
     }
 
@@ -16,6 +17,7 @@ Shader "Mystic Woods/Forest Ground"
     CBUFFER_START(UnityPerMaterial)
         float _TextureWorldSize;
         float _Transitions;
+        float _EdgeSoftness;
         half4 _Tint;
     CBUFFER_END
 
@@ -47,11 +49,11 @@ Shader "Mystic Woods/Forest Ground"
             float left = Bit(mask, 1), right = Bit(mask, 2), down = Bit(mask, 4), up = Bit(mask, 8);
             float distance = min(min(lerp(cellUV.x, 1, left), lerp(1 - cellUV.x, 1, right)),
                                  min(lerp(cellUV.y, 1, down), lerp(1 - cellUV.y, 1, up)));
-            float alpha = smoothstep(.01, .27, distance);
-            if (left * down > .5 && Bit(diagonal, 1) < .5) alpha *= smoothstep(.02, .27, length(cellUV));
-            if (right * down > .5 && Bit(diagonal, 2) < .5) alpha *= smoothstep(.02, .27, length(float2(1 - cellUV.x, cellUV.y)));
-            if (left * up > .5 && Bit(diagonal, 4) < .5) alpha *= smoothstep(.02, .27, length(float2(cellUV.x, 1 - cellUV.y)));
-            if (right * up > .5 && Bit(diagonal, 8) < .5) alpha *= smoothstep(.02, .27, length(1 - cellUV));
+            float alpha = smoothstep(.01, _EdgeSoftness, distance);
+            if (left * down > .5 && Bit(diagonal, 1) < .5) alpha *= smoothstep(.02, _EdgeSoftness, length(cellUV));
+            if (right * down > .5 && Bit(diagonal, 2) < .5) alpha *= smoothstep(.02, _EdgeSoftness, length(float2(1 - cellUV.x, cellUV.y)));
+            if (left * up > .5 && Bit(diagonal, 4) < .5) alpha *= smoothstep(.02, _EdgeSoftness, length(float2(cellUV.x, 1 - cellUV.y)));
+            if (right * up > .5 && Bit(diagonal, 8) < .5) alpha *= smoothstep(.02, _EdgeSoftness, length(1 - cellUV));
             color.a *= alpha;
         }
         return color;

@@ -1,0 +1,708 @@
+fileFormatVersion: 2
+guid: 1f7d0812c42f34b208fc424afaf2a89e
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6105006758874490898
+    second: ground-decor_0
+  - first:
+      213: 5221468063522841883
+    second: ground-decor_1
+  - first:
+      213: -3260158429693593010
+    second: ground-decor_2
+  - first:
+      213: -8718705127653835566
+    second: ground-decor_3
+  - first:
+      213: -6474537549236873117
+    second: ground-decor_4
+  - first:
+      213: 3176532197760225951
+    second: ground-decor_5
+  - first:
+      213: 952080565996734265
+    second: ground-decor_6
+  - first:
+      213: -5937048917008020658
+    second: ground-decor_7
+  - first:
+      213: -1453747783001436268
+    second: ground-decor_8
+  - first:
+      213: -6109007350861861730
+    second: ground-decor_9
+  - first:
+      213: 7361193312631649465
+    second: ground-decor_10
+  - first:
+      213: 5197872954523505241
+    second: ground-decor_11
+  - first:
+      213: -6968292149051161077
+    second: ground-decor_12
+  - first:
+      213: -1685304804125728845
+    second: ground-decor_13
+  - first:
+      213: -7527171592384588464
+    second: ground-decor_14
+  - first:
+      213: -7645644818128727285
+    second: ground-decor_15
+  - first:
+      213: -356239654559602812
+    second: ground-decor_16
+  - first:
+      213: -34001979231110435
+    second: ground-decor_17
+  - first:
+      213: 4071611685168519665
+    second: ground-decor_18
+  - first:
+      213: -89636412928299446
+    second: ground-decor_19
+  - first:
+      213: -7736074150333684791
+    second: ground-decor_20
+  - first:
+      213: -2908206036010902902
+    second: ground-decor_21
+  - first:
+      213: -4751446115371654639
+    second: ground-decor_22
+  - first:
+      213: -8669929353888195897
+    second: ground-decor_23
+  - first:
+      213: -3997423392121264817
+    second: ground-decor_24
+  - first:
+      213: 578051174903708140
+    second: ground-decor_25
+  - first:
+      213: -5758346856180182500
+    second: ground-decor_26
+  - first:
+      213: 5105063510200769193
+    second: ground-decor_27
+  - first:
+      213: 397945045674351715
+    second: ground-decor_28
+  - first:
+      213: -725562528669745526
+    second: ground-decor_29
+  - first:
+      213: -9006818878136211714
+    second: ground-decor_30
+  - first:
+      213: -8987850432900968103
+    second: ground-decor_31
+  - first:
+      213: 7415781699489127357
+    second: ground-decor_32
+  - first:
+      213: -414338198590413874
+    second: ground-decor_33
+  - first:
+      213: -761266320274449253
+    second: ground-decor_34
+  - first:
+      213: -9124224649774288697
+    second: ground-decor_35
+  - first:
+      213: -3786383928004602768
+    second: ground-decor_36
+  - first:
+      213: 9122492277756634704
+    second: ground-decor_37
+  - first:
+      213: 11878671483088926
+    second: ground-decor_38
+  - first:
+      213: 2587026741014959152
+    second: ground-decor_39
+  - first:
+      213: -4384342248459287320
+    second: GrassTuftA
+  - first:
+      213: -4341914971094132471
+    second: GrassTuftB
+  - first:
+      213: -2077486647635549056
+    second: GrassTuftC
+  - first:
+      213: -6911883280002553449
+    second: Clover
+  - first:
+      213: -5160217916438087236
+    second: LeavesGold
+  - first:
+      213: -8702903146055196469
+    second: LeavesGreen
+  - first:
+      213: 6645521990702992717
+    second: Pebbles
+  - first:
+      213: 5208993810194939582
+    second: Branch
+  - first:
+      213: -4059399524476978465
+    second: FlowersIvory
+  - first:
+      213: 3306681697738093950
+    second: FlowersGold
+  - first:
+      213: 9155959982757023439
+    second: FlowersBlue
+  - first:
+      213: 4255443050429751170
+    second: FairyRing
+  - first:
+      213: -5205272910323709881
+    second: MossPatch
+  - first:
+      213: 7235096903694979086
+    second: Roots
+  - first:
+      213: 8510650649111788912
+    second: Puddle
+  - first:
+      213: 6570337300070487687
+    second: FernSprouts
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 230
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationMethod: 0
+  spriteTessellationDetail: -1
+  spriteGeometrySubdivision: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: GrassTuftA
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 1010
+        width: 182
+        height: 132
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e4c8da44ffa723c0800000000000000
+      internalID: -4384342248459287320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrassTuftB
+      rect:
+        serializedVersion: 2
+        x: 369
+        y: 1007
+        width: 206
+        height: 146
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 909dbf6965b6eb3c0800000000000000
+      internalID: -4341914971094132471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrassTuftC
+      rect:
+        serializedVersion: 2
+        x: 682
+        y: 1010
+        width: 202
+        height: 132
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 084e016a6e84b23e0800000000000000
+      internalID: -2077486647635549056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Clover
+      rect:
+        serializedVersion: 2
+        x: 989
+        y: 1007
+        width: 203
+        height: 141
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7996c7e07ce0410a0800000000000000
+      internalID: -6911883280002553449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LeavesGold
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 703
+        width: 183
+        height: 141
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb9f91f15293368b0800000000000000
+      internalID: -5160217916438087236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LeavesGreen
+      rect:
+        serializedVersion: 2
+        x: 367
+        y: 709
+        width: 201
+        height: 134
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc020c8d2b3193780800000000000000
+      internalID: -8702903146055196469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pebbles
+      rect:
+        serializedVersion: 2
+        x: 694
+        y: 717
+        width: 172
+        height: 110
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4d06e28a03a93c50800000000000000
+      internalID: 6645521990702992717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Branch
+      rect:
+        serializedVersion: 2
+        x: 996
+        y: 721
+        width: 196
+        height: 105
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ebeb0ed95401a4840800000000000000
+      internalID: 5208993810194939582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlowersIvory
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 390
+        width: 206
+        height: 145
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fdaf82ed3ad1aa7c0800000000000000
+      internalID: -4059399524476978465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlowersGold
+      rect:
+        serializedVersion: 2
+        x: 367
+        y: 391
+        width: 200
+        height: 147
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e75f6fa0c71b3ed20800000000000000
+      internalID: 3306681697738093950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlowersBlue
+      rect:
+        serializedVersion: 2
+        x: 683
+        y: 390
+        width: 192
+        height: 147
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fce8ced0811801f70800000000000000
+      internalID: 9155959982757023439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FairyRing
+      rect:
+        serializedVersion: 2
+        x: 977
+        y: 392
+        width: 220
+        height: 154
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28f15c678ee5e0b30800000000000000
+      internalID: 4255443050429751170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MossPatch
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 91
+        width: 206
+        height: 115
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7480135edd723c7b0800000000000000
+      internalID: -5205272910323709881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Roots
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 81
+        width: 231
+        height: 142
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e00944cfc4a386460800000000000000
+      internalID: 7235096903694979086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Puddle
+      rect:
+        serializedVersion: 2
+        x: 663
+        y: 87
+        width: 235
+        height: 122
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07d71cb8ca7eb1670800000000000000
+      internalID: 8510650649111788912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FernSprouts
+      rect:
+        serializedVersion: 2
+        x: 977
+        y: 85
+        width: 221
+        height: 149
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 786533996f68e2b50800000000000000
+      internalID: 6570337300070487687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Branch: 5208993810194939582
+      Clover: -6911883280002553449
+      FairyRing: 4255443050429751170
+      FernSprouts: 6570337300070487687
+      FlowersBlue: 9155959982757023439
+      FlowersGold: 3306681697738093950
+      FlowersIvory: -4059399524476978465
+      GrassTuftA: -4384342248459287320
+      GrassTuftB: -4341914971094132471
+      GrassTuftC: -2077486647635549056
+      LeavesGold: -5160217916438087236
+      LeavesGreen: -8702903146055196469
+      MossPatch: -5205272910323709881
+      Pebbles: 6645521990702992717
+      Puddle: 8510650649111788912
+      Roots: 7235096903694979086
+      ground-decor_0: -6105006758874490898
+      ground-decor_1: 5221468063522841883
+      ground-decor_10: 7361193312631649465
+      ground-decor_11: 5197872954523505241
+      ground-decor_12: -6968292149051161077
+      ground-decor_13: -1685304804125728845
+      ground-decor_14: -7527171592384588464
+      ground-decor_15: -7645644818128727285
+      ground-decor_16: -356239654559602812
+      ground-decor_17: -34001979231110435
+      ground-decor_18: 4071611685168519665
+      ground-decor_19: -89636412928299446
+      ground-decor_2: -3260158429693593010
+      ground-decor_20: -7736074150333684791
+      ground-decor_21: -2908206036010902902
+      ground-decor_22: -4751446115371654639
+      ground-decor_23: -8669929353888195897
+      ground-decor_24: -3997423392121264817
+      ground-decor_25: 578051174903708140
+      ground-decor_26: -5758346856180182500
+      ground-decor_27: 5105063510200769193
+      ground-decor_28: 397945045674351715
+      ground-decor_29: -725562528669745526
+      ground-decor_3: -8718705127653835566
+      ground-decor_30: -9006818878136211714
+      ground-decor_31: -8987850432900968103
+      ground-decor_32: 7415781699489127357
+      ground-decor_33: -414338198590413874
+      ground-decor_34: -761266320274449253
+      ground-decor_35: -9124224649774288697
+      ground-decor_36: -3786383928004602768
+      ground-decor_37: 9122492277756634704
+      ground-decor_38: 11878671483088926
+      ground-decor_39: 2587026741014959152
+      ground-decor_4: -6474537549236873117
+      ground-decor_5: 3176532197760225951
+      ground-decor_6: 952080565996734265
+      ground-decor_7: -5937048917008020658
+      ground-decor_8: -1453747783001436268
+      ground-decor_9: -6109007350861861730
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

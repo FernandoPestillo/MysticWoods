@@ -29,6 +29,7 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
+    - _EdgeSoftness: 0.27
     - _TextureWorldSize: 4
     - _Transitions: 1
     m_Colors:
