@@ -9,5 +9,6 @@
   <Project Path="MysticWoods.Player.PlayModeTests.csproj" />
   <Project Path="MysticWoods.Combat.PlayModeTests.csproj" />
   <Project Path="MysticWoods.Player.Sandbox.csproj" />
+  <Project Path="MysticWoods.World.EditModeTests.csproj" />
   <Project Path="MysticWoods.Player.EditModeTests.csproj" />
 </Solution>

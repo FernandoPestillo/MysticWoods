@@ -79,6 +79,8 @@ namespace MysticWoods.EditorTools
             DressLevel(scene, prefabs, decor, edges, floorTile);
             EditorSceneManager.MarkSceneDirty(scene);
             EditorSceneManager.SaveScene(scene);
+            // Physics last: it also mirrors collider offsets on the instances flipped above.
+            SceneryPhysics.Run();
             Log("Scenery expansion done.");
         }
 
@@ -189,37 +191,7 @@ namespace MysticWoods.EditorTools
                 float scale = spec.Height / size.y;
                 root.transform.localScale = Vector3.one * scale;
 
-                foreach (var box in root.GetComponents<BoxCollider2D>()) Object.DestroyImmediate(box);
-                foreach (var other in root.GetComponents<Collider2D>()) Object.DestroyImmediate(other);
-                var transparency = root.GetComponent<TransparetObject>();
-                switch (spec.Kind)
-                {
-                    case Kind.Tree:
-                    case Kind.Sapling:
-                    {
-                        float trunk = spec.Name == "FirTree" ? .2f : spec.Kind == Kind.Sapling ? .14f : .17f;
-                        var feet = root.AddComponent<BoxCollider2D>();
-                        feet.size = new Vector2(size.x * trunk, size.y * .09f);
-                        feet.offset = new Vector2(0, size.y * .03f);
-                        var canopy = root.AddComponent<BoxCollider2D>();
-                        canopy.isTrigger = true;
-                        canopy.size = new Vector2(size.x * .8f, size.y * .82f);
-                        canopy.offset = new Vector2(0, size.y * .5f);
-                        if (transparency == null) root.AddComponent<TransparetObject>();
-                        break;
-                    }
-                    case Kind.Solid:
-                    {
-                        var box = root.AddComponent<BoxCollider2D>();
-                        box.size = new Vector2(size.x * .66f, size.y * .26f);
-                        box.offset = new Vector2(0, size.y * .13f);
-                        if (transparency != null) Object.DestroyImmediate(transparency);
-                        break;
-                    }
-                    default:
-                        if (transparency != null) Object.DestroyImmediate(transparency);
-                        break;
-                }
+                // Colliders, bodies and canopy fades are owned by SceneryPhysics.
                 if (spec.Kind == Kind.Glow)
                     foreach (var light in root.GetComponentsInChildren<UnityEngine.Rendering.Universal.Light2D>(true))
                     {

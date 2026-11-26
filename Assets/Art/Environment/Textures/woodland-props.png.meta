@@ -214,12 +214,12 @@ TextureImporter:
       name: OakA
       rect:
         serializedVersion: 2
-        x: 5
-        y: 889
-        width: 361
-        height: 456
+        x: 13
+        y: 908
+        width: 346
+        height: 435
       alignment: 9
-      pivot: {x: 0.5, y: 0.010964912}
+      pivot: {x: 0.5, y: 0.011494253}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -236,12 +236,12 @@ TextureImporter:
       name: OakB
       rect:
         serializedVersion: 2
-        x: 366
-        y: 887
-        width: 334
-        height: 538
+        x: 355
+        y: 907
+        width: 343
+        height: 519
       alignment: 9
-      pivot: {x: 0.5, y: 0.00929368}
+      pivot: {x: 0.5, y: 0.009633912}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -258,12 +258,12 @@ TextureImporter:
       name: OakC
       rect:
         serializedVersion: 2
-        x: 700
-        y: 887
-        width: 386
-        height: 443
+        x: 694
+        y: 908
+        width: 381
+        height: 420
       alignment: 9
-      pivot: {x: 0.5, y: 0.0112866815}
+      pivot: {x: 0.5, y: 0.011904762}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -280,12 +280,12 @@ TextureImporter:
       name: FernBush
       rect:
         serializedVersion: 2
-        x: 14
-        y: 569
-        width: 348
-        height: 277
+        x: 25
+        y: 585
+        width: 318
+        height: 246
       alignment: 9
-      pivot: {x: 0.5, y: 0.018050542}
+      pivot: {x: 0.5, y: 0.020325202}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -302,12 +302,12 @@ TextureImporter:
       name: FlowerBush
       rect:
         serializedVersion: 2
-        x: 371
-        y: 569
-        width: 346
-        height: 269
+        x: 388
+        y: 587
+        width: 309
+        height: 243
       alignment: 9
-      pivot: {x: 0.5, y: 0.01858736}
+      pivot: {x: 0.5, y: 0.020576132}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -324,12 +324,12 @@ TextureImporter:
       name: MushroomBush
       rect:
         serializedVersion: 2
-        x: 730
-        y: 564
-        width: 344
-        height: 272
+        x: 741
+        y: 584
+        width: 318
+        height: 241
       alignment: 9
-      pivot: {x: 0.5, y: 0.018382354}
+      pivot: {x: 0.5, y: 0.020746889}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -346,12 +346,12 @@ TextureImporter:
       name: MossRockA
       rect:
         serializedVersion: 2
-        x: 12
-        y: 275
-        width: 349
-        height: 242
+        x: 23
+        y: 281
+        width: 332
+        height: 243
       alignment: 9
-      pivot: {x: 0.5, y: 0.020661157}
+      pivot: {x: 0.5, y: 0.020576132}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -368,12 +368,12 @@ TextureImporter:
       name: MossRockB
       rect:
         serializedVersion: 2
-        x: 374
-        y: 272
-        width: 349
-        height: 255
+        x: 386
+        y: 281
+        width: 320
+        height: 258
       alignment: 9
-      pivot: {x: 0.5, y: 0.019607844}
+      pivot: {x: 0.5, y: 0.019379845}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -390,12 +390,12 @@ TextureImporter:
       name: MossRockC
       rect:
         serializedVersion: 2
-        x: 744
-        y: 268
-        width: 332
-        height: 189
+        x: 750
+        y: 281
+        width: 317
+        height: 171
       alignment: 9
-      pivot: {x: 0.5, y: 0.026455026}
+      pivot: {x: 0.5, y: 0.029239766}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -412,12 +412,12 @@ TextureImporter:
       name: FallenLog
       rect:
         serializedVersion: 2
-        x: 16
-        y: 24
-        width: 359
-        height: 183
+        x: 23
+        y: 31
+        width: 345
+        height: 182
       alignment: 9
-      pivot: {x: 0.5, y: 0.027322404}
+      pivot: {x: 0.5, y: 0.027472528}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -434,12 +434,12 @@ TextureImporter:
       name: FenceA
       rect:
         serializedVersion: 2
-        x: 410
-        y: 25
-        width: 305
-        height: 205
+        x: 403
+        y: 33
+        width: 300
+        height: 196
       alignment: 9
-      pivot: {x: 0.5, y: 0.024390243}
+      pivot: {x: 0.5, y: 0.025510205}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -456,12 +456,12 @@ TextureImporter:
       name: FenceB
       rect:
         serializedVersion: 2
-        x: 764
-        y: 26
-        width: 296
-        height: 193
+        x: 751
+        y: 32
+        width: 306
+        height: 190
       alignment: 9
-      pivot: {x: 0.5, y: 0.025906736}
+      pivot: {x: 0.5, y: 0.02631579}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []

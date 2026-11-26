@@ -38,12 +38,14 @@ Objetos novos na cena:
 
 ### Prefabs novos (`Assets/Art/Environment/Prefabs/`)
 
-| Prefab | Base clonada | Colisão |
-|---|---|---|
-| `FirTree`, `BirchTree`, `DeadTree`, `Sapling` | `OakA` | Caixa no tronco, gatilho na copa e `TransparetObject`: a copa fica translúcida quando o jogador passa atrás. |
-| `MossStump`, `CrystalRock`, `RootBall` | `MossRockA` | Caixa na base. |
-| `BerryBush`, `TallGrass`, `Bramble`, `Bellflowers` | `FernBush` | Nenhuma. |
-| `GlowShrooms` | `MushroomBush` | Nenhuma. Light2D ciano. |
+| Prefab | Base clonada |
+|---|---|
+| `FirTree`, `BirchTree`, `DeadTree`, `Sapling` | `OakA` |
+| `MossStump`, `CrystalRock`, `RootBall` | `MossRockA` |
+| `BerryBush`, `TallGrass`, `Bramble`, `Bellflowers` | `FernBush` |
+| `GlowShrooms` | `MushroomBush` (Light2D ciano) |
+
+A colisão de todos os prefabs de cenário é definida em `SceneryPhysics`; veja [Física do cenário](#física-do-cenário).
 
 ### Ordem de desenho (sorting layer `Bottom`)
 
@@ -53,13 +55,61 @@ Objetos novos na cena:
 
 O shader ganhou a propriedade `_EdgeSoftness`, que define a largura do esfumado da borda em células. O padrão 0,27 é o valor fixo anterior, então `Forest Path.mat` não muda. `Ruin Floor.mat` usa 0,46 e `_TextureWorldSize` = 8. A textura do piso foi importada com limite de 512 px, cerca de 64 texels por unidade, a mesma densidade da grama.
 
+## Props regenerados (`woodland-props.png`)
+
+Os 12 props originais foram redesenhados com o Codex: 3 carvalhos, 3 arbustos de samambaia, 3 rochas com musgo, tronco caído e 2 cercas. Cada item ficou no mesmo lugar e manteve a silhueta. O traço ficou mais nítido, as bordas ficaram limpas, sem halo, e a paleta acompanha `woodland-flora-2.png`. O prompt está em `codex-prompts.json` → `props`. Foram geradas quatro variações, e a escolhida foi a de sprites maiores. A grade do recorte está em [woodland-props-grid.png](Captures/woodland-props-grid.png).
+
+- As copas encostam umas nas outras, então o recorte corta na coluna mais vazia entre elas. Ilhas soltas com menos de 40 px dentro de cada recorte foram apagadas.
+- A troca preserva os **nomes e spriteIDs** dos sprites, com `ISpriteEditorDataProvider`. Os prefabs continuam apontando para os mesmos sprites.
+- A altura no mundo de cada prop foi mantida. Os prefabs e as 283 instâncias da cena foram reescalados pela razão entre a altura antiga e a nova do sprite.
+
+## Física do cenário
+
+Menu **Mystic Woods → Scenery → Configure Physics** ou `MysticWoods.EditorTools.SceneryPhysics.RunBatch`. O `SceneryExpansion` também chama esta etapa no final. Ela é idempotente. As regras ficam em `Assets/Editor/Scenery/SceneryPhysics.cs`, numa tabela por prefab:
+
+| Tipo | Prefabs | Configuração |
+|---|---|---|
+| Árvore | Oak A/B/C, Fir, Birch, Dead, Sapling | Cápsula horizontal só na base do tronco, gatilho na copa e `TransparetObject`. |
+| Sólido orgânico | rochas, toco, tronco caído, rocha de cristal, raiz, pilar quebrado, marco âmbar | Cápsula horizontal na pegada no chão. |
+| Construído | cercas, muro | Caixa fina na linha da base. |
+| Arco | `OpenArch` | Uma caixa em cada pilar, vão livre de cerca de 4,5 u, e gatilho de transparência. |
+| Caminhável | arbustos, flores, capim, espinheiro, cogumelos luminosos, medalhão | Sem collider e sem corpo. |
+| Jogo | `BossGate`, `ArenaEntrySeal`, `FinalSeal` | Geometria mantida, porque os scripts controlam. Só layer, corpo e material. Chave, saída e entrada da arena não mudaram. |
+
+Regras comuns:
+
+- Os obstáculos ficam na layer nova **`Environment`** (9), num `Rigidbody2D` **Static**.
+- Todos usam o material **`Assets/Settings/Physics/Environment Obstacle`**, com atrito 0 e quique 0, para os personagens deslizarem em vez de grudar.
+- A layer `Environment` colide exatamente com o que `Default` colide.
+- O contorno do mapa (`Bloqueios`) também está nessa layer e usa esse material.
+- Os gatilhos não bloqueiam movimento e são ignorados pela linha de visão do `HitQuery`.
+
+**Correções encontradas na revisão:**
+
+- O `AmberWaystone` não tinha colisão: dava para atravessar os 6 marcos.
+- Nas 87 instâncias com `flipX`, a arte espelhava mas os colliders não. Agora o offset é espelhado em cada instância; são 128 colliders.
+- A instância do arco na cena tinha colliders, corpo e `TransparetObject` adicionados à mão. Com o prefab assumindo a física, eles ficariam duplicados, então foram removidos.
+- As caixas das cercas ficavam abaixo dos postes.
+- Antes, sólidos com caixa e atrito padrão prendiam o personagem em 7 de 38 aproximações diagonais. Depois da revisão, isso não acontece em nenhuma.
+
+O teste `Assets/Tests/World/EditMode/SceneryPhysicsTests.cs` cobre essas regras: layer, corpo estático, material sem atrito, pegada só na base (até 35% da altura), um gatilho por prop com transparência, vegetação caminhável e colliders espelhados nas instâncias com `flipX`.
+
+| Overlay de colisão (vermelho = sólido, ciano = gatilho) | Antes | Depois |
+|---|---|---|
+| Entrada | [antes](Captures/physics-entrance-antes.jpg) | [depois](Captures/physics-entrance-depois.jpg) |
+| Ruínas / portão | [antes](Captures/physics-ruins-antes.jpg) | [depois](Captures/physics-ruins-depois.jpg) |
+| Borda da floresta | [antes](Captures/physics-forest-edge-antes.jpg) | [depois](Captures/physics-forest-edge-depois.jpg) |
+
 ## Validação
 
 Tudo foi rodado primeiro numa cópia APFS do projeto e depois no projeto real, com Unity 6000.6.7f1. O builder gerou os mesmos números nas duas execuções.
 
 - `RestructureRunner.VerifyBatch`: **PASS**. Nenhum script ausente nem shader com erro nas 4 cenas.
-- Testes EditMode: **30/30**. Testes PlayMode: **24/24**.
-- Rota física: busca em largura com uma caixa do tamanho do jogador a partir do início. A chave, o portão, a arena e a saída continuam alcançáveis. A área caminhável caiu 0,24% (109.565 → 109.301 amostras), por causa dos tocos e rochas novos fora da trilha.
+- Testes EditMode: **36/36**, incluindo os 6 de física do cenário. Testes PlayMode: **24/24**.
+- Rota física: busca em largura com uma caixa do tamanho do jogador a partir do início. A chave, o portão, a arena e a saída continuam alcançáveis.
+  - Na expansão do cenário, a área caminhável caiu 0,24% (109.565 → 109.301 amostras).
+  - Na revisão de física, caiu mais 0,9% (→ 108.336), porque os marcos, os pilares do arco e as pegadas agora bloqueiam.
+- Deslizamento: um corpo igual ao do jogador (cápsula de 0,55×0,3, dinâmica, a 4,2 u/s) foi empurrado na diagonal contra uma instância de cada obstáculo, por dois lados. Nenhum ficou preso, e a penetração máxima foi de 0,016 u.
 - Pendente: playtest humano para avaliar densidade e legibilidade em movimento. O desempenho não foi medido de novo; bordas, decalques e entulho somam 1.068 SpriteRenderers estáticos a mais, e a cena passou de 4,1 MB para 7,2 MB.
 
 ## Capturas (antes → depois)

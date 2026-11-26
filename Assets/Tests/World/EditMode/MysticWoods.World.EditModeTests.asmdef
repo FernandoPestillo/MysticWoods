@@ -1,0 +1,6 @@
+{
+  "name": "MysticWoods.World.EditModeTests",
+  "references": [],
+  "includePlatforms": ["Editor"],
+  "optionalUnityReferences": ["TestAssemblies"]
+}
